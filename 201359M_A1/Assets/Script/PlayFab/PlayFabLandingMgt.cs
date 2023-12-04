@@ -32,32 +32,42 @@ public class PlayFabLandingMgt : MonoBehaviour
 
     public string loginscene;
 
+    List<ItemInstance> ItemsInPlayer = new List<ItemInstance>();
+    //List<CatalogItem> items = new List<CatalogItem>();
     private void Awake()
     {
+       
+    }
+
+    private void Start()
+    {
+        //InitializePlayFabEvents();
+
         //PlayFabClientAPI.GetLeaderboard(lbreq, OnLeaderboardGet, OnError);
-        //GetCatalog("Legacy");
-        GetCatalog("Legacy");
-        GetVirtualCurrencies("RD");
 
         GetPlayerInventory();
+        GetCatalog("Legacy");
+
+        GetVirtualCurrencies("RD");
+
 
         LoadJSON();
-
 
         //TOOK FROM SHOPCONTROLLER
         shopcontroller.ModifySkillContent("RD");
         //playfablandingmgt.GetCatalog("Legacy");
         //playfablandingmgt.GetVirtualCurrencies("RD");
         shopcontroller.switchShopPanel();
+
+
+
         shopcontroller.panel.SetActive(false);
     }
 
-    private void Start()
+    private void Update()
     {
         
     }
-
-
     public void OnError(PlayFabError e)
     {
         //UpdateMsg(ErrMsg, "Error" + e.GenerateErrorReport());
@@ -113,6 +123,10 @@ public class PlayFabLandingMgt : MonoBehaviour
     }
 
 
+
+
+
+
     ///LEADERBOARD
     public void OnButtonGetLeaderboard(string statisticname)
     {
@@ -152,7 +166,7 @@ public class PlayFabLandingMgt : MonoBehaviour
 
             string onerow = "ROW";
             onerow = "#" + r.Leaderboard[item].Position + " " + r.Leaderboard[item].DisplayName + " " + r.Leaderboard[item].StatValue;
-            //Debug.Log("LB ADDED");
+            Debug.Log("LB ADDED TO ROW");
             //TURN LEADERBOARDSTR INTO A LIST ALSO
 
             if (!LeaderboardStr.Any() ||
@@ -168,9 +182,6 @@ public class PlayFabLandingMgt : MonoBehaviour
         }
     }
     ///
-
-
-
 
     //bool namedecided = false;
     //void GetLBName(GetAccountInfoResult r)
@@ -188,47 +199,35 @@ public class PlayFabLandingMgt : MonoBehaviour
     ///ECONOMY
     public void GetVirtualCurrencies(string currencytype)
     {
-
+        //DISPLAY AMOUNT OF MONEY
         PlayFabClientAPI.GetUserInventory(new GetUserInventoryRequest(),
             r => {
                 //RM, RD
                 int coins = r.VirtualCurrency[currencytype];
                 UpdateMsg(ref shopText, "Coins: " + coins);
-                moneyText.text = $"{coins}";
+                moneyText.text = $"${coins}";
             }
             , OnError);
     }
     public void GetCatalog(string catalogname)
     {
-        List<ItemInstance> ItemsInPlayer = new List<ItemInstance>();
-        //CHECK USER INVENTORY IF ITEM IS ALREADY IN THE INVENTORY
-        var UserInv = new GetUserInventoryRequest();
-        PlayFabClientAPI.GetUserInventory(UserInv, r =>
-        {
-            List<ItemInstance> ii = r.Inventory;
-            foreach (ItemInstance item in ii)
-            {
-                //Debug.Log("ADD ITEM");
-                ItemsInPlayer.Add(item);
-            }
-        }
-        , OnError);
-
+        //items.Clear();
         var catreq = new GetCatalogItemsRequest
         {
-            CatalogVersion = catalogname
+            CatalogVersion = catalogname,
         };
         PlayFabClientAPI.GetCatalogItems(catreq, r =>
         {
-            List<CatalogItem> items = r.Catalog;
-            UpdateMsg(ref nullText, "Catalog Items");
-            foreach (CatalogItem item in items)
+            
+            //UpdateMsg(ref nullText, "Catalog Items");
+            //foreach (CatalogItem item in items)
+            foreach (CatalogItem item in r.Catalog)
             {
+                Debug.Log("FIND ITEM");
                 bool itemfound = false;
-
-                UpdateMsg(ref nullText, 
-                    item.DisplayName + ", " + item.VirtualCurrencyPrices["RD"]);
-
+                //UpdateMsg(ref nullText, 
+                //    item.DisplayName + ", " + item.VirtualCurrencyPrices["RD"]);
+               
                 foreach (ItemInstance it in ItemsInPlayer)
                 {
                     if (it.ItemId == item.ItemId)
@@ -238,33 +237,34 @@ public class PlayFabLandingMgt : MonoBehaviour
                         break;
                     }
                 }
-
-                //IF ITEM NOT FOUND, THEN ADD IN INVETORY
+                
+                //IF ITEM NOT FOUND, THEN ADD IN INVENTORY
                 if (!itemfound)
                 {
+                    Debug.Log("ITEM NOT FOUND IN PLAYER");
                     shopcontroller.AddCatalogContent($"{item.DisplayName}\n{item.Description}",
                        $"{item.VirtualCurrencyPrices["RD"]}"
                        , "Legacy", item.ItemId, "RD");
                 }
             }
+
+
         }, OnError);
+
+
+       
+
     }
 
 
     // Function to clear all children of a GameObject
     void ClearAllChildren(GameObject parent)
     {
-        // Remove all children from the parent's transform
-        parent.transform.DetachChildren();
-
-
         // Iterate through each child and destroy it
         foreach (RectTransform child in parent.GetComponent<RectTransform>())
         {
             Destroy(child.gameObject);
         }
-
-        
     }
 
 
@@ -282,16 +282,16 @@ public class PlayFabLandingMgt : MonoBehaviour
             {
                 UpdateMsg(ref nullText, "BOUGHT!");
                 GetVirtualCurrencies("RD");
-
-                //REFRESH THS SHOP ITEMS
-                ClearAllChildren(shopcontroller.itemContent);
-                GetCatalog("Legacy");
             }, OnError);
+        //REFRESH THS SHOP ITEMS
+        //ClearAllChildren(shopcontroller.itemContent);
+        //GetCatalog("Legacy");
+
     }
 
     public void BuySkill(string currencytype, int price, string data2send, Skillbox sb)
     {
-        if (int.Parse(sb.skillleveltext.text) <= 10)
+        if (int.Parse(sb.skillleveltext.text) < 10)
         {
             //Debug.Log("BOUGHT");
 
@@ -319,18 +319,27 @@ public class PlayFabLandingMgt : MonoBehaviour
     ///INVENTORY
     public void GetPlayerInventory()
     {
+
+        //CHECK USER INVENTORY IF ITEM IS ALREADY IN THE INVENTORY
+        ItemsInPlayer.Clear(); // Clear the list before populating it again
+
+        //var Inv = new UserInve();
+
         var UserInv = new GetUserInventoryRequest();
-        PlayFabClientAPI.GetUserInventory(UserInv, r =>
+        PlayFabClientAPI.GetUserInventory(UserInv, 
+            r =>
         {
             List<ItemInstance> ii = r.Inventory;
-            UpdateMsg(ref nullText, "Player Inventory");
-            foreach (ItemInstance item in ii)
+            foreach (ItemInstance item in r.Inventory)
             {
-                UpdateMsg(ref nullText, "INVENTORY " + item.DisplayName + ", " 
-                    + item.ItemId + ", " + item.ItemInstanceId);
+                Debug.Log("PLAYER HAS " + item.ItemId);
+                ItemsInPlayer.Add(item);
             }
-        }
-        , OnError);
+        }, OnError);
+
+
+
+       
     }
     ///
 

@@ -18,9 +18,6 @@ public class LeaderboardController : MonoBehaviour
     void Start()
     {
         playfabmgt.GetComponent<PlayFabLandingMgt>().OnButtonGetLeaderboard("highscore");
-
-        
-
         panel.SetActive(false);
     }
 
@@ -35,8 +32,8 @@ public class LeaderboardController : MonoBehaviour
         playerCallback = callBack;
 
         //REAGAN
-        seeHighScorePanel();
-
+         seeHighScorePanel();
+        
         //for (int i = 0; i < playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr.Count; i++)
         //{
         //    string lbstring = playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr[i];
@@ -52,42 +49,37 @@ public class LeaderboardController : MonoBehaviour
 
     public void seeHighScorePanel()
     {
-        ClearAllChildren(panelContent);
+        for (int x = 0; x < 10; x++)
+        {
+            ClearAllChildren(panelContent);
 
-        playfabmgt.GetComponent<PlayFabLandingMgt>().OnButtonGetLeaderboard("highscore");
+            playfabmgt.GetComponent<PlayFabLandingMgt>().OnButtonGetLeaderboard("highscore");
 
-        //if (playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr.Any())
-        //{
-           // Debug.Log($"LBSTRING {playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr[0]}");
             for (int i = 0; i < playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr.Count; i++)
             {
                 string lbstring = playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr[i];
                 AddLbContent(lbstring);
+                Debug.Log($"FINISHED {lbstring}");
             }
-        //}
-
+        }
     }
 
 
     public void seeTimePanel()
     {
-        ClearAllChildren(panelContent);
+        for (int x = 0; x < 10; x++)
+        {
+            ClearAllChildren(panelContent);
 
-        playfabmgt.GetComponent<PlayFabLandingMgt>().OnButtonGetLeaderboard("Time");
-
-        //if (playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr.Any())
-        //{
-            //Debug.Log($"LBSTRING {playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr[0]}");
+            playfabmgt.GetComponent<PlayFabLandingMgt>().OnButtonGetLeaderboard("Time");
 
             for (int i = 0; i < playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr.Count; i++)
             {
-
                 string lbstring = playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr[i];
                 AddLbContent(lbstring);
                 Debug.Log($"FINISHED {lbstring}");
             }
-        //}
-
+        }
     }
 
     //public void OpenHighScorePanel(System.Action callBack = null)

@@ -46,7 +46,7 @@ public class PlayFabUserMgt : MonoBehaviour
             UserPanel.SetActive(false);
             LoginRegPanel.SetActive(true);
             //InstantRegister();
-            InstantLogin();
+            //InstantLogin();
         }
         
     }
@@ -254,7 +254,8 @@ public class PlayFabUserMgt : MonoBehaviour
         }
         else
         {
-            Debug.Log("PLEASE INPUT DISPLAY NAME");
+            PasswordResetEmailText.text = "PLEASE INPUT DISPLAY NAME";
+            //Debug.Log("PLEASE INPUT DISPLAY NAME");
         }
     }
 

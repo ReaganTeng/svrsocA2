@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -47,6 +48,13 @@ public class ShopController : MonoBehaviour
     {
         panel.SetActive(true);
         //ModifySkillContent("RD");
+
+        //if (itemContent.transform.childCount <= 0)
+        //{
+        //    playfablandingmgt.GetPlayerInventory();
+        //    playfablandingmgt.GetCatalog("Legacy");
+        //}
+
         playerCallback = callBack;
         
     }
@@ -93,7 +101,7 @@ public class ShopController : MonoBehaviour
         // Ensure the Content object is big enough to contain all the elements
         RectTransform contentRectTransform = itemContent.GetComponent<RectTransform>();
         contentRectTransform.sizeDelta = new Vector2(contentRectTransform.sizeDelta.x,
-            rectTransform.sizeDelta.y * itemContent.transform.childCount * .5f);
+            rectTransform.sizeDelta.y * itemContent.transform.childCount * 1.0f);
         RectTransform[] children = newText.GetComponentsInChildren<RectTransform>();
 
         Debug.Log($"CRT {itemContent.transform.childCount}");
@@ -110,6 +118,7 @@ public class ShopController : MonoBehaviour
                 () =>
                 {
                     playfablandingmgt.BuyItem(catalogName, itemID, currencyType, int.Parse(price));
+                    Destroy(newText.gameObject);
                 }
                 );
             }
@@ -117,7 +126,15 @@ public class ShopController : MonoBehaviour
 
     }
 
-
+    // Function to clear all children of a GameObject
+    void ClearAllChildren(GameObject parent)
+    {
+        // Iterate through each child and destroy it
+        foreach (RectTransform child in parent.GetComponent<RectTransform>())
+        {
+            Destroy(child.gameObject);
+        }
+    }
 
 
     public void switchShopPanel()
