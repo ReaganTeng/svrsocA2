@@ -46,7 +46,7 @@ public class PlayFabUserMgt : MonoBehaviour
             UserPanel.SetActive(false);
             LoginRegPanel.SetActive(true);
             //InstantRegister();
-            //InstantLogin();
+            InstantLogin();
         }
         
     }
@@ -149,8 +149,6 @@ public class PlayFabUserMgt : MonoBehaviour
     {
         SceneManager.LoadScene(ShopScene);
     }
-
-
 
 
 

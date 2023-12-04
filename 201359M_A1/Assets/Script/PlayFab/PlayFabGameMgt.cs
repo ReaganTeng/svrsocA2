@@ -184,6 +184,8 @@ public class PlayFabGameMgt : MonoBehaviour
     }
     public void OnButtonSendLeaderBoard(string statistic, float data)
     {
+        
+
         var req = new UpdatePlayerStatisticsRequest
         {
             Statistics = new List<StatisticUpdate>

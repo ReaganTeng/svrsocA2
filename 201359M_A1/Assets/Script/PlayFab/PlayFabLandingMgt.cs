@@ -170,7 +170,7 @@ public class PlayFabLandingMgt : MonoBehaviour
             //TURN LEADERBOARDSTR INTO A LIST ALSO
 
             if (!LeaderboardStr.Any() ||
-                item > LeaderboardStr.Count - 1  )
+                item > LeaderboardStr.Count - 1)
             {
                 LeaderboardStr.Add(onerow);
             }

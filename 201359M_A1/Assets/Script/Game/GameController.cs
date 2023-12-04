@@ -9,6 +9,7 @@ using PlayFab;
 using System.Diagnostics;
 using Debug = UnityEngine.Debug;
 using UnityEngine.UI;
+using PlayFab.MultiplayerModels;
 
 public class GameController : MonoBehaviour
 {
@@ -72,11 +73,6 @@ public class GameController : MonoBehaviour
 
         LoadLongestTime();
 
-
-        LoadJSON();
-
-       
-
         scoreText.text = "0";
     }
 
@@ -103,10 +99,10 @@ public class GameController : MonoBehaviour
             string timeText = string.Format("{0:00}:{1:00}", minutes, seconds);
             timerText.text = timeText;
 
-            if (timelasted >= longestTime)
-            {
-                SaveLongestTime(longestTime);
-            }
+            //if (timelasted >= longestTime)
+            //{
+            //    SaveLongestTime(longestTime);
+            //}
 
             if (timelasted % 3 <= Time.deltaTime)
             {
@@ -148,10 +144,10 @@ public class GameController : MonoBehaviour
         //Check and update the level
         CheckLevel();
 
-        if ((int)score >= highestScore)
-        {
-            SaveHighScore((int)score);
-        }
+        //if ((int)score >= highestScore)
+        //{
+        //    SaveHighScore((int)score);
+        //}
     }
 
     public void AddScore(int value)
@@ -162,10 +158,10 @@ public class GameController : MonoBehaviour
         //Check and update the level
         CheckLevel();
 
-        if ((int)score >= highestScore)
-        {
-            SaveHighScore((int)score);
-        }
+        //if ((int)score >= highestScore)
+        //{
+        //    SaveHighScore((int)score);
+        //}
     }
 
     void CheckLevel()
@@ -231,12 +227,10 @@ public class GameController : MonoBehaviour
             //GET FROM JSON
             jlw = JsonUtility.FromJson<JSListWrapper<Skill>>(r.Data["Skills"].Value);
 
-
             //0 - lives
             //1 - scoremultiplier
             //2 - rdmultiplier
             //Debug.Log($"JLW {jlw.list[1].name}");
-
 
             //set lives
             lives = jlw.list[0].level;
@@ -267,21 +261,24 @@ public class GameController : MonoBehaviour
         finalScoreText.text = score.ToString();
         finalHighScoreText.text = highestScore.ToString();
 
+        if (score >= highestScore)
+        {
+            Debug.Log("UPDATE SCORE");
+            playfab.GetComponent<PlayFabGameMgt>().OnButtonSendLeaderBoard("highscore", score);
+            SaveHighScore((int)score);
+        }
+
+        if (timelasted >= longestTime)
+        {
+            Debug.Log("UPDATE TIME");
+            playfab.GetComponent<PlayFabGameMgt>().OnButtonSendLeaderBoard("Time", timelasted);
+            SaveLongestTime((int)timelasted);
+        }
 
         //REAGAN send score and time
-        if(!resultsent)
+        if (!resultsent)
         {
-            if (score >= highestScore)
-            {
-                Debug.Log("UPDATE SCORE");
-                playfab.GetComponent<PlayFabGameMgt>().OnButtonSendLeaderBoard("highscore", score);
-            }
-
-            if (timelasted >= longestTime)
-            {
-                Debug.Log("UPDATE TIME");
-                playfab.GetComponent<PlayFabGameMgt>().OnButtonSendLeaderBoard("Time", timelasted);
-            }
+            
 
             resultsent = true;
         }
@@ -290,38 +287,122 @@ public class GameController : MonoBehaviour
 
     private void SaveHighScore(int score)
     {
-        highestScore = score;
-        PlayerPrefs.SetInt("highestScore", highestScore);
+
+
+        //highestScore = score;
+
+        SendJSON("HighestScore", score);
+
+        //PlayerPrefs.SetInt("highestScore", highestScore);
         //highScoreText.text = highestScore.ToString();
     }
 
     private void LoadHighScore()
     {
-        if(PlayerPrefs.HasKey("highestScore"))
-        {
-            highestScore = PlayerPrefs.GetInt("highestScore");
-            //highScoreText.text = highestScore.ToString();
-        }
+        //SendJSON("HighestScore", 0);        
+        LoadHSJSON();  
+
+        //Debug.Log("STAT " + r.Statistics[0].Value);
+        //if(PlayerPrefs.HasKey("highestScore"))
+        //{
+        //    highestScore = PlayerPrefs.GetInt("highestScore");
+
+        //    //highScoreText.text = highestScore.ToString();
+        //}
     }
 
 
 
     private void SaveLongestTime(float time)
     {
-        longestTime = time;
-        PlayerPrefs.SetFloat("longestTime", longestTime);
-        //highScoreText.text = highestScore.ToString();
+        SendJSON("HighestTime", time);
     }
 
-    private void LoadLongestTime()
+    public void SendJSON(string datatosend, float data)
     {
-        if (PlayerPrefs.HasKey("longestTime"))
+        //string stringListAsJson = JsonUtility.ToJson(data);
+        //Debug.Log("JSON data prepared: " + stringListAsJson);
+        var req = new UpdateUserDataRequest
         {
-            longestTime = PlayerPrefs.GetFloat("longestTime");
+            Data = new Dictionary<string, string>
+            {
+                {datatosend, ((int)data).ToString() }
+            }
+        };
+        PlayFabClientAPI.UpdateUserData(req, result => Debug.Log("Data sent success!"), OnError);
+    }
+
+
+
+
+    //FOR HIGH SCORE
+    void LoadHSJSON()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), OnJSONHSDataReceived, OnError);
+    }
+    void OnJSONHSDataReceived(GetUserDataResult r)
+    {
+        //for (int x = 0; x < skillboxes.Length; x++)
+        //{
+        //Debug.Log("received JSON data");
+        if (!r.Data.ContainsKey("HighestScore")
+            //&& r.Data.ContainsKey(skillboxes[x].name)
+            )
+        {
+            SendJSON("HighestScore", 0);
+            highestScore = 0;
         }
         else
         {
+            highestScore = int.Parse(r.Data["HighestScore"].Value);
+        }
+        //}
+    }
+    //
+
+
+    //FOR TIME
+    public void LoadTimeJSON()
+    {
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), OnJSONTimeDataReceived, OnError);
+    }
+    void OnJSONTimeDataReceived(GetUserDataResult r)
+    {
+        //for (int x = 0; x < skillboxes.Length; x++)
+        //{
+        //Debug.Log("received JSON data");
+        if (!r.Data.ContainsKey("HighestTime")
+            //&& r.Data.ContainsKey(skillboxes[x].name)
+            )
+        {
+            SendJSON("HighestTime", 0);
             longestTime = 0;
         }
+        else
+        {
+            Debug.Log("TIME LOADED");
+            longestTime = int.Parse(r.Data["HighestTime"].Value);
+        }
+        //}
+    }
+    //
+
+
+
+
+
+    private void LoadLongestTime()
+    {
+
+        LoadTimeJSON();
+
+        //if (PlayerPrefs.HasKey("longestTime"))
+        //{
+        //    longestTime = PlayerPrefs.GetFloat("longestTime");
+        //}
+        //else
+        //{
+        //    longestTime = 0;
+        //}
     }
 }
