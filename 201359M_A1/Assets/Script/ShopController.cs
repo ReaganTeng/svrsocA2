@@ -77,7 +77,7 @@ public class ShopController : MonoBehaviour
 
         RectTransform contentRectTransform = skillsContent.GetComponent<RectTransform>();
         contentRectTransform.sizeDelta = new Vector2(contentRectTransform.sizeDelta.x,
-            children[0].GetComponent<RectTransform>().sizeDelta.y * itemContent.transform.childCount * 1.0f);
+            contentRectTransform.sizeDelta.y * skillsContent.transform.childCount * 1.0f);
         for (int i = 0; i < children.Length; i++)
         {
             Debug.Log("ADDED " + children.Length);
