@@ -191,7 +191,7 @@ public class PlayFabUserMgt : MonoBehaviour
     {
         UpdateMsg(Msg, "display name updated!" + r.DisplayName);
         ClearFields();
-        if (!UserPanel.activeSelf)
+        if (UserPanel.activeSelf)
         {
             toggledisplaynameupdatepanel();
         }
