@@ -185,11 +185,16 @@ public class PlayFabUserMgt : MonoBehaviour
 
         ClearFields();
     }
+
+
     public void OnDisplayNameUpdate(UpdateUserTitleDisplayNameResult r)
     {
         UpdateMsg(Msg, "display name updated!" + r.DisplayName);
         ClearFields();
-        toggledisplaynameupdatepanel();
+        if (!UserPanel.activeSelf)
+        {
+            toggledisplaynameupdatepanel();
+        }
     }
 
 
