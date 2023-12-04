@@ -68,7 +68,16 @@ public class ShopController : MonoBehaviour
 
     public void ModifySkillContent(string currencytype)
     {
+
+
+       
+
         Skillbox[] children = skillsContent.GetComponentsInChildren<Skillbox>();
+
+
+        RectTransform contentRectTransform = skillsContent.GetComponent<RectTransform>();
+        contentRectTransform.sizeDelta = new Vector2(contentRectTransform.sizeDelta.x,
+            children[0].GetComponent<RectTransform>().sizeDelta.y * itemContent.transform.childCount * 1.0f);
         for (int i = 0; i < children.Length; i++)
         {
             Debug.Log("ADDED " + children.Length);

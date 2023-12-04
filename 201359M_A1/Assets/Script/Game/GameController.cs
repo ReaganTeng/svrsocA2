@@ -73,6 +73,8 @@ public class GameController : MonoBehaviour
 
         LoadLongestTime();
 
+        LoadSkillsJSON();
+
         scoreText.text = "0";
     }
 
@@ -107,6 +109,7 @@ public class GameController : MonoBehaviour
             if (timelasted % 3 <= Time.deltaTime)
             {
                 //INCREASE MONEY
+                //var buyreq = new AddUserVirtualCurrencyRequest
                 var buyreq = new AddUserVirtualCurrencyRequest
                 {
                     VirtualCurrency = "RD",
@@ -192,13 +195,13 @@ public class GameController : MonoBehaviour
 
     public void GoToLanding(int currencytype)
     {
-        PlayFabClientAPI.AddUserVirtualCurrency(new AddUserVirtualCurrencyRequest(),
-            r => {
-                //RM, RD
-                int coins = r.VirtualCurrency[currencytype];
-                //UpdateMsg(ref shopText, "Coins: " + coins);
-            }
-            , playfab.GetComponent<PlayFabGameMgt>().OnError);
+        //PlayFabClientAPI.AddUserVirtualCurrency(new AddUserVirtualCurrencyRequest(),
+        //    r => {
+        //        //RM, RD
+        //        int coins = r.VirtualCurrency[currencytype];
+        //        //UpdateMsg(ref shopText, "Coins: " + coins);
+        //    }
+        //    , playfab.GetComponent<PlayFabGameMgt>().OnError);
 
 
         //SceneManager.LoadScene("Landing");
@@ -207,8 +210,8 @@ public class GameController : MonoBehaviour
     }
 
 
-
-    public void LoadJSON()
+    //for money
+    public void LoadSkillsJSON()
     {
         PlayFabClientAPI.GetUserData(new GetUserDataRequest(), OnJSONDataReceived, OnError);
     }
