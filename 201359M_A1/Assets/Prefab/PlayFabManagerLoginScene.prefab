@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7258568918684196552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7258568918684196554}
+  - component: {fileID: 648031592043301464}
+  - component: {fileID: 8233100234385985676}
+  m_Layer: 0
+  m_Name: PlayFabManagerLoginScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7258568918684196554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258568918684196552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648031592043301464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258568918684196552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0e4c202a9e940b6b77757542dfee18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  userEmail: {fileID: 0}
+  userPassword: {fileID: 0}
+  userName: {fileID: 0}
+  displayName: {fileID: 0}
+  currentScore: {fileID: 0}
+  XP_Input: {fileID: 0}
+  Msg: {fileID: 0}
+  XPDisplay: {fileID: 0}
+  UserText: {fileID: 0}
+  ErrMsg: {fileID: 0}
+  LeaderboardText: {fileID: 0}
+  LoginScene: Login
+  GameScene: Game
+  ShopScene: Landing
+  messagePanel: {fileID: 0}
+  LoginRegPanel: {fileID: 0}
+  UserPanel: {fileID: 0}
+--- !u!114 &8233100234385985676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258568918684196552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ba8b1b7b10d1e4c9d1af54ee4a972e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillboxes:
+  - {fileID: 0}
+  - {fileID: 0}
+  loginscene: Login
