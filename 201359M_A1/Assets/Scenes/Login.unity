@@ -2382,7 +2382,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7258568917636996241}
         m_TargetAssemblyTypeName: PlayFabUserMgt, Assembly-CSharp
-        m_MethodName: OnButtonUpdateDisplayName
+        m_MethodName: PasswordResetRequest
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8752,7 +8752,7 @@ GameObject:
   - component: {fileID: 1960065174}
   - component: {fileID: 1960065173}
   m_Layer: 5
-  m_Name: InputField_displayname
+  m_Name: InputField_emailpassword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9328,11 +9328,15 @@ PrefabInstance:
     - target: {fileID: 648031592043301464, guid: c7a0b7942cda47d4b86110d6acff66df, type: 3}
       propertyPath: PasswordResetEmailText
       value: 
-      objectReference: {fileID: 1167746449}
+      objectReference: {fileID: 128889705}
     - target: {fileID: 648031592043301464, guid: c7a0b7942cda47d4b86110d6acff66df, type: 3}
       propertyPath: displaynameupdatepanel
       value: 
       objectReference: {fileID: 194293226}
+    - target: {fileID: 648031592043301464, guid: c7a0b7942cda47d4b86110d6acff66df, type: 3}
+      propertyPath: userEmailPasswordReset
+      value: 
+      objectReference: {fileID: 1960065173}
     - target: {fileID: 648031592043301464, guid: c7a0b7942cda47d4b86110d6acff66df, type: 3}
       propertyPath: displayName_postRegister
       value: 

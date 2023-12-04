@@ -106,7 +106,7 @@ public class PlayFabUserMgt : MonoBehaviour
         };
         PlayFabClientAPI.SendAccountRecoveryEmail(req, OnPasswordReset, OnError);
 
-
+        passwordresetpanel.SetActive(false);
     }
     void OnPasswordReset(SendAccountRecoveryEmailResult r)
     {
@@ -254,7 +254,7 @@ public class PlayFabUserMgt : MonoBehaviour
         }
         else
         {
-            PasswordResetEmailText.text = "PLEASE INPUT DISPLAY NAME";
+            //displayName.text = "PLEASE INPUT DISPLAY NAME";
             //Debug.Log("PLEASE INPUT DISPLAY NAME");
         }
     }
