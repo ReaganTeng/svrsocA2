@@ -13,8 +13,8 @@ public class FriendsController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pf.GetAvialablePlayers("highscore");
-        pf.GetFriends();
+        pf.GetAvialablePlayers();
+        //pf.GetFriends();
         pf.OnGetFriendLB();
 
         panel.SetActive(false);

@@ -311,12 +311,19 @@ public class PlayFabUserMgt : MonoBehaviour
 
         var req = new GetAccountInfoRequest
         {
-            PlayFabId = r.PlayFabId
+            PlayFabId = r.PlayFabId,
+            //AuthenticationContext = r.AuthenticationContext,
+           
         };
+        //.EntityToken.Entity.Id
+       
+       
 
         PlayFabClientAPI.GetAccountInfo(req, GetUserName, OnError);
 
         pFabId = r.PlayFabId;
+        PlayerPrefs.SetString("PLAYFABID", pFabId);
+        PlayerPrefs.SetString("PLAYFABTITLEID", r.EntityToken.Entity.Id);
 
         ClearFields();
         LoginRegPanel.SetActive(false);
