@@ -18,6 +18,9 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
    // [SerializeField] private string nickName;
     private ChatClient chatClient;
 
+    //recepientname
+    string privateReceiver;
+
     public static Action<string, string> OnRoomInvite = delegate { };
     public static Action<ChatClient> OnChatConnected = delegate { };
     public static Action<PhotonStatus> OnStatusUpdated = delegate { };
@@ -36,6 +39,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //nickName = PlayerPrefs.GetString("USERNAME");
         //nickName = "RAY";
         isconnected = false;
+        username = "ray";
+        privateReceiver = "";
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
     }
     private void OnDestroy()
@@ -45,14 +50,15 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     public void NameOnValueChange(string value)
     {
-        username = value;
+        //username = value;
     }
 
 
     private void Start()
     {
-        ChatConnectOnClick();
+        username = "ray";
 
+        ChatConnectOnClick();
         //ConnectoToPhotonChat();
     }
 
@@ -72,6 +78,13 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         if (isconnected)
         {
             chatClient.Service();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Debug.Log("SENDING MESSAGE");
+            //SEND MESSAGE FOR TESTING PURPOSED
+            SendPublicMessage();
         }
     }
 
@@ -113,7 +126,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     public void OnDisconnected()
     {
         Debug.Log("You have disconnected from the Photon Chat");
-       // chatClient.SetOnlineStatus(ChatUserStatus.Offline);
+       chatClient.SetOnlineStatus(ChatUserStatus.Offline);
 
 
     }
@@ -132,14 +145,13 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         chatClient.Subscribe(new string[] { "RegionChannel" });
 
 
-        //SEND MESSAGE FOR TESTING PURPOSED
-        SendPublicMessage();
+
 
 
         //FIRST VERSION
-        //OnChatConnected?.Invoke(chatClient);
-        //chatClient.SetOnlineStatus(ChatUserStatus.Online);
-        //chatClient.SendPrivateMessage("bri", "HELLO");
+        OnChatConnected?.Invoke(chatClient);
+        chatClient.SetOnlineStatus(ChatUserStatus.Online);
+        chatClient.SendPrivateMessage("bri", "HELLO");
 
     }
 
@@ -148,13 +160,14 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     }
 
-    //recepientname
-    string privateReceiver;
+   
 
     public void SendPublicMessage()
     {
-        if(privateReceiver == "")
+        Debug.Log("COMPUL OUT");
+        if (privateReceiver == "")
         {
+            Debug.Log("COMPUL");
             currentchat = "Hello";
             chatClient.PublishMessage("RegionChannel", currentchat);
 
@@ -172,13 +185,10 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     public void OnGetMessages(string channelName, string[] senders, object[] messages)
     {
         Debug.Log($"Photon Chat OnGetMessages {channelName}");
-        
-        //string msgs =""
-        
+                
         for (int i = 0; i < senders.Length; i++)
         {
             Debug.Log($"{senders[i]} messaged: {messages[i]}");
-
             string msg = $"\n{senders[i]} messaged: {messages[i]}\n";
 
             //DISPLAY INSIDE MESSAGE BOX;

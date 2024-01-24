@@ -75,7 +75,7 @@ public class GuildController : MonoBehaviour
         setPanelToFalse(guildsJoinedPanel);
         setPanelToFalse(viewMembersPanel);
         //ViewMembers(EntityKeyMaker(playersownTitleID));
-        ViewMembers(EntityKeyMaker(playersownTitleID));
+        //ViewMembers(EntityKeyMaker(playersownTitleID));
 
         panel.SetActive(false);
         
