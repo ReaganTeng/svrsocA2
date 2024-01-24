@@ -46,6 +46,7 @@ public class GuildController : MonoBehaviour
     {
         CanvasGroup canvasGrp = Panel.GetComponent<CanvasGroup>();
         canvasGrp.interactable = !canvasGrp.interactable;
+        canvasGrp.blocksRaycasts = !canvasGrp.blocksRaycasts;
         if (!canvasGrp.interactable)
         {
             canvasGrp.alpha = 0;
@@ -61,7 +62,7 @@ public class GuildController : MonoBehaviour
     {
         CanvasGroup canvasGrp = Panel.GetComponent<CanvasGroup>();
         canvasGrp.interactable = false;
-        
+        canvasGrp.blocksRaycasts = false;
         canvasGrp.alpha = 0;
         
     }
@@ -146,6 +147,8 @@ public class GuildController : MonoBehaviour
             guildui.GuildName.text = pair.GroupName;
             //guildui.ViewGuildButton;
             string guildid = pair.Group.Id;
+            guildui.guilid = guildid;
+
             guildui.RemoveGuildButton.
             onClick.AddListener(() =>
             {
@@ -154,6 +157,7 @@ public class GuildController : MonoBehaviour
             guildui.ViewGuildButton.
             onClick.AddListener(() =>
             {
+                ViewMembers(EntityKeyMaker(guildid));
                 togglePanels(viewMembersPanel);
             });
         }
@@ -287,12 +291,15 @@ public class GuildController : MonoBehaviour
         };
 
         Debug.Log($"GROUP NAME {request.Group}");
-        PlayFabGroupsAPI.ListGroupMembers(request,
-            OnViewMembers,
+        PlayFabGroupsAPI.ListGroupMembers(
+            request,
+            OnViewMembers,//entityKey),
             OnSharedError);
     }
 
-    public void OnViewMembers(ListGroupMembersResponse r)
+    public void OnViewMembers(ListGroupMembersResponse r
+        //, EntityKey grpid
+        )
     {
         foreach (GuildMemberUI gmUI in membersContent.GetComponentsInChildren<GuildMemberUI>())
         {
@@ -309,13 +316,14 @@ public class GuildController : MonoBehaviour
             gmui.KickButton.onClick.AddListener(
                 () =>
                 {
-                    //KickMember(member.RoleId);
+                    //KickMember(grpid, EntityKeyMaker(member.RoleId));
                 }
             );
         }
     }
     //
 
+    
 
 
 
@@ -357,6 +365,9 @@ public class GuildController : MonoBehaviour
 
         // Presumably, this would be part of a separate process where the recipient reviews and accepts the request
         var request = new AcceptGroupApplicationRequest { Group = prevRequest.Group, Entity = prevRequest.Entity };
+
+
+        //INSTANT ACCEPT
         PlayFabGroupsAPI.AcceptGroupApplication(request, OnAcceptApplication, OnSharedError);
     }
     public void OnAcceptApplication(EmptyResponse response)
@@ -366,9 +377,9 @@ public class GuildController : MonoBehaviour
     }
 
 
-    public void KickMember(string groupId, EntityKey entityKey)
+    public void KickMember(EntityKey groupId, EntityKey entityKey)
     {
-        var request = new RemoveMembersRequest { Group = EntityKeyMaker(groupId), Members = new List<EntityKey> { entityKey } };
+        var request = new RemoveMembersRequest { Group = groupId, Members = new List<EntityKey> { entityKey } };
         PlayFabGroupsAPI.RemoveMembers(request, OnKickMembers, OnSharedError);
     }
     private void OnKickMembers(EmptyResponse response)

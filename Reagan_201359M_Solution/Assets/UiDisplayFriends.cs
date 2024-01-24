@@ -8,7 +8,7 @@ public class UiDisplayFriends : MonoBehaviour
 {
 
     public Transform friendcontainer;
-    public UiFriend uifriendprefab;
+    public PlayerDisplayUI uifriendprefab;
 
     private void Awake()
     {
@@ -29,7 +29,8 @@ public class UiDisplayFriends : MonoBehaviour
 
        foreach(FriendInfo friend in friends)
         {
-            UiFriend uifriend = Instantiate(uifriendprefab, friendcontainer);
+            Debug.Log("FRIEND");
+            PlayerDisplayUI uifriend = Instantiate(uifriendprefab, friendcontainer);
             uifriend.Initialize(friend);
         }
     }

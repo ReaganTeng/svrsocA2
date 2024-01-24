@@ -10,4 +10,6 @@ public class GuildUI : MonoBehaviour
     public Button ViewGuildButton;
     public Button RemoveGuildButton;
 
+    [HideInInspector]
+    public string guilid;
 }

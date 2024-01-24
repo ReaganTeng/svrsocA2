@@ -1,93 +1,89 @@
 using System.Collections;
 using System.Collections.Generic;
-using PlayFab;
-using PlayFab.ClientModels;
+
 using System;
 using UnityEngine;
-using UnityEditor.PackageManager;
+//using UnityEditor.PackageManager;
 using System.Linq;
+using PlayFab;
+
+using PlayFab.ClientModels;
 
 public class PlayFabFriendController : MonoBehaviour
-{
-    public static Action<List<FriendInfo>> OnFriendListUpdated = delegate { };
-
-    List<FriendInfo> friends;
-
-    private void Awake()
     {
-        friends = new List<FriendInfo>();
-        PhotonConnector.GetPhotonFriends += HandleGetFriends;
-        UiAddFriend.OnAddFriend += HandleAddPlayfabFriend;
-        UiFriend.OnRemoveFriend += HandleRemoveFriend;
-    }
+        public static Action<List<FriendInfo>> OnFriendListUpdated = delegate { };
+        private List<FriendInfo> friends;
 
-    private void HandleGetFriends()
-    {
-        GetPlayFabFriends();
-    }
-
-    private void OnDestroy()
-    {
-        PhotonConnector.GetPhotonFriends -= HandleGetFriends;
-        UiAddFriend.OnAddFriend -= HandleAddPlayfabFriend;
-        UiFriend.OnRemoveFriend -= HandleRemoveFriend;
-
-    }
-
-    private void HandleRemoveFriend(string name)
-    {
-        string id = friends.FirstOrDefault(f 
-            => f.TitleDisplayName == name).FriendPlayFabId.ToString();
-        var request = new RemoveFriendRequest
+        #region Unity Methods
+        private void Awake()
         {
-            FriendPlayFabId = name,
-        };
-        PlayFabClientAPI.RemoveFriend(request, OnFriendRemoveSuccess, OnFailure);
+            friends = new List<FriendInfo>();
+            PhotonConnector.GetPhotonFriends += HandleGetFriends;
+            UiAddFriend.OnAddFriend += HandleAddPlayfabFriend;
+            PlayerDisplayUI.OnRemoveFriend += HandleRemoveFriend;
+        }
+
+        private void OnDestroy()
+        {
+            PhotonConnector.GetPhotonFriends -= HandleGetFriends;
+            UiAddFriend.OnAddFriend -= HandleAddPlayfabFriend;
+            PlayerDisplayUI.OnRemoveFriend -= HandleRemoveFriend;
+        }
+        #endregion
+
+        #region Private Methods
+        private void HandleAddPlayfabFriend(string name)
+        {
+            Debug.Log($"Playfab add friend request for {name}");
+            var request = new AddFriendRequest { FriendTitleDisplayName = name };
+            PlayFabClientAPI.AddFriend(request, OnFriendAddedSuccess, OnFailure);
+        }
+        private void HandleRemoveFriend(string name)
+        {
+            string id = friends.FirstOrDefault(f => f.TitleDisplayName == name).FriendPlayFabId;
+            Debug.Log($"Playfab remove friend {name} with id {id}");
+            var request = new RemoveFriendRequest { FriendPlayFabId = id };
+            PlayFabClientAPI.RemoveFriend(request, OnFriendRemoveSuccess, OnFailure);
+        }
+
+        private void HandleGetFriends()
+        {
+            GetPlayfabFriends();
+        }
+
+        private void GetPlayfabFriends()
+        {
+            Debug.Log("Playfab get friend list request");
+            var request = new GetFriendsListRequest {
+                };
+            PlayFabClientAPI.GetFriendsList(request, OnFriendsListSuccess, OnFailure);
+        }
+        #endregion
+
+        #region Playfab Call backs
+        private void OnFriendAddedSuccess(AddFriendResult result)
+        {
+            Debug.Log("Playfab add friend success getting updated friend list");
+            GetPlayfabFriends();
+        }
+
+        private void OnFriendsListSuccess(GetFriendsListResult result)
+        {
+            Debug.Log($"Playfab get friend list success: {result.Friends.Count}");
+            friends = result.Friends;
+            OnFriendListUpdated?.Invoke(result.Friends);
+        }
+
+        private void OnFriendRemoveSuccess(RemoveFriendResult result)
+        {
+            Debug.Log($"Playfab remove friend success");
+            GetPlayfabFriends();
+        }
+
+        private void OnFailure(PlayFabError error)
+        {
+            Debug.Log($"Playfab Friend Error occured: {error.GenerateErrorReport()}");
+        }
+        #endregion
     }
 
-    private void OnFriendRemoveSuccess(RemoveFriendResult result)
-    {
-        GetPlayFabFriends();
-    }
-
-    private void HandleAddPlayfabFriend(string name)
-    {
-        var request = new AddFriendRequest {FriendTitleDisplayName = name};
-        PlayFabClientAPI.AddFriend(request, OnFriendAddedSuccess, OnFailure);
-        //throw new NotImplementedException();
-    }
-
-    private void OnFailure(PlayFabError error) {
-        Debug.Log($"ERROR {error.GenerateErrorReport()}");
-    }
-
-    private void OnFriendAddedSuccess(AddFriendResult result)
-    {
-        GetPlayFabFriends();
-    }
-
-    private void GetPlayFabFriends()
-    {
-        var request = new GetFriendsListRequest
-        { XboxToken = null
-        };
-
-        PlayFabClientAPI.GetFriendsList(request, OnFriendsListSuccess, OnFailure);
-
-
-    }
-
-    private void OnFriendsListSuccess(GetFriendsListResult result)
-    {
-        friends = result.Friends;
-        OnFriendListUpdated?.Invoke(result.Friends);
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}

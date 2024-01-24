@@ -11,9 +11,12 @@
 namespace Photon.Chat
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Diagnostics;
     using ExitGames.Client.Photon;
+    //using static UnityEditor.FilePathAttribute;
+    //using static UnityEditor.PlayerSettings;
 
     #if SUPPORTED_UNITY || NETFX_CORE
     using Hashtable = ExitGames.Client.Photon.Hashtable;
