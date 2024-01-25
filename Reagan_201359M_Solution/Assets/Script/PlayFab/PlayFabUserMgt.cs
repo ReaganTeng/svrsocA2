@@ -329,17 +329,15 @@ public class PlayFabUserMgt : MonoBehaviour
         var req = new GetAccountInfoRequest
         {
             PlayFabId = r.PlayFabId,
+           
         };
-
-        
-
 
         PlayFabClientAPI.GetAccountInfo(req, GetUserName, OnError);
 
         pFabId = r.PlayFabId;
         PlayerPrefs.SetString("PLAYFABID", pFabId);
 
-        Debug.Log($"DISPLAY NAME IS {req.PlayFabId}");
+        //Debug.Log($"DISPLAY NAME IS {req.Username}");
         PlayerPrefs.SetString("PLAYFABTITLEID", r.EntityToken.Entity.Id);
 
         ClearFields();
@@ -351,14 +349,14 @@ public class PlayFabUserMgt : MonoBehaviour
         string username = "WELCOME ";
         UserText.text = username;
 
-
-
-
         if (r != null
             && r.AccountInfo.Username != null)
         {
             UserText.text += r.AccountInfo.Username;
         }
+
+        
+
     }
     
 

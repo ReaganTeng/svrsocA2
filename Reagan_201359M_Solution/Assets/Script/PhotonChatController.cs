@@ -34,8 +34,49 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     #region Unity Methods
 
+    public void OnError(PlayFabError e)
+    {
+        //UpdateMsg(ErrMsg, "Error" + e.GenerateErrorReport());
+        Debug.Log("Error" + e.GenerateErrorReport());
+    }
+
+
+    void CorrectNamePref()
+    {
+        string playersownId = PlayerPrefs.GetString("PLAYFABID");
+
+        PlayFabClientAPI.GetLeaderboard(
+           new GetLeaderboardRequest
+           {
+               StatisticName = "highscore",
+               MaxResultsCount = 10,
+           },
+        r =>
+        {
+            for (int item = 0; item < r.Leaderboard.Count; item++)
+            {
+                if (r.Leaderboard[item].PlayFabId == playersownId)
+                {
+                    if (!PlayerPrefs.HasKey("NAME")
+                      ||
+                      (PlayerPrefs.HasKey("NAME") &&
+                      PlayerPrefs.GetString("NAME") != r.Leaderboard[item].DisplayName))
+                    {
+                        PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
+                    }
+                }
+            }
+        }
+       , OnError);
+    }
+
+
     private void Awake()
     {
+
+        CorrectNamePref();
+
+
         //nickName = PlayerPrefs.GetString("USERNAME");
         //nickName = "RAY";
         isconnected = false;
