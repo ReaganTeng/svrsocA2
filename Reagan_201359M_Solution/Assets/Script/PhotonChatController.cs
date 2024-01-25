@@ -42,6 +42,9 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         username = PlayerPrefs.GetString("NAME");
         privateReceiver = "";
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
+
+        ChatConnectOnClick();
+        //ConnectoToPhotonChat();
     }
     private void OnDestroy()
     {
@@ -54,13 +57,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     }
 
 
-    private void Start()
-    {
-        username = "ray";
-
-        ChatConnectOnClick();
-        //ConnectoToPhotonChat();
-    }
+   
 
     //FOR JOINING CHAT
     public void ChatConnectOnClick()
