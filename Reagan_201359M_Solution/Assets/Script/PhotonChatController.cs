@@ -62,8 +62,12 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                       (PlayerPrefs.HasKey("NAME") &&
                       PlayerPrefs.GetString("NAME") != r.Leaderboard[item].DisplayName))
                     {
+                        Debug.Log($"USERNAME FOUND {r.Leaderboard[item].DisplayName}");
                         PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
                     }
+
+                    username = PlayerPrefs.GetString("NAME");
+                    Debug.Log($"USERNAME IS {username}");
                 }
             }
         }
@@ -71,26 +75,21 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     }
 
 
-    private void Awake()
+    void Awake()
     {
+        isconnected = false;
 
         CorrectNamePref();
 
-
-        //nickName = PlayerPrefs.GetString("USERNAME");
-        //nickName = "RAY";
-        isconnected = false;
-        username = PlayerPrefs.GetString("NAME");
-
-        Debug.Log($"USERNAME IS {username}");
         privateReceiver = "";
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
-
-
-
         ChatConnectOnClick();
         //ConnectoToPhotonChat();
+
     }
+
+
+   
     private void OnDestroy()
     {
         PlayerDisplayUI.OnInviteFriend -= HandleFriendInvite;
@@ -183,12 +182,10 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     public void OnConnected()
     {
-        Debug.Log("You have connected to the Photon Chat");
+        //Debug.Log($"{chatClient.AppId} have connected to the Photon Chat");
         isconnected = true;
         //SECOND VERSION
         chatClient.Subscribe(new string[] { "RegionChannel" });
-
-
 
 
 
@@ -201,7 +198,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     public void SendPrivateMessage()
     {
         currentchat = "HELLO BLUE";
-        chatClient.SendPrivateMessage("Schindler", "HELLO BLUE");
+        chatClient.SendPrivateMessage("blue", "HELLO BLUE");
 
         //CLEAR CHAT FIELDS HERE
         currentchat = "";
@@ -235,9 +232,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                 
         for (int i = 0; i < senders.Length; i++)
         {
-            Debug.Log($"{senders[i]} messaged: {messages[i]}");
+            //Debug.Log($"{senders[i]} messaged: {messages[i]}");
             string msg = $"\n{senders[i]} messaged: {messages[i]}\n";
-
             //DISPLAY INSIDE MESSAGE BOX;
             chatdisplay.text += msg;
         }
@@ -245,23 +241,23 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     public void OnPrivateMessage(string sender, object message, string channelName)
     {
-        Debug.Log($"{sender} messaged: {message}");
+        //Debug.Log($"{sender} messaged: {message}");
         string msg = $"\n{sender} messaged: {message}\n";
         //DISPLAY INSIDE MESSAGE BOX;
         chatdisplay.text += msg;
 
-        /*if (!string.IsNullOrEmpty(message.ToString()))
-        {
-            // Channel Name format [Sender : Recipient]
-            string[] splitNames = channelName.Split(new char[] { ':' });
-            string senderName = splitNames[0];
+        //if (!string.IsNullOrEmpty(message.ToString()))
+        //{
+        //    // Channel Name format [Sender : Recipient]
+        //    string[] splitNames = channelName.Split(new char[] { ':' });
+        //    string senderName = splitNames[0];
 
-            if (!sender.Equals(senderName, StringComparison.OrdinalIgnoreCase))
-            {
-                Debug.Log($"{sender}: {message}");
-                OnRoomInvite?.Invoke(sender, message.ToString());
-            }
-        }*/
+        //    if (!sender.Equals(senderName, StringComparison.OrdinalIgnoreCase))
+        //    {
+        //        Debug.Log($"{sender} messaged: {message}");
+        //        OnRoomInvite?.Invoke(sender, message.ToString());
+        //    }
+        //}
     }
 
     public void OnSubscribed(string[] channels, bool[] results)
