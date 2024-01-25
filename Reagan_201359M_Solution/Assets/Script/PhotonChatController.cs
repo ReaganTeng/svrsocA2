@@ -81,8 +81,12 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //nickName = "RAY";
         isconnected = false;
         username = PlayerPrefs.GetString("NAME");
+
+        Debug.Log($"USERNAME IS {username}");
         privateReceiver = "";
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
+
+
 
         ChatConnectOnClick();
         //ConnectoToPhotonChat();
@@ -191,14 +195,13 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //FIRST VERSION
         OnChatConnected?.Invoke(chatClient);
         chatClient.SetOnlineStatus(ChatUserStatus.Online);
-        chatClient.SendPrivateMessage("bri", "HELLO");
 
     }
 
     public void SendPrivateMessage()
     {
         currentchat = "HELLO BLUE";
-        chatClient.SendPrivateMessage("blue", "HELLO BLUE");
+        chatClient.SendPrivateMessage("Schindler", "HELLO BLUE");
 
         //CLEAR CHAT FIELDS HERE
         currentchat = "";
@@ -223,7 +226,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     public void OnChatStateChange(ChatState state)
     {
-        Debug.Log($"Photon Chat OnChatStateChange: {state.ToString()}");
+        Debug.Log($"Photon Chat OnChatStateChange: {state}");
     }
 
     public void OnGetMessages(string channelName, string[] senders, object[] messages)
