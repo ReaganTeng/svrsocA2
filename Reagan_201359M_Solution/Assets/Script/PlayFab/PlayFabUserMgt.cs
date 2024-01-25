@@ -201,6 +201,15 @@ public class PlayFabUserMgt : MonoBehaviour
         {
             DisplayName = name,
         };
+
+        if (!PlayerPrefs.HasKey("NAME")
+            ||
+            (PlayerPrefs.HasKey("NAME") &&
+            PlayerPrefs.GetString("NAME") != name))
+        {
+            PlayerPrefs.SetString("NAME", name);
+        }
+
         PlayFabClientAPI.UpdateUserTitleDisplayName(req, OnDisplayNameUpdate, OnError);
 
         ClearFields();
@@ -234,11 +243,11 @@ public class PlayFabUserMgt : MonoBehaviour
 
         if (hasNoLetters)
         {
-            UnityEngine.Debug.Log("The string has no letters.");
+            Debug.Log("The string has no letters.");
         }
         else
         {
-            UnityEngine.Debug.Log("The string contains at least one letter.");
+            Debug.Log("The string contains at least one letter.");
         }
 
         return hasNoLetters;
@@ -276,6 +285,15 @@ public class PlayFabUserMgt : MonoBehaviour
                 DisplayName = name,
             };
             PlayFabClientAPI.UpdateUserTitleDisplayName(req, OnDisplayNameUpdate, OnError);
+
+
+            if (!PlayerPrefs.HasKey("NAME")
+            ||
+            (PlayerPrefs.HasKey("NAME") &&
+            PlayerPrefs.GetString("NAME") != name))
+            {
+                PlayerPrefs.SetString("NAME", name);
+            }
         }
         else
         {
@@ -306,23 +324,22 @@ public class PlayFabUserMgt : MonoBehaviour
         UpdateMsg(Msg, "Login Success!");
         ClearFields();
         UserPanel.SetActive(true);
-
-        //Debug.Log("LoginResult: " + r.PlayFabId);
+        
 
         var req = new GetAccountInfoRequest
         {
             PlayFabId = r.PlayFabId,
-            //AuthenticationContext = r.AuthenticationContext,
-           
         };
-        //.EntityToken.Entity.Id
-       
-       
+
+        
+
 
         PlayFabClientAPI.GetAccountInfo(req, GetUserName, OnError);
 
         pFabId = r.PlayFabId;
         PlayerPrefs.SetString("PLAYFABID", pFabId);
+
+        Debug.Log($"DISPLAY NAME IS {req.PlayFabId}");
         PlayerPrefs.SetString("PLAYFABTITLEID", r.EntityToken.Entity.Id);
 
         ClearFields();
@@ -334,12 +351,13 @@ public class PlayFabUserMgt : MonoBehaviour
         string username = "WELCOME ";
         UserText.text = username;
 
+
+
+
         if (r != null
             && r.AccountInfo.Username != null)
         {
             UserText.text += r.AccountInfo.Username;
-            //r.AccountInfo = "gos";
-            //Debug.Log("Username is " + r.AccountInfo.Username);
         }
     }
     
