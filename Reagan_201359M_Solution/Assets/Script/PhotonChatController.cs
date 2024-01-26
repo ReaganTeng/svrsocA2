@@ -18,8 +18,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
    // [SerializeField] private string nickName;
     private ChatClient chatClient;
 
-    //recepientname
-    string privateReceiver;
+    
 
     public static Action<string, string> OnRoomInvite = delegate { };
     public static Action<ChatClient> OnChatConnected = delegate { };
@@ -31,6 +30,9 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     bool isconnected;
 
     public TextMeshProUGUI chatdisplay;
+
+    //private Dictionary<string, string> photonIdToUsernameMap = new Dictionary<string, string>();
+
 
     #region Unity Methods
 
@@ -68,22 +70,31 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
                     username = PlayerPrefs.GetString("NAME");
                     Debug.Log($"USERNAME IS {username}");
+
+
+                    privateReceiver = "blue";
+                    ChatConnectOnClick();
+
+                    // Use the actual Photon ID of the user
+                    //string photonId = chatClient.AuthValues.UserId;
+                    //photonIdToUsernameMap.Add(photonId, username);
                 }
             }
         }
        , OnError);
     }
 
-
+    //recepientname
+    string privateReceiver;
     void Awake()
     {
         isconnected = false;
 
         CorrectNamePref();
 
-        privateReceiver = "";
+        
+
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
-        ChatConnectOnClick();
         //ConnectoToPhotonChat();
 
     }
@@ -101,7 +112,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     }
 
 
-   
+
 
     //FOR JOINING CHAT
     public void ChatConnectOnClick()
@@ -110,7 +121,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         chatClient = new ChatClient(this);
         chatClient.Connect(PhotonNetwork.PhotonServerSettings.AppSettings.AppIdChat,
             PhotonNetwork.AppVersion, new AuthenticationValues(username));
-        Debug.Log("Connecting to Photon Chat");
+        Debug.Log($"Connecting {username} to Photon Chat");
     }
 
 
@@ -197,11 +208,22 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     public void SendPrivateMessage()
     {
-        currentchat = "HELLO BLUE";
-        chatClient.SendPrivateMessage("blue", "HELLO BLUE");
+        if (!string.IsNullOrEmpty(privateReceiver))
+        {
+            string privateChannel = privateReceiver; // Use the Photon ID as the channel name
+            currentchat = $"HELLO {privateReceiver}";
+            chatClient.SendPrivateMessage(privateChannel, currentchat);
 
-        //CLEAR CHAT FIELDS HERE
-        currentchat = "";
+            // CLEAR CHAT FIELDS HERE
+            currentchat = "";
+        }
+        //else
+        //{
+        //    Debug.Log("Private receiver is not set. Please set a valid recipient before sending a private message.");
+        //}
+
+
+
     }
 
    
@@ -209,15 +231,15 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     public void SendPublicMessage()
     {
        // Debug.Log("COMPUL OUT");
-        if (privateReceiver == "")
-        {
+        //if (privateReceiver == "")
+        //{
             //Debug.Log("COMPUL");
             currentchat = "Hello";
             chatClient.PublishMessage("RegionChannel", currentchat);
 
             //CLEAR CHAT FIELDS HERE
             currentchat = "";
-        }
+        //}
     }
 
 
@@ -239,12 +261,30 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         }
     }
 
+
+    // Helper method to get the username from a Photon ID
+    //private string GetUsernameFromPhotonId(string photonId)
+    //{
+    //    if (photonIdToUsernameMap.TryGetValue(photonId, out string username))
+    //    {
+    //        Debug.Log($"US NAME IS {username}");
+    //        return username;
+    //    }
+
+    //    // If the username is not found, return the Photon ID itself
+    //    return photonId;
+    //}
+
     public void OnPrivateMessage(string sender, object message, string channelName)
     {
-        //Debug.Log($"{sender} messaged: {message}");
-        string msg = $"\n{sender} messaged: {message}\n";
-        //DISPLAY INSIDE MESSAGE BOX;
+
+
+        //string senderUsername = GetUsernameFromPhotonId(sender);
+
+        string msg = $"\n{username} messaged: {message}\n";
         chatdisplay.text += msg;
+
+        
 
         //if (!string.IsNullOrEmpty(message.ToString()))
         //{
