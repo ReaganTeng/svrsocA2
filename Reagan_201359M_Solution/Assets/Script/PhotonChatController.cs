@@ -315,22 +315,16 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         for (int i = 0; i < channels.Length; i++)
         {
-            if (party_ChannelName.Equals(channels[i]))
+            if (party_ChannelName.Equals(channels[i]) && results[i])
             {
-                if (results[i])
+                ChatChannel partyChannel;
+                if (this.chatClient.TryGetChannel(party_ChannelName, out partyChannel))
                 {
-                    ChatChannel partyChannel;
-                    
-
-                    if (this.chatClient.TryGetChannel(party_ChannelName, false, out partyChannel))
+                    if (!partyChannel.PublishSubscribers)
                     {
-                        if (!partyChannel.PublishSubscribers)
-                        {
-                            Debug.LogError("PublishSubscribers was not set during channel creation.");
-                        }
+                        Debug.LogError("PublishSubscribers was not set during channel creation.");
                     }
                 }
-              
             }
         }
 
