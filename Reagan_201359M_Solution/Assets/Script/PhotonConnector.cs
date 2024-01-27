@@ -30,7 +30,7 @@ public class PhotonConnector : MonoBehaviourPunCallbacks
         if(!PhotonNetwork.IsConnectedAndReady
             || !PhotonNetwork.IsConnected)
         {
-            Debug.Log("PHOTON IS NOT READY");
+            //Debug.Log("PHOTON IS NOT READY");
 
             return;
         }

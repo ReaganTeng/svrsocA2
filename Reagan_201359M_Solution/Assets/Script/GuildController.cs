@@ -42,7 +42,7 @@ public class GuildController : MonoBehaviour
     public GameObject viewMembersPanel;
 
 
-    void togglePanels(GameObject Panel)
+    public void togglePanels(GameObject Panel)
     {
         CanvasGroup canvasGrp = Panel.GetComponent<CanvasGroup>();
         canvasGrp.interactable = !canvasGrp.interactable;

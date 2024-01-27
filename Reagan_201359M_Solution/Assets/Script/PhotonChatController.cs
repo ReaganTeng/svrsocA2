@@ -2,24 +2,50 @@ using UnityEngine;
 using System;
 using Photon.Chat;
 using Photon.Pun;
+using Photon.Chat.Demo;
 
 using ExitGames.Client.Photon;
 using System.Collections.Generic;
 using PlayFab.ClientModels;
 using PlayFab;
 //using UnityEditor.PackageManager;
-using Photon.Chat.Demo;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Collections;
+
+
+public class CustomDropdownOptionData
+{
+    public string Text { get; set; }
+    public Color Color { get; set; }
+
+    public CustomDropdownOptionData(string text, Color color)
+    {
+        Text = text;
+        Color = color;
+    }
+}
+
 
 public class PhotonChatController : MonoBehaviour, IChatClientListener
 {
+  
+
+    string everyone = "EVERYONE";
+    string friends = "FRIENDS";
+
+    public TMP_Dropdown namelist;
 
    // [SerializeField] private string nickName;
     private ChatClient chatClient;
 
-    
+    string currentchat;
+
+    public TMP_InputField chatInputfield;
+
+    int listoffset;
 
     public static Action<string, string> OnRoomInvite = delegate { };
     public static Action<ChatClient> OnChatConnected = delegate { };
@@ -27,16 +53,16 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     [HideInInspector]
     public string username;
-    string currentchat;
     bool isconnected;
 
-    public TextMeshProUGUI chatdisplay;
+    public GameObject chatdisplay;
 
     //private Dictionary<string, string> photonIdToUsernameMap = new Dictionary<string, string>();
 
-
-    #region Unity Methods
-
+    List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
+    
+    List<string> PlayerDisplaynameList = new List<string>();
+  
     public void OnError(PlayFabError e)
     {
         //UpdateMsg(ErrMsg, "Error" + e.GenerateErrorReport());
@@ -44,8 +70,25 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     }
 
 
-    void CorrectNamePref()
+    
+
+    public void TypeChatOnValueChange()
     {
+        currentchat = chatInputfield.text;
+        Debug.Log("CHAT");
+    }
+
+    void ChatList()
+    {
+        //REFRESH EVERYTHING
+        PlayerDisplaynameList.Clear();
+        options.Clear();
+        namelist.AddOptions(options);
+        //
+
+        options.Add(new TMP_Dropdown.OptionData(everyone));
+        options.Add(new TMP_Dropdown.OptionData(friends));
+        listoffset = options.Count;
         string playersownId = PlayerPrefs.GetString("PLAYFABID");
 
         PlayFabClientAPI.GetLeaderboard(
@@ -54,50 +97,145 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                StatisticName = "highscore",
                MaxResultsCount = 10,
            },
-        r =>
-        {
-            for (int item = 0; item < r.Leaderboard.Count; item++)
+            r =>
             {
-                if (r.Leaderboard[item].PlayFabId == playersownId)
+                for (int item = 0; item < r.Leaderboard.Count; item++)
                 {
-                    if (!PlayerPrefs.HasKey("NAME")
-                      ||
-                      (PlayerPrefs.HasKey("NAME") &&
-                      PlayerPrefs.GetString("NAME") != r.Leaderboard[item].DisplayName))
+                    string NAME = r.Leaderboard[item].DisplayName;
+
+                    //IF IT IS NOT PLAYER ITSELF
+                    if (r.Leaderboard[item].PlayFabId == playersownId)
                     {
-                        Debug.Log($"USERNAME FOUND {r.Leaderboard[item].DisplayName}");
-                        PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
-
-                        //r.Leaderboard[item].Username
+                        //CONNECT PLAYER ITSELF TO PHOTON CHAT
+                        if (!PlayerPrefs.HasKey("NAME")
+                          ||
+                          (PlayerPrefs.HasKey("NAME") &&
+                          PlayerPrefs.GetString("NAME") != r.Leaderboard[item].DisplayName))
+                        {
+                            //Debug.Log($"USERNAME FOUND {r.Leaderboard[item].DisplayName}");
+                            PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
+                        }
+                        username = PlayerPrefs.GetString("NAME");
+                        ChatConnectOnClick();
+                        //
                     }
+                    else
+                    //ADD AS PART OF THE OPTIONS
+                    {
+                        PlayerDisplaynameList.Add(NAME);
 
-                    username = PlayerPrefs.GetString("NAME");
 
 
-                    Debug.Log($"USERNAME IS {username}");
+                        options.Add(new TMP_Dropdown.OptionData(NAME));
+                        
 
-
-                    privateReceiver = "blue";
-                    ChatConnectOnClick();
-
-                    // Use the actual Photon ID of the user
-                    //string photonId = chatClient.AuthValues.UserId;
-                    //photonIdToUsernameMap.Add(photonId, username);
+                       // Debug.Log($"LOOPED {NAME}");
+                    }
+                    //
                 }
+
+                namelist.AddOptions(options);
+                //Debug.Log("LOOP OPTIONS ADDED");
+
             }
-        }
        , OnError);
+        //Debug.Log("CHATLIST");
+
     }
+
+
+
+    void SendToFriends()
+    {
+        string playersownId = PlayerPrefs.GetString("PLAYFABID");
+        PlayFabClientAPI.GetFriendLeaderboard(
+            new GetFriendLeaderboardRequest
+            {
+                StatisticName = "highscore",
+                MaxResultsCount = 10,
+            },
+            r =>
+            {
+                for (int item = 0; item < r.Leaderboard.Count; item++)
+                {
+                    if (r.Leaderboard[item].PlayFabId != playersownId)
+                    {
+                        SendPrivateMessage(r.Leaderboard[item].DisplayName);
+                    }
+                }
+            }, OnError
+            );
+        
+    }
+
+
+    IEnumerator ListFriendsCoroutine()
+    {
+        string playersownId = PlayerPrefs.GetString("PLAYFABID");
+
+        PlayFabClientAPI.GetFriendLeaderboard(
+            new GetFriendLeaderboardRequest
+            {
+                StatisticName = "highscore",
+                MaxResultsCount = 10,
+            },
+            friendResult =>
+            {
+                foreach (var friendEntry in friendResult.Leaderboard)
+                {
+                    if (friendEntry.PlayFabId != playersownId)
+                    {
+                        StartCoroutine(GetLeaderboardForFriend(friendEntry.PlayFabId, friendEntry.DisplayName));
+                    }
+                }
+            },
+            OnError);
+
+        yield return new WaitForSeconds(1f); // Adjust delay as needed
+    }
+
+    IEnumerator GetLeaderboardForFriend(string friendPlayFabId, string friendresultDM)
+    {
+        PlayFabClientAPI.GetLeaderboard(
+            new GetLeaderboardRequest
+            {
+                StatisticName = "highscore",
+                MaxResultsCount = 10,
+            },
+            lbResult =>
+            {
+                for (int x = 0; x < lbResult.Leaderboard.Count; x++)
+                {
+                    if (lbResult.Leaderboard[x].PlayFabId == friendPlayFabId)
+                    {
+                        Debug.Log($"FOUND FRIEND {lbResult.Leaderboard[x].DisplayName} {friendresultDM} {friendPlayFabId}");
+                        int idx = x +listoffset;
+
+                        namelist.options[idx].text = $"{namelist.options[idx].text} (FRIEND)";
+                        // Update UI or perform other actions with the found friend
+                    }
+                }
+            },
+            OnError);
+
+        yield return null; // Ensure the coroutine has time to complete before moving on
+    }
+
+
+
 
     //recepientname
     string privateReceiver;
     void Awake()
     {
+
+        chatInputfield.text = "";
         isconnected = false;
 
-        CorrectNamePref();
+        ChatList();
+        //ListFriends();
+        StartCoroutine(ListFriendsCoroutine());
 
-        
 
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
         //ConnectoToPhotonChat();
@@ -111,12 +249,23 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         PlayerDisplayUI.OnInviteFriend -= HandleFriendInvite;
     }
 
-    public void NameOnValueChange(string value)
+  
+
+    public void onPrivateReceiverchanged()
     {
-        //username = value;
+        int selectedIndex = namelist.value;
+
+        if (namelist.value >= listoffset)
+        {
+            privateReceiver = PlayerDisplaynameList[selectedIndex - listoffset ];
+        }
+        else
+        {
+            privateReceiver = namelist.options[selectedIndex].text;
+        }
+
+        Debug.Log($"SELECTED OPTION IS {privateReceiver}");
     }
-
-
 
 
     //FOR JOINING CHAT
@@ -137,19 +286,79 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
             chatClient.Service();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //Debug.Log("SENDING MESSAGE");
-            //SEND MESSAGE FOR TESTING PURPOSED
-            //SendPublicMessage();
-
-            SendPrivateMessage();
-        }
+        
     }
 
-    #endregion
 
-    #region  Private Methods
+    public void SendMessage()
+    {
+        if (hasNoletters(currentchat))
+        {
+            return;
+        }
+
+
+        if (privateReceiver == everyone)
+        {
+            SendPublicMessage();
+        }
+        else if (privateReceiver == friends)
+        {
+            SendToFriends();
+        }
+        else
+        {
+            SendPrivateMessage();
+
+        }
+
+
+    }
+
+
+    public void togglePanels(GameObject Panel)
+    {
+        CanvasGroup canvasGrp = Panel.GetComponent<CanvasGroup>();
+        canvasGrp.interactable = !canvasGrp.interactable;
+        canvasGrp.blocksRaycasts = !canvasGrp.blocksRaycasts;
+        if (!canvasGrp.interactable)
+        {
+            canvasGrp.alpha = 0;
+        }
+        else
+        {
+            canvasGrp.alpha = 1;
+        }
+        //Debug.Log("DEBUGGGG");
+    }
+
+    bool hasNoletters(string input)
+    {
+        // Assume the string has no letters until we find one
+        bool hasNoLetters = true;
+
+        foreach (char c in input)
+        {
+            if (char.IsLetterOrDigit(c))
+            {
+                hasNoLetters = false;
+                break; // Exit the loop early since we found a letter
+            }
+        }
+
+        if (hasNoLetters)
+        {
+            Debug.Log("The string has no letters.");
+        }
+        else
+        {
+            Debug.Log("The string contains at least one letter.");
+        }
+
+        return hasNoLetters;
+    }
+
+
 
     private void ConnectoToPhotonChat()
     {
@@ -163,19 +372,13 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     }
 
-    #endregion
-
-    #region  Public Methods
+   
 
     public void HandleFriendInvite(string recipient)
     {
         if (!PhotonNetwork.InRoom) return;
         chatClient.SendPrivateMessage(recipient, PhotonNetwork.CurrentRoom.Name);
     }
-
-    #endregion
-
-    #region Photon Chat Callbacks
 
     public void DebugReturn(DebugLevel level, string message)
     {
@@ -191,10 +394,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     }
     
 
-    public void TypeChatOnValueChange(string value)
-    {
-        currentchat = value;
-    }
+   
 
     public void OnConnected()
     {
@@ -208,39 +408,35 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         OnUserSubscribed("RegionChannel", username);
 
-    }
-
-    public void SendPrivateMessage()
-    {
-        if (!string.IsNullOrEmpty(privateReceiver))
+        for (int i = 0; i < 100; i++)
         {
-            string privateChannel = privateReceiver; // Use the Photon ID as the channel name
-            currentchat = $"HELLO {privateReceiver}";
-            chatClient.SendPrivateMessage(privateChannel, currentchat);
-
-            // CLEAR CHAT FIELDS HERE
-            currentchat = "";
+            chatClient.PublishMessage("RegionChannel", "HELLO");
         }
-        //else
-        //{
-        //    Debug.Log("Private receiver is not set. Please set a valid recipient before sending a private message.");
-        //}
     }
 
-   
-
-    public void SendPublicMessage()
+    void SendPrivateMessage()
     {
-       // Debug.Log("COMPUL OUT");
-        //if (privateReceiver == "")
-        //{
-            //Debug.Log("COMPUL");
-            currentchat = "Hello";
-            chatClient.PublishMessage("RegionChannel", currentchat);
+        string privateChannel = privateReceiver; // Use the Photon ID as the channel name
+        //currentchat = $"HELLO {privateReceiver}";
+        chatClient.SendPrivateMessage(privateChannel, currentchat);
+        currentchat = "";       
+    }
 
-            //CLEAR CHAT FIELDS HERE
-            currentchat = "";
-        //}
+
+    void SendPrivateMessage(string receiver)
+    {
+        string privateChannel = receiver; // Use the Photon ID as the channel name
+        //currentchat = $"HELLO {privateReceiver}";
+        chatClient.SendPrivateMessage(privateChannel, currentchat);
+        currentchat = "";
+    }
+
+
+    void SendPublicMessage()
+    {
+        chatClient.PublishMessage("RegionChannel", currentchat);   
+        //CLEAR CHAT FIELDS HERE
+        currentchat = "";
     }
 
 
@@ -256,12 +452,35 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         for (int i = 0; i < senders.Length; i++)
         {
             //Debug.Log($"{senders[i]} messaged: {messages[i]}");
-            string msg = $"\n{senders[i]} messaged: {messages[i]}\n";
+            string msg = $"{senders[i]}: {messages[i]}\n\n";
             //DISPLAY INSIDE MESSAGE BOX;
-            chatdisplay.text += msg;
+            //chatdisplay.text += msg;
+            CreateMessage(msg);
         }
     }
 
+    public void ClearMessageBox()
+    {
+        foreach(TextMeshProUGUI t in chatdisplay.GetComponentsInChildren<TextMeshProUGUI>())
+        {
+            Destroy(t);
+        }
+    }
+
+
+    void CreateMessage(string msg)
+    {
+        // Create a new GameObject
+        GameObject textObject = new GameObject("DynamicText");
+        // Attach TextMeshProUGUI component to the GameObject
+        TextMeshProUGUI textComponent = textObject.AddComponent<TextMeshProUGUI>();
+        // Set the text
+        textComponent.text = msg;
+        
+        textComponent.fontSize = Screen.height * .05f;
+        // Set the parent to your chatdisplay or another desired parent
+        textObject.transform.SetParent(chatdisplay.transform, false);
+    }
 
     // Helper method to get the username from a Photon ID
     //private string GetUsernameFromPhotonId(string photonId)
@@ -282,8 +501,10 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         //string senderUsername = GetUsernameFromPhotonId(sender);
 
-        string msg = $"\n{sender} messaged: {message}\n";
-        chatdisplay.text += msg;
+        string msg = $"{sender}: {message}\n\n";
+        //chatdisplay.text += msg;
+
+        CreateMessage(msg);
 
 
         //if (!string.IsNullOrEmpty(message.ToString()))
@@ -300,8 +521,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //}
     }
 
-   
-    
+
+
 
     public void OnSubscribed(string[] channels, bool[] results)
     {
@@ -311,19 +532,23 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //    Debug.Log($"{channels[i]}");
         //}
 
-        string party_ChannelName = "RegionChannel";
+        //string party_ChannelName = "RegionChannel";
 
+
+
+        // Accessing chatClient within the class
         for (int i = 0; i < channels.Length; i++)
-        {
-            if (party_ChannelName.Equals(channels[i]) && results[i])
+        { 
+            ChatChannel partyChannel;
+            if (chatClient.TryGetChannel(channels[i], out partyChannel))
             {
-                ChatChannel partyChannel;
-                if (this.chatClient.TryGetChannel(party_ChannelName, out partyChannel))
+                if (partyChannel.PublishSubscribers)
                 {
-                    if (!partyChannel.PublishSubscribers)
-                    {
-                        Debug.LogError("PublishSubscribers was not set during channel creation.");
-                    }
+                    Debug.Log($"{partyChannel.Name} published");
+                }
+                else
+                {
+                    Debug.LogError($"PublishSubscribers was not set during channel {partyChannel.Name} creation.");
                 }
             }
         }
@@ -360,7 +585,6 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     {
         Debug.Log($"Photon Chat OnUserUnsubscribed: {channel} {user}");
     }
-    #endregion
 
 
   

@@ -212,6 +212,8 @@ public class PlayFabUserMgt : MonoBehaviour
 
         PlayFabClientAPI.UpdateUserTitleDisplayName(req, OnDisplayNameUpdate, OnError);
 
+        OnButtonSendLeaderBoard();
+
         ClearFields();
     }
 
@@ -657,11 +659,11 @@ public class PlayFabUserMgt : MonoBehaviour
                 new StatisticUpdate
                 {
                     StatisticName = "highscore",
-                    Value = int.Parse(currentScore.text)
+                    Value = 0,
                 }
             }
         };
-        UpdateMsg(Msg,"Submitting score:" + currentScore.text);
+       // UpdateMsg(Msg,"Submitting score:" + currentScore.text);
         PlayFabClientAPI.UpdatePlayerStatistics(req, OnLeaderboardUpdate, OnError);
         ClearFields();
     }

@@ -59,7 +59,7 @@ public class LeaderboardController : MonoBehaviour
             {
                 string lbstring = playfabmgt.GetComponent<PlayFabLandingMgt>().LeaderboardStr[i];
                 AddLbContent(lbstring);
-                Debug.Log($"FINISHED {lbstring}");
+               // Debug.Log($"FINISHED {lbstring}");
             }
         }
     }
