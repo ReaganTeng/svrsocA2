@@ -408,10 +408,10 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         OnUserSubscribed("RegionChannel", username);
 
-        for (int i = 0; i < 100; i++)
-        {
-            chatClient.PublishMessage("RegionChannel", "HELLO");
-        }
+        //for (int i = 0; i < 100; i++)
+        //{
+        //    chatClient.PublishMessage("RegionChannel", "HELLO");
+        //}
     }
 
     void SendPrivateMessage()
