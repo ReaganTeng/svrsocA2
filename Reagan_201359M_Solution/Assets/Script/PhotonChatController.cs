@@ -114,6 +114,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                         {
                             //Debug.Log($"USERNAME FOUND {r.Leaderboard[item].DisplayName}");
                             PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
+
+
                         }
                         username = PlayerPrefs.GetString("NAME");
                         ChatConnectOnClick();
@@ -239,11 +241,12 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
         //ConnectoToPhotonChat();
+        GameObject.FindGameObjectWithTag("NameText").GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("NAME");
 
     }
 
 
-   
+
     private void OnDestroy()
     {
         PlayerDisplayUI.OnInviteFriend -= HandleFriendInvite;
@@ -312,6 +315,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         }
 
+        currentchat = "";
+        chatInputfield.text = "";
 
     }
 
