@@ -234,8 +234,14 @@ public class PlayFabLandingMgt : MonoBehaviour
                         {
                             RemoveFriend(id);
                             GetAvialablePlayers();
+
+                           
+
                             Destroy(playerUI);
                         });
+
+
+                        //ADD FRIEND BUTTON
 
                         //Debug.Log($"INSTANTIATED OWN ID {playersownId}");
                         //Debug.Log($"INSTANTIATED OWN ID {r.Leaderboard[item].PlayFabId}");

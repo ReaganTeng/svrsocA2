@@ -26,6 +26,8 @@ public class PlayerDisplayUI : MonoBehaviour
     public static Action<string> OnGetCurrentStatus = delegate { };
     public static Action OnGetRoomStatus = delegate { };
 
+    [HideInInspector]
+    public string friendUsername;
 
 
     public Button RemoveButton;

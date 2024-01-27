@@ -11,6 +11,7 @@ using PlayFab;
 using Photon.Chat.Demo;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
 
 public class PhotonChatController : MonoBehaviour, IChatClientListener
 {
@@ -66,9 +67,13 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                     {
                         Debug.Log($"USERNAME FOUND {r.Leaderboard[item].DisplayName}");
                         PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
+
+                        //r.Leaderboard[item].Username
                     }
 
                     username = PlayerPrefs.GetString("NAME");
+
+
                     Debug.Log($"USERNAME IS {username}");
 
 
@@ -197,12 +202,11 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         isconnected = true;
         //SECOND VERSION
         chatClient.Subscribe(new string[] { "RegionChannel" });
-
-
-
         //FIRST VERSION
         OnChatConnected?.Invoke(chatClient);
         chatClient.SetOnlineStatus(ChatUserStatus.Online);
+
+        OnUserSubscribed("RegionChannel", username);
 
     }
 
@@ -221,9 +225,6 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //{
         //    Debug.Log("Private receiver is not set. Please set a valid recipient before sending a private message.");
         //}
-
-
-
     }
 
    
@@ -281,10 +282,9 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         //string senderUsername = GetUsernameFromPhotonId(sender);
 
-        string msg = $"\n{username} messaged: {message}\n";
+        string msg = $"\n{sender} messaged: {message}\n";
         chatdisplay.text += msg;
 
-        
 
         //if (!string.IsNullOrEmpty(message.ToString()))
         //{
@@ -300,13 +300,40 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //}
     }
 
+   
+    
+
     public void OnSubscribed(string[] channels, bool[] results)
     {
-        Debug.Log($"Photon Chat OnSubscribed");
+
         //for (int i = 0; i < channels.Length; i++)
         //{
         //    Debug.Log($"{channels[i]}");
         //}
+
+        string party_ChannelName = "RegionChannel";
+
+        for (int i = 0; i < channels.Length; i++)
+        {
+            if (party_ChannelName.Equals(channels[i]))
+            {
+                if (results[i])
+                {
+                    ChatChannel partyChannel;
+                    
+
+                    if (this.chatClient.TryGetChannel(party_ChannelName, false, out partyChannel))
+                    {
+                        if (!partyChannel.PublishSubscribers)
+                        {
+                            Debug.LogError("PublishSubscribers was not set during channel creation.");
+                        }
+                    }
+                }
+              
+            }
+        }
+
     }
 
     public void OnUnsubscribed(string[] channels)
@@ -316,6 +343,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         {
             Debug.Log($"{channels[i]}");
         }*/
+
+
     }
 
     public void OnStatusUpdate(string user, int status, bool gotMessage, object message)
@@ -325,6 +354,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         Debug.Log($"Status Update for {user} and its now {status}.");
         OnStatusUpdated?.Invoke(newStatus);
     }
+
+
 
     public void OnUserSubscribed(string channel, string user)
     {
@@ -336,5 +367,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         Debug.Log($"Photon Chat OnUserUnsubscribed: {channel} {user}");
     }
     #endregion
+
+
+  
 
 }
