@@ -8,11 +8,11 @@ using Debug = UnityEngine.Debug;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using System;
+using System.Diagnostics;
 
 public class PlayFabLandingMgt : MonoBehaviour
 {
 
-    
 
     //NAME TO DISPLAY IN LEADERBOARD
     string nametodisplay = "NIL";
@@ -23,16 +23,12 @@ public class PlayFabLandingMgt : MonoBehaviour
     public TextMeshProUGUI moneyText;
 
 
+    CloudScriptManager cloudScriptManager;
+
     public ShopController shopcontroller;
-
-
     TextMeshProUGUI nullText = null;
-
     public Skillbox[] skillboxes;
-
     public List<string> LeaderboardStr;
-
-
     public List<string> FriendListStr;
 
 
@@ -43,7 +39,10 @@ public class PlayFabLandingMgt : MonoBehaviour
 
 
 
-    public TextMeshProUGUI txtFrdList, friendLeaderboard, friendName;
+
+    public GuildController guildcontroller;
+
+    public TextMeshProUGUI txtFrdList, friendLeaderboard, friendName, chooseguildText;
     public GameObject friendContent, friendLBContent;
 
     public TMP_InputField addFriendInputField, removeFriendInputField;
@@ -66,6 +65,8 @@ public class PlayFabLandingMgt : MonoBehaviour
     void Awake()
     {
         playersownId = PlayerPrefs.GetString("PLAYFABID");
+
+        //guildcontroller = GetComponent<GuildController>();
     }
 
 
@@ -230,33 +231,120 @@ public class PlayFabLandingMgt : MonoBehaviour
                         string dm = r.Leaderboard[item].DisplayName;
                         string id = r.Leaderboard[item].PlayFabId;
 
+                        pdUI.playfabid = r.Leaderboard[item].PlayFabId;
+
+
+
+                        {
+                            string st = "";
+                            var request = new GetAccountInfoRequest
+                            {
+                                PlayFabId = r.Leaderboard[item].PlayFabId,
+                            };
+                            PlayFabClientAPI.GetAccountInfo(request, result =>
+                            {
+                                string otherPlayerPlayFabId = result.AccountInfo?.TitleInfo.TitlePlayerAccount.Id;
+                                st = otherPlayerPlayFabId;
+                                //pdUI.playfabtitleid = GetOtherPlayerPlayFabTitleId(r.Leaderboard[item].PlayFabId);
+                                pdUI.playfabtitleid = st;
+                                //Debug.Log($"String returned {pdUI.playfabtitleid}");
+                                chooseguildText.text = $"Choose guild to invite {pdUI.displayname.text}";
+
+                                pdUI.InviteButton.onClick.AddListener(() =>
+                                {
+                                    string playersownTitleID = PlayerPrefs.GetString("PLAYFABTITLEID");
+
+                                    guildcontroller.titleIDChosen = pdUI.playfabtitleid;
+                                    //Debug.Log($"PEEPEE {guildcontroller.titleIDChosen}");
+
+                                    guildcontroller.ListInvitationGrp(playersownTitleID);
+                                    setPanelToTrue(guildcontroller.guildChoicePanel);
+
+                                    guildcontroller.closebuttonfriendspanel.SetActive(false);
+                                });
+                            }
+                            , OnError
+                            );
+                        }
+
                         pdUI.RemoveButton.onClick.AddListener(() =>
                         {
                             RemoveFriend(id);
                             GetAvialablePlayers();
-
-                           
-
                             Destroy(playerUI);
                         });
 
 
-                        //ADD FRIEND BUTTON
 
-                        //Debug.Log($"INSTANTIATED OWN ID {playersownId}");
-                        //Debug.Log($"INSTANTIATED OWN ID {r.Leaderboard[item].PlayFabId}");
 
                     }
-                    else
-                    {
-                        //Debug.Log($"OWN ID {playersownId}");
-                    }
+                   
                 }
             }, OnError
-            );
+        );
     }
 
+    void setPanelToTrue(GameObject Panel)
+    {
+        CanvasGroup canvasGrp = Panel.GetComponent<CanvasGroup>();
+        canvasGrp.interactable = true;
+        canvasGrp.blocksRaycasts = true;
+        canvasGrp.alpha = 1;
+
+    }
+
+    void setPanelToFalse(GameObject Panel)
+    {
+        CanvasGroup canvasGrp = Panel.GetComponent<CanvasGroup>();
+        canvasGrp.interactable = false;
+        canvasGrp.blocksRaycasts = false;
+        canvasGrp.alpha = 0;
+    }
+
+    public string GetOtherPlayerPlayFabTitleId(string pfid)
+    {
+        string st = "";
+        var request = new GetAccountInfoRequest
+        {
+            PlayFabId = pfid,
+        };
+
+        PlayFabClientAPI.GetAccountInfo(request, result =>
+        {
+            string otherPlayerPlayFabId = result.AccountInfo?.TitleInfo.TitlePlayerAccount.Id;
+            st = otherPlayerPlayFabId;
+        }
+        , OnError
+        );
+
+        Debug.Log($"String returned {st}");
+        return st;
+    }
+
+    
+
+
+
+
+
+
+
     string pFabId;
+
+
+    public void GetAccountInfo(string playFabId)
+    {
+        var request = new GetAccountInfoRequest
+        {
+            PlayFabId = playFabId,
+        };
+
+        PlayFabClientAPI.GetAccountInfo(request, accountInfoResult =>
+        {
+            string titlePlayerAccountId = accountInfoResult.AccountInfo.TitleInfo.TitlePlayerAccount.Id;
+            Debug.Log($"FABA TITLE ID  {titlePlayerAccountId}");
+        }, OnError);
+    }
 
     public void GetAvialablePlayers()
     {
@@ -265,7 +353,8 @@ public class PlayFabLandingMgt : MonoBehaviour
         {
             Destroy(pd.gameObject);
         }
-        
+
+
         PlayFabClientAPI.GetLeaderboard(
             new GetLeaderboardRequest
             {
@@ -276,6 +365,16 @@ public class PlayFabLandingMgt : MonoBehaviour
          {
              for (int item = 0; item < r.Leaderboard.Count; item++)
              {
+                 //Debug.Log($"FABA ID {r.Leaderboard[item].PlayFabId}");
+                 //GetAccountInfo(r.Leaderboard[item].PlayFabId);
+                 // Check if the player's PlayFabId is not in the cloudscript list
+
+                 //if (!cloudScriptManager.IsPlayerInCloudScriptList(r.Leaderboard[item].PlayFabId))
+                 //{
+                 //    // If not in the list, add it to the cloudscript list
+                 //    cloudScriptManager.AddPlayerToCloudScriptList(r.Leaderboard[item].PlayFabId);
+                 //}
+
                  if (r.Leaderboard[item].PlayFabId != playersownId)
                  {
                      GameObject playerUI = Instantiate(playerdisplayPrefab, panelContent.transform);
@@ -292,11 +391,7 @@ public class PlayFabLandingMgt : MonoBehaviour
 
                      });
                  }
-                 //else
-                 //{
-                 //    Debug.Log("OWN ID");
-                 //}
-             }
+           }
          }   
             
         , OnError);

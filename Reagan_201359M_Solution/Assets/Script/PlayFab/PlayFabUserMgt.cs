@@ -22,6 +22,8 @@ public class PlayFabUserMgt : MonoBehaviour
     
     [SerializeField] GameObject messagePanel, LoginRegPanel, UserPanel, displaynameupdatepanel, passwordresetpanel;
 
+    CloudScriptManager cloudScriptManager;
+
 
     //NAME TO DISPLAY IN LEADERBOARD
     string nametodisplay = "NIL";
@@ -29,8 +31,12 @@ public class PlayFabUserMgt : MonoBehaviour
     float resetpasswordmessage_timer;
 
 
+    string displayNameRegistered;
+
 
     public string pFabId;
+
+
 
 
 
@@ -40,7 +46,7 @@ public class PlayFabUserMgt : MonoBehaviour
     void Awake()
     {
 
-
+        cloudScriptManager = GetComponent<CloudScriptManager>();
         // Singleton pattern
         if (Instance == null)
         {
@@ -202,6 +208,8 @@ public class PlayFabUserMgt : MonoBehaviour
             DisplayName = name,
         };
 
+      
+
         if (!PlayerPrefs.HasKey("NAME")
             ||
             (PlayerPrefs.HasKey("NAME") &&
@@ -339,8 +347,16 @@ public class PlayFabUserMgt : MonoBehaviour
         pFabId = r.PlayFabId;
         PlayerPrefs.SetString("PLAYFABID", pFabId);
 
+        
+       
         //Debug.Log($"DISPLAY NAME IS {req.Username}");
         PlayerPrefs.SetString("PLAYFABTITLEID", r.EntityToken.Entity.Id);
+
+
+        //cloudScriptManager.AddPlayerToCloudScriptList(
+        //    r.PlayFabId, 
+        //    r.EntityToken.Entity.Id, 
+        //    PlayerPrefs.GetString("NAME"));
 
         ClearFields();
         LoginRegPanel.SetActive(false);

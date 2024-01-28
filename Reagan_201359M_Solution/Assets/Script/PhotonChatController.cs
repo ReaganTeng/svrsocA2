@@ -190,6 +190,9 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                         StartCoroutine(GetLeaderboardForFriend(friendEntry.PlayFabId, friendEntry.DisplayName));
                     }
                 }
+
+                onPrivateReceiverchanged();
+
             },
             OnError);
 
@@ -220,6 +223,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
             },
             OnError);
 
+
         yield return null; // Ensure the coroutine has time to complete before moving on
     }
 
@@ -243,6 +247,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         //ConnectoToPhotonChat();
         GameObject.FindGameObjectWithTag("NameText").GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("NAME");
 
+
     }
 
 
@@ -257,6 +262,11 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     public void onPrivateReceiverchanged()
     {
         int selectedIndex = namelist.value;
+
+        if(selectedIndex < 0 )
+        {
+            return;
+        }
 
         if (namelist.value >= listoffset)
         {

@@ -18,7 +18,6 @@ public class PlayerDisplayUI : MonoBehaviour
     [SerializeField] private string friendName;
     [SerializeField] private bool isOnline;
     [SerializeField] private Image onlineImage;
-    [SerializeField] private GameObject inviteButton;
     [SerializeField] private Color onlineColor;
     [SerializeField] private Color offlineColor;
     public static Action<string> OnRemoveFriend = delegate { };
@@ -29,9 +28,19 @@ public class PlayerDisplayUI : MonoBehaviour
     [HideInInspector]
     public string friendUsername;
 
+    [HideInInspector]
+    public string playfabid;
+    [HideInInspector]
+    public string playfabtitleid;
+
 
     public Button RemoveButton;
     public Button AddButton;
+    public Button InviteButton;
+
+
+   // public Button InviteToGuildButton;
+
 
     public TextMeshProUGUI displayname;
 
@@ -82,7 +91,7 @@ public class PlayerDisplayUI : MonoBehaviour
     private void SetupUI()
     {
         friendNameText.SetText(friendName);
-        inviteButton.SetActive(false);
+        //inviteButton.SetActive(false);
     }
 
     private void SetStatus(int status)
@@ -97,7 +106,7 @@ public class PlayerDisplayUI : MonoBehaviour
         {
             onlineImage.color = offlineColor;
             isOnline = false;
-            inviteButton.SetActive(false);
+            //inviteButton.SetActive(false);
         }
     }
 

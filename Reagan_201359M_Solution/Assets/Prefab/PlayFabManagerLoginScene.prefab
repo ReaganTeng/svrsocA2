@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7258568918684196554}
   - component: {fileID: 648031592043301464}
   - component: {fileID: 8233100234385985676}
+  - component: {fileID: 7412014459367411615}
   m_Layer: 0
   m_Name: PlayFabManagerLoginScene
   m_TagString: Untagged
@@ -51,17 +52,23 @@ MonoBehaviour:
   displayName: {fileID: 0}
   currentScore: {fileID: 0}
   XP_Input: {fileID: 0}
+  displayName_postRegister: {fileID: 0}
+  userEmailPasswordReset: {fileID: 0}
   Msg: {fileID: 0}
   XPDisplay: {fileID: 0}
   UserText: {fileID: 0}
   ErrMsg: {fileID: 0}
   LeaderboardText: {fileID: 0}
+  PasswordResetEmailText: {fileID: 0}
   LoginScene: Login
   GameScene: Game
   ShopScene: Landing
   messagePanel: {fileID: 0}
   LoginRegPanel: {fileID: 0}
   UserPanel: {fileID: 0}
+  displaynameupdatepanel: {fileID: 0}
+  passwordresetpanel: {fileID: 0}
+  pFabId: 
 --- !u!114 &8233100234385985676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,3 +85,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   loginscene: Login
+--- !u!114 &7412014459367411615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258568918684196552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada2af164d9de894284e7ef8f395a7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
