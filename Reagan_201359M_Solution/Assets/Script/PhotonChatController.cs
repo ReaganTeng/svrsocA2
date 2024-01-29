@@ -496,7 +496,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     void SendPublicMessage()
     {
-        chatClient.PublishMessage("RegionChannel", currentchat);   
+        chatClient.PublishMessage("RegionChannel", $"\n{currentchat}\n\n");   
         //CLEAR CHAT FIELDS HERE
         currentchat = "";
     }
@@ -514,7 +514,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         for (int i = 0; i < senders.Length; i++)
         {
             //Debug.Log($"{senders[i]} messaged: {messages[i]}");
-            string msg = $"{senders[i]}: {messages[i]}\n\n";
+            string msg = $"\n{senders[i]}: {messages[i]}\n\n";
             //DISPLAY INSIDE MESSAGE BOX;
             //chatdisplay.text += msg;
             CreateMessage(msg);
