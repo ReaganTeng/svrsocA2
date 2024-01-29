@@ -75,7 +75,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     public void TypeChatOnValueChange()
     {
         currentchat = chatInputfield.text;
-        Debug.Log("CHAT");
+        Debug.Log($"CHAT IS {currentchat}");
     }
 
     void ChatList()
@@ -156,8 +156,11 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                     if (r.Leaderboard[item].PlayFabId != playersownId)
                     {
                         SendPrivateMessage(r.Leaderboard[item].DisplayName);
+                        Debug.Log($"CURRENT {currentchat}");
                     }
                 }
+                chatInputfield.text = "";
+                currentchat = "";
             }, OnError
             );
         
@@ -183,9 +186,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                         StartCoroutine(GetLeaderboardForFriend(friendEntry.PlayFabId, friendEntry.DisplayName));
                     }
                 }
-
                 onPrivateReceiverchanged();
-
             },
             OnError);
 
@@ -320,19 +321,24 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         if (privateReceiver == everyone)
         {
             SendPublicMessage();
+            currentchat = "";
+            chatInputfield.text = "";
         }
         else if (privateReceiver == friends)
         {
             SendToFriends();
+            currentchat = "";
+            chatInputfield.text = "";
         }
         else
         {
             SendPrivateMessage();
-
+            currentchat = "";
+            chatInputfield.text = "";
         }
 
-        currentchat = "";
-        chatInputfield.text = "";
+        //currentchat = "";
+        //chatInputfield.text = "";
 
     }
 
@@ -471,6 +477,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         string privateChannel = privateReceiver; // Use the Photon ID as the channel name
         //currentchat = $"HELLO {privateReceiver}";
         chatClient.SendPrivateMessage(privateChannel, currentchat);
+        chatInputfield.text = "";
         currentchat = "";       
     }
 
@@ -478,9 +485,12 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
     void SendPrivateMessage(string receiver)
     {
         string privateChannel = receiver; // Use the Photon ID as the channel name
-        //currentchat = $"HELLO {privateReceiver}";
+                            //currentchat = $"HELLO {privateReceiver}";
+        Debug.Log($"CURRENT CHAT {currentchat}");
+
         chatClient.SendPrivateMessage(privateChannel, currentchat);
-        currentchat = "";
+        Debug.Log($"CURRENT CHAT {currentchat}");
+       
     }
 
 
