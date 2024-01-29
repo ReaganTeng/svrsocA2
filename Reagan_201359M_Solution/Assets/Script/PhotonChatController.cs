@@ -327,8 +327,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         else if (privateReceiver == friends)
         {
             SendToFriends();
-            currentchat = "";
-            chatInputfield.text = "";
+            //currentchat = "";
+            //chatInputfield.text = "";
         }
         else
         {
