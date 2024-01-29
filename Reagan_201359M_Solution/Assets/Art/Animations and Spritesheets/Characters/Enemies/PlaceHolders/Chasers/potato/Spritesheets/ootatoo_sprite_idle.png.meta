@@ -1,0 +1,2366 @@
+fileFormatVersion: 2
+guid: d9be3ef8b22a11c4382fa422a5b1b794
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3287
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db84171a45d15ff4d95d35e2e8378f2b
+      internalID: 234313706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 3287
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d299de20f76ac1e4b8621ed93a9d5d24
+      internalID: 1827213586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 3287
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af9e7a1c3176764599f013ea3a9ae39
+      internalID: 1565505289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 3287
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1c1113e1d96e142a2172370a8a1f43
+      internalID: -1299482955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3287
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c3cb4c039e2234fa878c4f3c32cac4
+      internalID: 742588748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3114
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcabd3c79bc998439b95ac62b7556ea
+      internalID: 1060620431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_6
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 3114
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3008da945cae0854dab89e07a430bbc3
+      internalID: -1142425695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_7
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 3114
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0553c9fcbfd2a4e4fada03f3cfaadd5f
+      internalID: -115778500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 3114
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100b7edf800e888468ca182c6ecdb01c
+      internalID: 141710205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_9
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3114
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2af024b8e77364890757ea5351edff
+      internalID: 1280178843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2941
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e2ad60d5871ba42a6d6051bf60e3f0
+      internalID: 1294163152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_11
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2941
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c6b4f054ef56543a3133aefe607a31
+      internalID: 499790802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_12
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2941
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4913368774e6ffe4b9ef46ab5c51bdfb
+      internalID: 1949941513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_13
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2941
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56e5cbcda9ae994293bcf6dd03467c9
+      internalID: -1453060576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_14
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2941
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec51fb8f961dcc54fb76f38545a60a93
+      internalID: -1937672472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2768
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efb7c225cca6504f8dd6c9f0d464edf
+      internalID: 1885789488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_16
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2768
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb77b2e8cf15c4419ae14043fa9d3ee
+      internalID: -76182631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_17
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2768
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238612ddd909df34bb55bcfd7797cf1d
+      internalID: -2053116761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_18
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2768
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee8dbccd3ddfc14aa33d095077f01c8
+      internalID: -1700524024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_19
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2768
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f54e1b2b004af845832e241aab95184
+      internalID: 321227214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2595
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a339cabdec8af24a84e470ce38dd3e5
+      internalID: -277238602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_21
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2595
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074840007dab40943a6037c4c75ffc9b
+      internalID: -1941239740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_22
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2595
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd791e02bc9f12343a5f99da939cea53
+      internalID: -1740377364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_23
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2595
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ff0200a5d83304aa178fd4c19390b8
+      internalID: 1720827319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_24
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2595
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fa7c0da226a854f80da458d6fb9639
+      internalID: -316215938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2422
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa02659f7ccb74348b36ea9d858f59b0
+      internalID: -267684956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_26
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2422
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c736bba88cac11f4698b54cf33eaec88
+      internalID: 2143466377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_27
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2422
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f8e113cf38e424d8463b7a75304ba4
+      internalID: 23803003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_28
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2422
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b79065d40f62e4db3ac79b20db46ad
+      internalID: -1313954105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_29
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2422
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd620cd92e2f1d4fb9ab7e0f6cbd265
+      internalID: -616769353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2249
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591ecde365ee46140bc0286afa2491c5
+      internalID: 822921088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_31
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2249
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854935e3b9fc70646a662896bba0ccc9
+      internalID: 1827515414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_32
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2249
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b709a36bdb01944287093856a486e7a
+      internalID: 588340934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_33
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2249
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d61191fef6e5db4588985330610c4f0
+      internalID: -558308102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_34
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2249
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c0f6daeccfc6e46b9c659301ed8c2a
+      internalID: -226006223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2076
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58138d969324f164e8f0581659df27d7
+      internalID: 538801419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_36
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2076
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054d3787243bd9348ac0e0ed2bff34af
+      internalID: 867935272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_37
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2076
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab67db4837e810241b364bc2ab6e349e
+      internalID: 1622081974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_38
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2076
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd04398f92e81d4bac125b41a717ee2
+      internalID: 1966930106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_39
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2076
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2cc92eed9fe89438d093ea646ace10
+      internalID: 1585405537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1903
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f5ccc353837dd4f90be545f93f022e
+      internalID: 235536327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_41
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1903
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3793f80b8911a9b4d8fb7ffa5ba902d9
+      internalID: -519121277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_42
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1903
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23067c48543148c4194f44b531150d2f
+      internalID: 31557753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_43
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1903
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112a852c2e03fed40bb9702f400fe4e1
+      internalID: 1317549603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_44
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1903
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d21d78ca7fef6469ba162c14a82522
+      internalID: 972446809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1730
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea089d97a7e4ae40ad43e24280bfc58
+      internalID: 1703279357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_46
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1730
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d919b4534b5468a4b8006e0594e92801
+      internalID: 1438323635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_47
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1730
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ebaaf0467e5c04b9acc8cc24ee926f
+      internalID: -1903355786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_48
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1730
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef3c460acb44cf498d78f73d408248f
+      internalID: 1312508649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_49
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1730
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e507ccdfba96fc46b83eddeb1f07e80
+      internalID: -1844897712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1557
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef1058922cacd745a42cadc0ad4a304
+      internalID: -1488089354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_51
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1557
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee51751bef91f9468e1f98a72f79b5c
+      internalID: -1895940849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_52
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1557
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064b9e9ed18abe847ba7b6ba02c627d9
+      internalID: 617498422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_53
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1557
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327dec7751e2ec647b2d60b0b13fb62a
+      internalID: 285651042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_54
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1557
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6e17d4418ab764aafd693c1dc60e24
+      internalID: -128258844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1384
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ee3acde27148145ad4f81418185c7b
+      internalID: 144489405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_56
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1384
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dd160664f8ed641a56d9c72035e2e0
+      internalID: 333784222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_57
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1384
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7eadc8aa8050af4f8d34700dd9f7090
+      internalID: -549586689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_58
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1384
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00965f352c8fab740977f4d9f698b201
+      internalID: -1671068243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_59
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1384
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9c26c4a7ea1a0478075fc5a906a755
+      internalID: -1195258053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1211
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa72b1eb5d630b94b91d8a7037321f96
+      internalID: -1071488349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_61
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1211
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87664179c557dc849a194238eeff60a7
+      internalID: -1204071849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_62
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1211
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92618511ea719748992fba2a8bac43c
+      internalID: 1988338167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_63
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1211
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b52899e54568f4c9529322ad7dc14c
+      internalID: 1639581362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_64
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1211
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5f0c86255931a418303ac36e790f3a
+      internalID: 890182378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1038
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bf013b08e92b84d9880b0233b50392
+      internalID: 646512704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_66
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1038
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467e43a78ddd27641b4df59b0814d7ef
+      internalID: -2129378551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_67
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1038
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190b3f4925f7af64293e554dbd1ae052
+      internalID: 913237318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_68
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1038
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38edbc8c5fc982b4d8d5b3a6d2ea6f43
+      internalID: -444367530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_69
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1038
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6658eb57204a82b4eb54f1ea35a9a77d
+      internalID: 724291017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 865
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84309f42d59443943af99b03868b86ed
+      internalID: 422421570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_71
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 865
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16aad71cc64a5a94383f7545becbe9a3
+      internalID: 858138461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_72
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 865
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcbc6f899a540440a678d9ef835a930
+      internalID: 1419754418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_73
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 865
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da91d7abbad3ded459f4b87cda951576
+      internalID: 992500238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_74
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 865
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed430c26ea9f1a45ab1b054d88cf09b
+      internalID: 664600545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 692
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff51d94df042024db8cb4ac1e869480
+      internalID: -1979313484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_76
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 692
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae415c367ef3784cafe2f06dbd65e69
+      internalID: 405570807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_77
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 692
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fe808df76611140a3542d0b001bd5b
+      internalID: -1493980614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_78
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 692
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1214ebb211520854780d0476c016341f
+      internalID: 433065091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_79
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 692
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697f40ec22a6d0c42aac56e7d37c3780
+      internalID: 13321835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b95c4bd3cac4794d8d4e91aafcee305
+      internalID: 748298465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_81
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 519
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acac8602ecca94146b21808b411baa66
+      internalID: 649974966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_82
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 519
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd9a0440479275488df34006ced399f
+      internalID: 1086630511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_83
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 519
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1a333826809094cb616716a35d498c
+      internalID: 2119497282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_84
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 519
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cb9249ef55ae347bb0f43175986f2d
+      internalID: -1728197433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 346
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c104a4d8030cba4ea382fa383c6c462
+      internalID: 886080935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_86
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 346
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce8c97811cfa7043af6d4402766b8ef
+      internalID: 1223922759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_87
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 346
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a810b90924a3b49a178499239f73e6
+      internalID: 792081692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_88
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 346
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7be475f3ff2314c8d17bd17c552878
+      internalID: -2123694129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_89
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 346
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb09190466921c24e9775340c5b9b2f3
+      internalID: 239680410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 173
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f25c16c82e72cb41a1676a93e701e79
+      internalID: -406347253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_91
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 173
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb26eccbe8cf06408b76c80d395bb3e
+      internalID: 269907858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_92
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 173
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dfd6806ef4cde4c85bdb4266dbb662
+      internalID: -1738828191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_93
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 173
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1887fdc3cb0815d4c9ba81e2a59a4332
+      internalID: 1344587959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_94
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 173
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d40827d98b6f74985af2e1290c7e8a
+      internalID: -1585702438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4ca53c2a0e4a94d9f284e2cbaa569b
+      internalID: -429621528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_96
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec219e4f36bc6a4994a7e358de86b8f
+      internalID: 546448446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_97
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 0
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6b98d8f5dee0d4982fd127c6786cf3
+      internalID: 545369223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_98
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8065590d9a78547a99fa5a9669af5a
+      internalID: -1173241696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ootatoo_sprite_idle_99
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff2f6f9bd061ca4f99fba2edafd94ac
+      internalID: -884681466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 67f8a75e97585054a8cd203bf8f82653
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ootatoo_sprite_idle_0: 234313706
+      ootatoo_sprite_idle_1: 1827213586
+      ootatoo_sprite_idle_10: 1294163152
+      ootatoo_sprite_idle_11: 499790802
+      ootatoo_sprite_idle_12: 1949941513
+      ootatoo_sprite_idle_13: -1453060576
+      ootatoo_sprite_idle_14: -1937672472
+      ootatoo_sprite_idle_15: 1885789488
+      ootatoo_sprite_idle_16: -76182631
+      ootatoo_sprite_idle_17: -2053116761
+      ootatoo_sprite_idle_18: -1700524024
+      ootatoo_sprite_idle_19: 321227214
+      ootatoo_sprite_idle_2: 1565505289
+      ootatoo_sprite_idle_20: -277238602
+      ootatoo_sprite_idle_21: -1941239740
+      ootatoo_sprite_idle_22: -1740377364
+      ootatoo_sprite_idle_23: 1720827319
+      ootatoo_sprite_idle_24: -316215938
+      ootatoo_sprite_idle_25: -267684956
+      ootatoo_sprite_idle_26: 2143466377
+      ootatoo_sprite_idle_27: 23803003
+      ootatoo_sprite_idle_28: -1313954105
+      ootatoo_sprite_idle_29: -616769353
+      ootatoo_sprite_idle_3: -1299482955
+      ootatoo_sprite_idle_30: 822921088
+      ootatoo_sprite_idle_31: 1827515414
+      ootatoo_sprite_idle_32: 588340934
+      ootatoo_sprite_idle_33: -558308102
+      ootatoo_sprite_idle_34: -226006223
+      ootatoo_sprite_idle_35: 538801419
+      ootatoo_sprite_idle_36: 867935272
+      ootatoo_sprite_idle_37: 1622081974
+      ootatoo_sprite_idle_38: 1966930106
+      ootatoo_sprite_idle_39: 1585405537
+      ootatoo_sprite_idle_4: 742588748
+      ootatoo_sprite_idle_40: 235536327
+      ootatoo_sprite_idle_41: -519121277
+      ootatoo_sprite_idle_42: 31557753
+      ootatoo_sprite_idle_43: 1317549603
+      ootatoo_sprite_idle_44: 972446809
+      ootatoo_sprite_idle_45: 1703279357
+      ootatoo_sprite_idle_46: 1438323635
+      ootatoo_sprite_idle_47: -1903355786
+      ootatoo_sprite_idle_48: 1312508649
+      ootatoo_sprite_idle_49: -1844897712
+      ootatoo_sprite_idle_5: 1060620431
+      ootatoo_sprite_idle_50: -1488089354
+      ootatoo_sprite_idle_51: -1895940849
+      ootatoo_sprite_idle_52: 617498422
+      ootatoo_sprite_idle_53: 285651042
+      ootatoo_sprite_idle_54: -128258844
+      ootatoo_sprite_idle_55: 144489405
+      ootatoo_sprite_idle_56: 333784222
+      ootatoo_sprite_idle_57: -549586689
+      ootatoo_sprite_idle_58: -1671068243
+      ootatoo_sprite_idle_59: -1195258053
+      ootatoo_sprite_idle_6: -1142425695
+      ootatoo_sprite_idle_60: -1071488349
+      ootatoo_sprite_idle_61: -1204071849
+      ootatoo_sprite_idle_62: 1988338167
+      ootatoo_sprite_idle_63: 1639581362
+      ootatoo_sprite_idle_64: 890182378
+      ootatoo_sprite_idle_65: 646512704
+      ootatoo_sprite_idle_66: -2129378551
+      ootatoo_sprite_idle_67: 913237318
+      ootatoo_sprite_idle_68: -444367530
+      ootatoo_sprite_idle_69: 724291017
+      ootatoo_sprite_idle_7: -115778500
+      ootatoo_sprite_idle_70: 422421570
+      ootatoo_sprite_idle_71: 858138461
+      ootatoo_sprite_idle_72: 1419754418
+      ootatoo_sprite_idle_73: 992500238
+      ootatoo_sprite_idle_74: 664600545
+      ootatoo_sprite_idle_75: -1979313484
+      ootatoo_sprite_idle_76: 405570807
+      ootatoo_sprite_idle_77: -1493980614
+      ootatoo_sprite_idle_78: 433065091
+      ootatoo_sprite_idle_79: 13321835
+      ootatoo_sprite_idle_8: 141710205
+      ootatoo_sprite_idle_80: 748298465
+      ootatoo_sprite_idle_81: 649974966
+      ootatoo_sprite_idle_82: 1086630511
+      ootatoo_sprite_idle_83: 2119497282
+      ootatoo_sprite_idle_84: -1728197433
+      ootatoo_sprite_idle_85: 886080935
+      ootatoo_sprite_idle_86: 1223922759
+      ootatoo_sprite_idle_87: 792081692
+      ootatoo_sprite_idle_88: -2123694129
+      ootatoo_sprite_idle_89: 239680410
+      ootatoo_sprite_idle_9: 1280178843
+      ootatoo_sprite_idle_90: -406347253
+      ootatoo_sprite_idle_91: 269907858
+      ootatoo_sprite_idle_92: -1738828191
+      ootatoo_sprite_idle_93: 1344587959
+      ootatoo_sprite_idle_94: -1585702438
+      ootatoo_sprite_idle_95: -429621528
+      ootatoo_sprite_idle_96: 546448446
+      ootatoo_sprite_idle_97: 545369223
+      ootatoo_sprite_idle_98: -1173241696
+      ootatoo_sprite_idle_99: -884681466
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

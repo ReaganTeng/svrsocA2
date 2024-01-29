@@ -15,19 +15,23 @@ using System.Text.RegularExpressions;
 using PlayFab.GroupsModels;
 using System.Diagnostics;
 using Debug = UnityEngine.Debug;
+using Unity.VisualScripting;
 
 
 public class GuildController : MonoBehaviour
 {
     public TMP_Dropdown optionlist;
 
+    public PhotonChatController chatController;
+
     public GameObject panel;
     Action playerCallback;
 
-
+    public GameObject closeButtonChooseGuild;
     public GameObject closebuttonfriendspanel;
     public GameObject guildPanelCloseButton;
 
+    string admin = "Administrators";
 
     public TMP_InputField newguildIF;
 
@@ -66,7 +70,8 @@ public class GuildController : MonoBehaviour
 
     [HideInInspector]
     public string titleIDChosen = "";
-
+    [HideInInspector]
+    public string displaynamechosen = "";
     List<GameObject> guildPanels;
 
 
@@ -106,7 +111,7 @@ public class GuildController : MonoBehaviour
         canvasGrp.alpha = 0;
     }
 
-
+    
     public void onOptionsChanged()
     {
         int selectedOption = optionlist.value;
@@ -152,17 +157,23 @@ public class GuildController : MonoBehaviour
         playersownTitleID = PlayerPrefs.GetString("PLAYFABTITLEID");
         ListGroupsCreated(playersownTitleID);
         ListInvitationGrp(playersownTitleID);
-
         setPanelToFalse(viewMembersPanel);
         setPanelToFalse(guildChoicePanel);
-
-
         ListGroupsInvited();
-
         ViewJoinedGroups();
         ClosePanel();
-
         //cloudScriptManager.GetGroupInvitations();
+    }
+
+
+    public void Refresh()
+    {
+        ListGroupsCreated(playersownTitleID);
+        ListInvitationGrp(playersownTitleID);
+        setPanelToFalse(viewMembersPanel);
+        setPanelToFalse(guildChoicePanel);
+        ListGroupsInvited();
+        ViewJoinedGroups();
     }
 
 
@@ -170,7 +181,13 @@ public class GuildController : MonoBehaviour
     {
         setPanelToFalse(viewMembersPanel);
 
-        guildPanelCloseButton.SetActive(false);
+        guildPanelCloseButton.SetActive(true);
+    }
+
+
+    public void Setactiveclosebuttonfriendspanel()
+    {
+        closebuttonfriendspanel.SetActive(true);
     }
 
     //LIST THE GROUPS YOUR INVITED TO
@@ -244,7 +261,6 @@ public class GuildController : MonoBehaviour
 
     public void ClosePanel()
     {
-//        panel.SetActive(false);
         togglePanels(panel);
         setPanelToTrue(yourGuildPanel);
         setPanelToFalse(guildsJoinedPanel);
@@ -257,7 +273,7 @@ public class GuildController : MonoBehaviour
     }
 
 
-    //VIEW THE GROUPS THAT PLAYER HAS JOINED
+    //VIEW THE GROUPS THAT PLAYER HAS JOINED, NOT CREATED
     #region ViewJoinedGroups
     public void ViewJoinedGroups()
     {
@@ -283,26 +299,69 @@ public class GuildController : MonoBehaviour
         {
             GroupNameById[pair.Group.Id] = pair.GroupName;
 
-            //DISPLAY GUILD IN PANELCONTENT
-            GameObject guildui_GO = Instantiate(guildUI, guildsJoinedContent.transform);
-            GuildUI guildui = guildui_GO.GetComponent<GuildUI>();
-            guildui.GuildName.gameObject.SetActive(true);
-            guildui.GuildName.text = pair.GroupName;
-            string guildid = pair.Group.Id;
-            guildui.guilid = guildid;
-
-            guildui.ViewGuildButton.gameObject.SetActive(true);
-            guildui.ViewGuildButton.
-            onClick.AddListener(() =>
+            var findgrpreq = new GetGroupRequest
             {
-                ViewMembersInOthergroup(EntityKeyMaker(guildid));
-                togglePanels(viewMembersPanel);
-                guildPanelCloseButton.gameObject.SetActive(false);
-            });
+                Group = pair.Group
+            };
+            PlayFabGroupsAPI.GetGroup(
+                findgrpreq,
+                success =>
+                {
+                    var listMembersRequest = new ListGroupMembersRequest
+                    {
+                        Group = pair.Group,
+                    };
+
+                    PlayFabGroupsAPI.ListGroupMembers(
+                        listMembersRequest,
+                        succe =>
+                        {
+                            //hjhjjh
+                            foreach (var mem in succe.Members)
+                            {
+                                foreach (var me in mem.Members)
+                                {
+                                    //DISPLAY ONLY THE GUILDS THAT PLAYER HAS JOINED AND NOT CREATED
+                                    //Debug.Log($"ETET {pair.GroupName} {me.Key.Id} {mem.RoleName}");
+                                    if (me.Key.Id == playersownTitleID
+                                    && mem.RoleName != admin)
+                                    {
+                                        DisplayInGuildsJoinedPanel(pair);
+                                    }
+                                }
+                            }
+                        },
+                        OnSharedError
+                        );
+                },
+                OnSharedError
+                );
+
         }
 
-        
+
     }
+
+    void DisplayInGuildsJoinedPanel (GroupWithRoles pair)
+    {
+        //DISPLAY GUILD IN PANELCONTENT
+        GameObject guildui_GO = Instantiate(guildUI, guildsJoinedContent.transform);
+        GuildUI guildui = guildui_GO.GetComponent<GuildUI>();
+        guildui.GuildName.gameObject.SetActive(true);
+        guildui.GuildName.text = pair.GroupName;
+        string guildid = pair.Group.Id;
+        guildui.guilid = guildid;
+
+        guildui.ViewGuildButton.gameObject.SetActive(true);
+        guildui.ViewGuildButton.
+        onClick.AddListener(() =>
+        {
+            ViewMembersInOthergroup(EntityKeyMaker(guildid));
+            togglePanels(viewMembersPanel);
+            guildPanelCloseButton.gameObject.SetActive(false);
+        });
+    }
+
     #endregion
 
 
@@ -388,7 +447,7 @@ public class GuildController : MonoBehaviour
             {
                 membertitileid = mem.Key.Id;
                 string memberDisplayname = mem.Lineage["master_player_account"].Id;
-                GetDisplayName(memberDisplayname, gmui.MemberName, member.RoleName);
+                GetDisplayNameViaPlayfabID(memberDisplayname, gmui.MemberName, member.RoleName);
 
                 gmui.KickButton.gameObject.SetActive(false);
 
@@ -404,7 +463,11 @@ public class GuildController : MonoBehaviour
     {
         var request = new PFGroups.ListMembershipRequest { Entity = EntityKeyMaker(entitykey),
        };
-        PlayFabGroupsAPI.ListMembership(request, OnListInvitationGrp, OnSharedError);
+        PlayFabGroupsAPI.ListMembership(request,
+             
+            OnListInvitationGrp, 
+            
+            OnSharedError);
     }
     private void OnListInvitationGrp(PFGroups.ListMembershipResponse response)
     {
@@ -419,24 +482,72 @@ public class GuildController : MonoBehaviour
             GroupNameById[pair.Group.Id] = pair.GroupName;
             EntityGroupPairs.Add(new KeyValuePair<string, string>(prevRequest.Entity.Id, pair.Group.Id));
 
-            //DISPLAY GUILD IN PANELCONTENT
-            GameObject guildui_GO = Instantiate(guildUI, GuildInvitationContent.transform);
-            GuildUI guildui = guildui_GO.GetComponent<GuildUI>();
-            guildui.GuildName.gameObject.SetActive(true);
-            guildui.GuildName.text = pair.GroupName;
-            string guildid = pair.Group.Id;
-            guildui.guilid = guildid;
-
-            guildui.InviteButton.gameObject.SetActive(true);
-            guildui.InviteButton.onClick.AddListener(() =>
+            var findgrpreq = new GetGroupRequest
             {
+                Group = pair.Group
+            };
+            PlayFabGroupsAPI.GetGroup(
+                findgrpreq,
+                success =>
+                {
+                    var listMembersRequest = new ListGroupMembersRequest
+                    {
+                        Group = pair.Group,
+                    };
+                    PlayFabGroupsAPI.ListGroupMembers(
+                        listMembersRequest,
+                        succe =>
+                        {
+                            //Debug.Log($"\nTITIDCHOSEN {titleIDChosen}\n" +
+                            //    $"OWN ID {playersownTitleID}");
+                            bool memberingroup = false;
 
-                InviteToGroup(guildid, EntityKeyMaker(titleIDChosen));
-                setPanelToFalse(guildChoicePanel);
-                closebuttonfriendspanel.SetActive(true);
-                //Debug.Log($"INVITED {titleIDChosen}");
-            });
+                            foreach (var mem in succe.Members)
+                            {
+                                //FIND WHETHER MEMBER IS ALREAD IN GROUP
+                                foreach (var me in mem.Members)
+                                {
+                                    //IF MEMBER IS ALREAD INSIDE GROUP
+                                    if (me.Key.Id == titleIDChosen)
+                                    {
+                                        memberingroup = true;
+                                    }
+                                }
+                            }
+
+                            if (!memberingroup)
+                            {
+                                Debug.Log("DISPLAY OPTION");
+                                //Debug.Log($"MEMBER {m.Key.Id} IS ALD IN GRP");
+                                DisplayGuildOption(pair);
+                            }
+                        },
+                        OnSharedError
+                    );
+                },
+                OnSharedError
+            );
         }
+    }
+    void DisplayGuildOption(GroupWithRoles pair)
+    {
+        //DISPLAY GUILD IN PANELCONTENT
+        GameObject guildui_GO = Instantiate(guildUI, GuildInvitationContent.transform);
+        GuildUI guildui = guildui_GO.GetComponent<GuildUI>();
+        guildui.GuildName.gameObject.SetActive(true);
+        guildui.GuildName.text = pair.GroupName;
+        string guildid = pair.Group.Id;
+        guildui.guilid = guildid;
+
+        guildui.InviteButton.gameObject.SetActive(true);
+        guildui.InviteButton.onClick.AddListener(() =>
+        {
+            InviteToGroup(guildid, EntityKeyMaker(titleIDChosen));
+            setPanelToFalse(guildChoicePanel);
+            //shsgag
+            chatController.SendMessage("YOU HAVE BEEN SENT A GUILD INVITE", displaynamechosen);
+            closebuttonfriendspanel.SetActive(true);
+        });
     }
     #endregion
     //
@@ -447,16 +558,18 @@ public class GuildController : MonoBehaviour
         Debug.LogError(error.GenerateErrorReport());
     }
 
+
+
     //LIST THE GROUPS THAT PLAYER HAS CREATED
     #region ListGroupsCreated
     public void ListGroupsCreated(string entityKey)
     {
-        var request = new ListMembershipRequest { Entity =
-                    EntityKeyMaker(entityKey),
+        var request = new ListMembershipRequest { 
+            Entity = EntityKeyMaker(entityKey),
         };
         PlayFabGroupsAPI.ListMembership(request, OnListGroupsCreated, OnSharedError);
-
-        Debug.Log("LISTED");
+        
+        //Debug.Log("LISTED");
     }
     void OnListGroupsCreated(ListMembershipResponse response)
     {
@@ -468,42 +581,79 @@ public class GuildController : MonoBehaviour
         var prevRequest = (ListMembershipRequest)response.Request;
         foreach (var pair in response.Groups)
         {
-            GroupNameById[pair.Group.Id] = pair.GroupName;
-            EntityGroupPairs.Add(new KeyValuePair<string, string>(prevRequest.Entity.Id, pair.Group.Id));
-            
-            //DISPLAY GUILD IN PANELCONTENT
-            GameObject guildui_GO = Instantiate(guildUI, guildsCreatedContent.transform);
-            GuildUI guildui = guildui_GO.GetComponent<GuildUI>();
-            guildui.GuildName.gameObject.SetActive(true);
-            guildui.GuildName.text = pair.GroupName;
-            string guildid = pair.Group.Id;
-            guildui.guilid = guildid;
-
-            guildui.RemoveGuildButton.gameObject.SetActive(true);
-            guildui.RemoveGuildButton.
-            onClick.AddListener(() =>
+            var findgrpreq = new GetGroupRequest
             {
-                DeleteGroup(guildid);
-            });
-            guildui.ViewGuildButton.gameObject.SetActive(true);
-            guildui.ViewGuildButton.
-            onClick.AddListener(() =>
-            {
-               ViewMembersInOwngroup(EntityKeyMaker(guildid));
-                togglePanels(viewMembersPanel);
-                guildPanelCloseButton.gameObject.SetActive(false);
-            });
+                Group = pair.Group
+            };
+            PlayFabGroupsAPI.GetGroup(
+                findgrpreq,
+                success =>
+                {
+                    
+                    var listMembersRequest = new ListGroupMembersRequest
+                    {
+                        Group = pair.Group,
+                    };
 
-            //Debug.Log("LISTED");
+                    PlayFabGroupsAPI.ListGroupMembers(
+                        listMembersRequest,
+                        succe =>
+                        {
+                            foreach (var mem in succe.Members)
+                            {
+                                foreach (var me in mem.Members)
+                                {
+                                    //DISPLAY ONLY THE GUILDS THAT PLAYER HIMSELF HAS CREATED
+                                    //Debug.Log($"ETET {pair.GroupName} {me.Key.Id} {mem.RoleName}");
+                                    if (me.Key.Id == playersownTitleID
+                                    && mem.RoleName == admin)
+                                    {
+                                        DisplayInGroupsCreatedPanel(pair);
+                                    }
+                                }
+                            }
+                        },
+                        OnSharedError
+                        );
+                },
+                OnSharedError
+                );
         }
     }
+
+    void DisplayInGroupsCreatedPanel(GroupWithRoles pair)
+    {
+        //GroupNameById[pair.Group.Id] = pair.GroupName;
+        //EntityGroupPairs.Add(new KeyValuePair<string, string>(prevRequest.Entity.Id, pair.Group.Id));
+
+        //DISPLAY GUILD IN PANELCONTENT
+        GameObject guildui_GO = Instantiate(guildUI, guildsCreatedContent.transform);
+        GuildUI guildui = guildui_GO.GetComponent<GuildUI>();
+        guildui.GuildName.gameObject.SetActive(true);
+        guildui.GuildName.text = pair.GroupName;
+        string guildid = pair.Group.Id;
+        guildui.guilid = guildid;
+
+        guildui.RemoveGuildButton.gameObject.SetActive(true);
+        guildui.RemoveGuildButton.
+        onClick.AddListener(() =>
+        {
+            DeleteGroup(guildid);
+        });
+        guildui.ViewGuildButton.gameObject.SetActive(true);
+        guildui.ViewGuildButton.
+        onClick.AddListener(() =>
+        {
+            ViewMembersInOwngroup(EntityKeyMaker(guildid));
+            togglePanels(viewMembersPanel);
+            guildPanelCloseButton.gameObject.SetActive(false);
+        });
+    }
+
     #endregion
 
 
-
-
-
-
+    
     #region CreatingGuild
     public void CreateGroup()
     {
@@ -651,18 +801,24 @@ public class GuildController : MonoBehaviour
             {
                 membertitileid = mem.Key.Id;
                 string memberDisplayname = mem.Lineage["master_player_account"].Id;
-                GetDisplayName(memberDisplayname, gmui.MemberName, member.RoleName);
+                GetDisplayNameViaPlayfabID(memberDisplayname, gmui.MemberName, member.RoleName);
 
                 //IF MEMBER IS NOT ADMINISTRATOR OF THE GROUP
-                if (member.RoleName != "Administrators"
+                if (member.RoleName != admin
                     && member.RoleName != "Creator")
                 {
                     gmui.KickButton.onClick.AddListener(
                     () => {
+                        displaynamechosen = gmui.MemberName.text;
+
                         KickMember(EntityKeyMaker(group.Group.Id),
                             EntityKeyMaker(membertitileid));
                         OnViewMembersInOwnGroup(group,
                            r);
+
+                        //NOTE
+                        //ajkajksa
+                        //ViewMembersInOwngroup(group.Group.Id);
                     });
                 }
                 else
@@ -676,7 +832,13 @@ public class GuildController : MonoBehaviour
         }
     }
 
-    void GetDisplayName(string playfabid, TextMeshProUGUI membername, string rolename)
+
+    #endregion
+    //
+
+
+
+    void GetDisplayNameViaPlayfabID(string playfabid, TextMeshProUGUI membername, string rolename)
     {
         PlayFabClientAPI.GetLeaderboard(
            new GetLeaderboardRequest
@@ -699,24 +861,24 @@ public class GuildController : MonoBehaviour
        , OnSharedError);
     }
 
-    #endregion
-    //
 
-
-    public void InviteToGroup(string groupId, PFGroups.EntityKey entityKey)
+    #region invitetoGroupAction
+    public void InviteToGroup(string groupId, PFGroups.EntityKey titleid)
     {
-        var request = new PFGroups.InviteToGroupRequest { Group = EntityKeyMaker(groupId), Entity = entityKey };
+        var request = new PFGroups.InviteToGroupRequest { Group = EntityKeyMaker(groupId), Entity = titleid };
         PlayFabGroupsAPI.InviteToGroup(request,
 
             result =>
             {
+                //NOTE
                 //cloudScriptManager.SendGroupInvitation(groupId, $"{entityKey}");
-
+                //string memberDisplayname = titleid.Lineage["master_player_account"].Id;
+                //SEND CHAT NOTIFICATION
             }
             , 
             OnSharedError);
     }
-
+    #endregion
 
 
     #region AcceptOrRejectInvitation
@@ -784,7 +946,7 @@ public class GuildController : MonoBehaviour
         Debug.Log("Entity Added to Group: " + prevRequest.Entity.Id + " to " + prevRequest.Group.Id);
     }
 
-
+    #region KickMember
     public void KickMember(PFGroups.EntityKey groupId, PFGroups.EntityKey entityKey)
     {
         var request = new PFGroups.RemoveMembersRequest { Group = groupId, Members = new List<PFGroups.EntityKey> { entityKey } };
@@ -794,9 +956,11 @@ public class GuildController : MonoBehaviour
     {
         var prevRequest = (PFGroups.RemoveMembersRequest)response.Request;
 
+        chatController.SendMessage("YOU HAVE BEEN KICKED OUT OF A GUILD, REFRESH TO SEE", displaynamechosen);
         Debug.Log("Entity kicked from Group: " + prevRequest.Members[0].Id + " to " + prevRequest.Group.Id);
         EntityGroupPairs.Remove(new KeyValuePair<string, string>(prevRequest.Members[0].Id, prevRequest.Group.Id));
     }
+    #endregion
 
     public static PFGroups.EntityKey EntityKeyMaker(string titleId)
     {

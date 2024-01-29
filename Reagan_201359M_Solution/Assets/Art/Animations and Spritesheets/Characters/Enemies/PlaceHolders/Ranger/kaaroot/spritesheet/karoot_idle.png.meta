@@ -1,0 +1,2806 @@
+fileFormatVersion: 2
+guid: 09f911b5c48624944a53c1d509cb477c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: karoot_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4257.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f622ee0ef9053143965dd094f388586
+      internalID: 1399876708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4257.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092d9d27e99d3984f90d554207a8fa28
+      internalID: 1522038309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4257.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d1872a958219a469ef118d8dda3438
+      internalID: 2012947749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4257.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eefdfe623ac6c84fafb43b4bbc81099
+      internalID: 1909403894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4257.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d97f9b73a1cb474bb9042e78cfe5338
+      internalID: 734283208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4072.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05fe7992c519b494999b69670370d9d4
+      internalID: 1837519409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 4072.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4129b6cc6a3d13e4080d71a9dd074e6a
+      internalID: 1748249007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4072.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a243c134cec5a614faf63a01c18c92c4
+      internalID: 1267160985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4072.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9224ddd44b0194489f0d3a03108918
+      internalID: 1511035552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4072.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bdc60c47a9b0d40881abab1e6f3648
+      internalID: -1951436937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3887.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e5bfd7f7adb4d4ea239a4d5062c8b4
+      internalID: -463272703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3887.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e54f7beaa9c3f4a94adeaed4416c21
+      internalID: -1695979135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3887.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a9045de16635b4982ab14db1491b18
+      internalID: -1793474170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3887.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bcf1c92e1d81d4caab9aff39d4a038
+      internalID: 1691898772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3887.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94697b2ea39b76b4d920c38f5aeeece3
+      internalID: -262165021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3702.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b880c93fbb8d445a7e5501f18eda16
+      internalID: 422630537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3702.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdff17a661ee39f4ea4dd2dce175884d
+      internalID: -1443959679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3702.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3594332e6ed514d9a8e270bd696273
+      internalID: 626624450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3702.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27caba8b7cb9cd4cb31838f0fb287cd
+      internalID: -521927704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3702.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749635c702eab6e41a65df76035d65bc
+      internalID: -1817921674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3517.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d52576b2b8ec9c4aae0d289cb7529f6
+      internalID: -675180705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3517.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef812ab0b1181b648b3c269224fab59c
+      internalID: -1673345873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3517.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8c5b413c8d74642ae0ae137302d134
+      internalID: -599590908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3517.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198855c3ffe7dcc48b3c3e1bb79587db
+      internalID: -992552607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3517.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17a1c6d8d8e7ba48a6541fd576e0ba4
+      internalID: -2094172957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3332.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9378a2d960f1f09478d30af364f7d5ac
+      internalID: -328124602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3332.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f0f842780ed3946808df573fa1ae26
+      internalID: 1898825805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3332.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4a01922d0ba7b44887294ccabb4dcf
+      internalID: 235505472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3332.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9358f05729c710743a589488d0146efb
+      internalID: 1173693573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3332.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afca1e2892d6e56419065f7c3e42c400
+      internalID: -138914411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3147.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7052d3c064ee0478357e5e15fb5e22
+      internalID: -1454756014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 3147.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1d641b2bfa53e438e3dd1a142190dc
+      internalID: 1426243087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 3147.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebade6792a70917458d02979d9c4e7c2
+      internalID: 1069644512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3147.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5539f6f5717c1b4593def6390891e87
+      internalID: 1055026707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3147.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9256dc90fbe300b4e8a275582e22db1a
+      internalID: -1690406562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2962.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a83b0222db1d6645905a460c1d0f09c
+      internalID: -495109206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2962.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82d3802bcac93e4eacf0621d54010c2
+      internalID: -2039108525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_37
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2962.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae42545b9a5bb8348a9c4a052debc57e
+      internalID: -743762199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2962.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eca9d8edd2aafe42a23b4c9eed060cd
+      internalID: -1797980552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_39
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2962.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22863e33210ffaf4dbe899113466bc94
+      internalID: -964604302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2777.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5faf6ffc3c5b54e878824e72b53522
+      internalID: 298955457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2777.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc836196e6f3b7e4c91c20f2801c2514
+      internalID: -1067353578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_42
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2777.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393238676a6705547b2463a98037d403
+      internalID: 179323690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2777.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56504d72d3312d94cbb7f026b72df283
+      internalID: -1492272533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_44
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2777.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af136a6862d612c4f96ff5331ab390d4
+      internalID: 1290656382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bcd63c8b79306429e825245ca6ec11
+      internalID: -165149411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_46
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2592.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449393c0fb52a3047ba16b2aff3233b1
+      internalID: 323973863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_47
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2592.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11420cf44d39ef479d9049838ef33b1
+      internalID: -1339716374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_48
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2592.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffd52cbc0052ce4db87bea7a6c60301
+      internalID: -70567326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_49
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2592.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b66632b53cbbb4e8c1d57754c613f2
+      internalID: 952427673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2407.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fe7b56259d17144a66d43e0534111c
+      internalID: 927129314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_51
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2407.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912fda48434709843aa7856b37d291d3
+      internalID: -1412216587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_52
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2407.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ace30d4bf18c44c9e6c3e985ec43a2
+      internalID: 803871233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_53
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2407.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febf046b1c1d34045aa6ff1c34e70a56
+      internalID: -782044656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_54
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2407.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3235b3e96e64a2944b8abe61d21c7197
+      internalID: 1805740008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2222.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d298e8db36738d4ca439103fbf7f6a0
+      internalID: 885838232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_56
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2222.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37dfb8edc0716e40929543c9eb4311b
+      internalID: 302184528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_57
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2222.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dfa76c57cff5140979143b444bc284
+      internalID: 506243601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_58
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2222.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8546938ecb005e4469ba542df3d7f4e2
+      internalID: -941491515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_59
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2222.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccb94829d1765944b084433bec5b0ec
+      internalID: 204594646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2037.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf1b8eac2c35124090dbf49077c388e
+      internalID: 1996277871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2037.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b147b3c8ec18e40821e02727860b32
+      internalID: 633872847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_62
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2037.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f050712c8a957641ba7791618bf124d
+      internalID: 570251619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_63
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2037.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2790f1942f86041bc8417719428bd6
+      internalID: 685762046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_64
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2037.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bb1a01123550a47a50f4a16cdddcba
+      internalID: 956351528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1852.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4be703e6eaea5448ae5e6ecb00c1ea1
+      internalID: 2124203774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_66
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1852.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c2c89a0d519374b8efe580d8c4a215
+      internalID: 948071171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_67
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1852.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7330e64756b3a46afc3c4e21989882
+      internalID: -341469477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_68
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1852.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c47c4fdfec16841ad2b30aab5a3312
+      internalID: 132666138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_69
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1852.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da93cd430c1f5a438c742edcd01c127
+      internalID: -705250224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1667.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60b5cd70b94e8e4fbefe943611309ee
+      internalID: -346128194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_71
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1667.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e0b7c4a983e0b4386fc59f2316d739
+      internalID: 1723283897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_72
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1667.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30473eb9938b01d4197311954ff763bf
+      internalID: -567145505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_73
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1667.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39929b90d9b28704abc99f9b6d1df722
+      internalID: 1348679726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_74
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1667.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273b4276e7123544d84895502e73b678
+      internalID: 2106483959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1482.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a77feac37ac004cb3f93bf175985aa
+      internalID: 1681235903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_76
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1482.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47b6af036d1f8a4786359e6e62b79e8
+      internalID: 849360213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_77
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1482.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a0295b79d97f647a9881e57019d4fa
+      internalID: 513355683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_78
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1482.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d8ffaf10b78ff4586471dadd8b310a
+      internalID: -1578564571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_79
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1482.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebd5e421925a8e408e4a53f85c7278d
+      internalID: -990231729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1297.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4239eaea98d2ac4f9448690a0243fc7
+      internalID: -1548872030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_81
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1297.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9559a7d0e0ab7e7499cd7cd9413a2d05
+      internalID: -193478262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_82
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1297.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dc4e276d84c8a4a82b43270e96ecfc
+      internalID: 476823930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_83
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1297.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e484f72c802a3409dd289b5879f429
+      internalID: -408121403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_84
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1297.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e367a5e46a07f854a86490ded696d49c
+      internalID: 328452335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1112.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b6903e52dca7d4699b16fdd62bdae2
+      internalID: -1594509411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_86
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1112.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8aee0e09f0e8746b602a67c8476f9d
+      internalID: 1939567541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_87
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1112.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109ffdf17fd5db6469e755e764f7154b
+      internalID: 1342138130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_88
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1112.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8d85dba18fba9468fd3ebb818ccb1c
+      internalID: -461140189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_89
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1112.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb67b8d02b83f34e9f20323616b715c
+      internalID: -306811390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 927.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8545483359d54d54590ef01b4d9c5d74
+      internalID: -585879880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_91
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 927.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02fc301c40a2254085c5b75603f83cc
+      internalID: 651023805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_92
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 927.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22ea25b7d2122d43a781dc05ffcc7cb
+      internalID: 2101825705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_93
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 927.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d79568bfb3b3a48880b8f9b4833aec
+      internalID: -25535562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_94
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 927.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826ca3d5bdf2a43409eac4005896f195
+      internalID: 2018347902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb62d891e04898408afeb3c67493a39
+      internalID: 495661309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_96
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 742.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095cbdb60bdf5a547b93939f1c1132d0
+      internalID: -1870739542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_97
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 742.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f57404fe1a173b49bb3f6448d6e87df
+      internalID: 646358340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_98
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 742.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e20c9507e50a5f4d8768c541a8fbaba
+      internalID: 285081478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_99
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 742.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f50853a2f55874d85856df072fdcb2
+      internalID: 1043850231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 557.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b7e1cc96b49274981895c85a16202b
+      internalID: -1403087923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_101
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 557.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2089cacaf62da01489336cdfcda75278
+      internalID: 979842185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_102
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 557.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6622f90e9c2d22041bde029f9ee84d0c
+      internalID: 1589680619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_103
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 557.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c058a16fdf900e549a525588e3af7d2a
+      internalID: -1072848182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_104
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 557.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0215f6b791439a648b9e162452fdaf4e
+      internalID: 325724700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3739656e92841064c8afda80dacb659f
+      internalID: 295669839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_106
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 372.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1c29d449dda7b49a5adef501f2afe7
+      internalID: -1235317344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_107
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 372.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7534fddd0fa5814bba3281987768fee
+      internalID: -2077700347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_108
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 372.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1d1c77ac9eb2f448d8e9849719acbe
+      internalID: -1830484990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_109
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 372.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaeaae0cd3b5f643881c703038922ad
+      internalID: 1735538714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d8fb033a493904b9ea44e1881c055b
+      internalID: 1842280140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_111
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 187.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e276314e76f3f4d93f25c8d4c76c3f
+      internalID: 123379217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_112
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 187.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a495cf385eb71f43abb3a9c2f3c064d
+      internalID: 734732023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_113
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 187.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4614b829386dc341aaa6432a9dba146
+      internalID: -2005288729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_114
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 187.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd0579fb51456d4d93490458302a3d1
+      internalID: 670870607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d32b6fdfb250a4cb4e1415fbd6f632
+      internalID: -188242684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_116
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98b65caec8c56e49a657004eb03c5bc
+      internalID: -476558273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_117
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdf5cad0c84be34faa773e515a06a16
+      internalID: 1651426221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_118
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438bc263c24621b4594b19bee9d22edd
+      internalID: 1980415559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karoot_idle_119
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2.875
+        width: 200
+        height: 185.125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c663c640f6bf4f95d226842e9c4a7
+      internalID: 77811273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 056415a0488a1ae49b14a0152e673baa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      karoot_idle_0: 1399876708
+      karoot_idle_1: 1522038309
+      karoot_idle_10: -463272703
+      karoot_idle_100: -1403087923
+      karoot_idle_101: 979842185
+      karoot_idle_102: 1589680619
+      karoot_idle_103: -1072848182
+      karoot_idle_104: 325724700
+      karoot_idle_105: 295669839
+      karoot_idle_106: -1235317344
+      karoot_idle_107: -2077700347
+      karoot_idle_108: -1830484990
+      karoot_idle_109: 1735538714
+      karoot_idle_11: -1695979135
+      karoot_idle_110: 1842280140
+      karoot_idle_111: 123379217
+      karoot_idle_112: 734732023
+      karoot_idle_113: -2005288729
+      karoot_idle_114: 670870607
+      karoot_idle_115: -188242684
+      karoot_idle_116: -476558273
+      karoot_idle_117: 1651426221
+      karoot_idle_118: 1980415559
+      karoot_idle_119: 77811273
+      karoot_idle_12: -1793474170
+      karoot_idle_13: 1691898772
+      karoot_idle_14: -262165021
+      karoot_idle_15: 422630537
+      karoot_idle_16: -1443959679
+      karoot_idle_17: 626624450
+      karoot_idle_18: -521927704
+      karoot_idle_19: -1817921674
+      karoot_idle_2: 2012947749
+      karoot_idle_20: -675180705
+      karoot_idle_21: -1673345873
+      karoot_idle_22: -599590908
+      karoot_idle_23: -992552607
+      karoot_idle_24: -2094172957
+      karoot_idle_25: -328124602
+      karoot_idle_26: 1898825805
+      karoot_idle_27: 235505472
+      karoot_idle_28: 1173693573
+      karoot_idle_29: -138914411
+      karoot_idle_3: 1909403894
+      karoot_idle_30: -1454756014
+      karoot_idle_31: 1426243087
+      karoot_idle_32: 1069644512
+      karoot_idle_33: 1055026707
+      karoot_idle_34: -1690406562
+      karoot_idle_35: -495109206
+      karoot_idle_36: -2039108525
+      karoot_idle_37: -743762199
+      karoot_idle_38: -1797980552
+      karoot_idle_39: -964604302
+      karoot_idle_4: 734283208
+      karoot_idle_40: 298955457
+      karoot_idle_41: -1067353578
+      karoot_idle_42: 179323690
+      karoot_idle_43: -1492272533
+      karoot_idle_44: 1290656382
+      karoot_idle_45: -165149411
+      karoot_idle_46: 323973863
+      karoot_idle_47: -1339716374
+      karoot_idle_48: -70567326
+      karoot_idle_49: 952427673
+      karoot_idle_5: 1837519409
+      karoot_idle_50: 927129314
+      karoot_idle_51: -1412216587
+      karoot_idle_52: 803871233
+      karoot_idle_53: -782044656
+      karoot_idle_54: 1805740008
+      karoot_idle_55: 885838232
+      karoot_idle_56: 302184528
+      karoot_idle_57: 506243601
+      karoot_idle_58: -941491515
+      karoot_idle_59: 204594646
+      karoot_idle_6: 1748249007
+      karoot_idle_60: 1996277871
+      karoot_idle_61: 633872847
+      karoot_idle_62: 570251619
+      karoot_idle_63: 685762046
+      karoot_idle_64: 956351528
+      karoot_idle_65: 2124203774
+      karoot_idle_66: 948071171
+      karoot_idle_67: -341469477
+      karoot_idle_68: 132666138
+      karoot_idle_69: -705250224
+      karoot_idle_7: 1267160985
+      karoot_idle_70: -346128194
+      karoot_idle_71: 1723283897
+      karoot_idle_72: -567145505
+      karoot_idle_73: 1348679726
+      karoot_idle_74: 2106483959
+      karoot_idle_75: 1681235903
+      karoot_idle_76: 849360213
+      karoot_idle_77: 513355683
+      karoot_idle_78: -1578564571
+      karoot_idle_79: -990231729
+      karoot_idle_8: 1511035552
+      karoot_idle_80: -1548872030
+      karoot_idle_81: -193478262
+      karoot_idle_82: 476823930
+      karoot_idle_83: -408121403
+      karoot_idle_84: 328452335
+      karoot_idle_85: -1594509411
+      karoot_idle_86: 1939567541
+      karoot_idle_87: 1342138130
+      karoot_idle_88: -461140189
+      karoot_idle_89: -306811390
+      karoot_idle_9: -1951436937
+      karoot_idle_90: -585879880
+      karoot_idle_91: 651023805
+      karoot_idle_92: 2101825705
+      karoot_idle_93: -25535562
+      karoot_idle_94: 2018347902
+      karoot_idle_95: 495661309
+      karoot_idle_96: -1870739542
+      karoot_idle_97: 646358340
+      karoot_idle_98: 285081478
+      karoot_idle_99: 1043850231
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

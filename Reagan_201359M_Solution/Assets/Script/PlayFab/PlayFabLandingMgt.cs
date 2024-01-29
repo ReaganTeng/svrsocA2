@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 using System.Linq;
 using System;
 using System.Diagnostics;
+using System.Collections;
 
 public class PlayFabLandingMgt : MonoBehaviour
 {
@@ -102,49 +103,12 @@ public class PlayFabLandingMgt : MonoBehaviour
     }
 
 
-    void AddFriend(FriendIdType idType, string friendId, string id)
-    {
-        var request = new AddFriendRequest();
-        //Debug.Log("ADDED DM");
-
-        switch (idType)
-        {
-            case FriendIdType.PlayFabId:
-                request.FriendPlayFabId = friendId;
-                break;
-            case FriendIdType.Username:
-                request.FriendUsername = friendId;
-                break;
-            case FriendIdType.Email:
-                request.FriendEmail = friendId;
-                break;
-            case FriendIdType.DisplayName:
-                //Debug.Log("ADDED DM");
-                request.FriendPlayFabId = id;
-                request.FriendTitleDisplayName = friendId;
-                break;
-        }
-        PlayFabClientAPI.AddFriend(
-            request,
-            result =>
-            {
-                Debug.Log("ADDED FRIEND");
-            }, OnError
-            );
-    }
-
-    //public void OnAddFriend()
-    //{
-    //    AddFriend(FriendIdType.DisplayName, addFriendInputField.text);
-    //}
-
+   
 
     //REAGAN'S VERSION
     void AddFriend(string friendId, string id)
     {
-        var request = new AddFriendRequest();
-        //Debug.Log("ADDED DM");
-       
+        var request = new AddFriendRequest();       
         request.FriendPlayFabId = id;
         request.FriendTitleDisplayName = friendId;
         
@@ -204,7 +168,7 @@ public class PlayFabLandingMgt : MonoBehaviour
    
 
 
-    public void OnGetFriendLB()
+    public void GetFriendLB()
     {
         foreach(PlayerDisplayUI pd in friendLBContent.GetComponentsInChildren<PlayerDisplayUI>())
         {
@@ -230,56 +194,54 @@ public class PlayFabLandingMgt : MonoBehaviour
                         pdUI.AddButton.gameObject.SetActive(false);
                         string dm = r.Leaderboard[item].DisplayName;
                         string id = r.Leaderboard[item].PlayFabId;
-
                         pdUI.playfabid = r.Leaderboard[item].PlayFabId;
 
-
-
+                        string st = "";
+                        var request = new GetAccountInfoRequest
                         {
-                            string st = "";
-                            var request = new GetAccountInfoRequest
+                            PlayFabId = r.Leaderboard[item].PlayFabId,
+                        };
+                        PlayFabClientAPI.GetAccountInfo(request, result =>
+                        {
+                            string otherPlayerPlayFabId = result.AccountInfo?.TitleInfo.TitlePlayerAccount.Id;
+                            st = otherPlayerPlayFabId;
+                            //pdUI.playfabtitleid = GetOtherPlayerPlayFabTitleId(r.Leaderboard[item].PlayFabId);
+                            pdUI.playfabtitleid = st;
+                            //Debug.Log($"String returned {pdUI.playfabtitleid}");
+                            chooseguildText.text = $"Choose guild to invite {pdUI.displayname.text}";
+
+                            pdUI.InviteButton.onClick.AddListener(() =>
                             {
-                                PlayFabId = r.Leaderboard[item].PlayFabId,
-                            };
-                            PlayFabClientAPI.GetAccountInfo(request, result =>
-                            {
-                                string otherPlayerPlayFabId = result.AccountInfo?.TitleInfo.TitlePlayerAccount.Id;
-                                st = otherPlayerPlayFabId;
-                                //pdUI.playfabtitleid = GetOtherPlayerPlayFabTitleId(r.Leaderboard[item].PlayFabId);
-                                pdUI.playfabtitleid = st;
-                                //Debug.Log($"String returned {pdUI.playfabtitleid}");
-                                chooseguildText.text = $"Choose guild to invite {pdUI.displayname.text}";
+                                string playersownTitleID = PlayerPrefs.GetString("PLAYFABTITLEID");
 
-                                pdUI.InviteButton.onClick.AddListener(() =>
-                                {
-                                    string playersownTitleID = PlayerPrefs.GetString("PLAYFABTITLEID");
+                                guildcontroller.titleIDChosen = pdUI.playfabtitleid;
+                                //Debug.Log($"PEEPEE {guildcontroller.titleIDChosen}");
+                                guildcontroller.displaynamechosen = pdUI.displayname.text;
+                                guildcontroller.ListInvitationGrp(playersownTitleID);
+                                setPanelToTrue(guildcontroller.guildChoicePanel);
 
-                                    guildcontroller.titleIDChosen = pdUI.playfabtitleid;
-                                    //Debug.Log($"PEEPEE {guildcontroller.titleIDChosen}");
-
-                                    guildcontroller.ListInvitationGrp(playersownTitleID);
-                                    setPanelToTrue(guildcontroller.guildChoicePanel);
-
-                                    guildcontroller.closebuttonfriendspanel.SetActive(false);
-                                });
-                            }
-                            , OnError
-                            );
+                                guildcontroller.closebuttonfriendspanel.SetActive(false);
+                            });
                         }
+                        , OnError
+                        );
 
                         pdUI.RemoveButton.onClick.AddListener(() =>
                         {
                             RemoveFriend(id);
+                            GetFriendLB();
                             GetAvialablePlayers();
-                            Destroy(playerUI);
+                            GetAvialablePlayers();
+                            GetFriendLB();
+                            //Destroy(playerUI);
                         });
 
-
-
-
+                       
                     }
                    
                 }
+
+               
             }, OnError
         );
     }
@@ -377,19 +339,10 @@ public class PlayFabLandingMgt : MonoBehaviour
 
                  if (r.Leaderboard[item].PlayFabId != playersownId)
                  {
-                     GameObject playerUI = Instantiate(playerdisplayPrefab, panelContent.transform);
-                     PlayerDisplayUI pdUI = playerUI.GetComponent<PlayerDisplayUI>();
-                     pdUI.displayname.text = r.Leaderboard[item].DisplayName;
-                     string disPlayName = r.Leaderboard[item].DisplayName;
-                     string PlayfabID = r.Leaderboard[item].PlayFabId;
-                     pdUI.RemoveButton.gameObject.SetActive(false);
-                     pdUI.AddButton.onClick.AddListener(() =>
-                     {
-                         AddFriend(disPlayName, PlayfabID);
-                         OnGetFriendLB();
-                         Destroy(playerUI);
 
-                     });
+                     CheckFriendAndInstantiateUI(r, item);
+                     
+
                  }
            }
          }   
@@ -400,8 +353,64 @@ public class PlayFabLandingMgt : MonoBehaviour
 
 
 
+    public void CheckFriendAndInstantiateUI(GetLeaderboardResult r, int item)
+    {
+        StartCoroutine(CheckFriendCoroutine(r, item));
+    }
 
-    
+    IEnumerator CheckFriendCoroutine(GetLeaderboardResult r, int item)
+    {
+        bool aldfriend = false;
+
+        PlayFabClientAPI.GetFriendLeaderboard(
+            new GetFriendLeaderboardRequest
+            {
+                StatisticName = "highscore",
+                MaxResultsCount = 10,
+            },
+            friendr =>
+            {
+                for (int friendritem = 0; friendritem < friendr.Leaderboard.Count; friendritem++)
+                {
+                    if (r.Leaderboard[item].PlayFabId == friendr.Leaderboard[friendritem].PlayFabId)
+                    {
+                        aldfriend = true;
+                        break;
+                    }
+                }
+            },
+            OnError);
+
+        // Wait until the asynchronous operation is completed
+        yield return new WaitForSeconds(1); // You can adjust the delay time if needed
+        //while (!aldfriend)
+        //{
+        //    yield return null;
+        //}
+
+        // Instantiate UI if the player is not part of the user's friend
+        if (!aldfriend)
+        {
+            Debug.Log("INSTANTIATE");
+            GameObject playerUI = Instantiate(playerdisplayPrefab, panelContent.transform);
+            PlayerDisplayUI pdUI = playerUI.GetComponent<PlayerDisplayUI>();
+            pdUI.displayname.text = r.Leaderboard[item].DisplayName;
+            string disPlayName = r.Leaderboard[item].DisplayName;
+            string PlayfabID = r.Leaderboard[item].PlayFabId;
+            pdUI.RemoveButton.gameObject.SetActive(false);
+            pdUI.AddButton.onClick.AddListener(() =>
+            {
+                AddFriend(disPlayName, PlayfabID);
+                GetFriendLB();
+                GetAvialablePlayers();
+            });
+            pdUI.InviteButton.gameObject.SetActive(false);
+        }
+    }
+
+
+
+
     void AcceptGiftFrom(string firstPlayFabId, string tradeId)
     {
         PlayFabClientAPI.AcceptTrade(new AcceptTradeRequest
@@ -516,20 +525,13 @@ public class PlayFabLandingMgt : MonoBehaviour
 
         GetPlayerInventory();
         GetCatalog("Legacy");
-
         GetVirtualCurrencies("RD");
-
-
         LoadJSON();
-
         //TOOK FROM SHOPCONTROLLER
         shopcontroller.ModifySkillContent("RD");
         //playfablandingmgt.GetCatalog("Legacy");
         //playfablandingmgt.GetVirtualCurrencies("RD");
         shopcontroller.switchShopPanel();
-
-
-
         shopcontroller.panel.SetActive(false);
     }
 

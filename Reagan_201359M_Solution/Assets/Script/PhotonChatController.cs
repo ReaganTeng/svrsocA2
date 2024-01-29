@@ -114,8 +114,6 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                         {
                             //Debug.Log($"USERNAME FOUND {r.Leaderboard[item].DisplayName}");
                             PlayerPrefs.SetString("NAME", r.Leaderboard[item].DisplayName);
-
-
                         }
                         username = PlayerPrefs.GetString("NAME");
                         ChatConnectOnClick();
@@ -125,12 +123,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
                     //ADD AS PART OF THE OPTIONS
                     {
                         PlayerDisplaynameList.Add(NAME);
-
-
-
                         options.Add(new TMP_Dropdown.OptionData(NAME));
-                        
-
                        // Debug.Log($"LOOPED {NAME}");
                     }
                     //
@@ -245,7 +238,6 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         PlayerDisplayUI.OnInviteFriend += HandleFriendInvite;
         //ConnectoToPhotonChat();
-        GameObject.FindGameObjectWithTag("NameText").GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("NAME");
 
 
     }
@@ -299,12 +291,56 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
             chatClient.Service();
         }
 
-        
+        if (GameObject.FindGameObjectWithTag("NameText") != null &&
+            GameObject.FindGameObjectWithTag("NameText").GetComponent<TextMeshProUGUI>().text != PlayerPrefs.GetString("NAME"))
+        {
+            GameObject.FindGameObjectWithTag("NameText").GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("NAME");
+        }
+
+
+        //if(Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    for (int i = 0; i < 100; i++)
+        //    {
+        //        chatClient.PublishMessage("RegionChannel", "HELLO");
+        //    }
+        //}
+
     }
 
 
     public void SendMessage()
     {
+        if (hasNoletters(currentchat))
+        {
+            return;
+        }
+
+
+        if (privateReceiver == everyone)
+        {
+            SendPublicMessage();
+        }
+        else if (privateReceiver == friends)
+        {
+            SendToFriends();
+        }
+        else
+        {
+            SendPrivateMessage();
+
+        }
+
+        currentchat = "";
+        chatInputfield.text = "";
+
+    }
+
+
+    public void SendMessage(string input, string privatereceiver)
+    {
+        currentchat = input;
+        privateReceiver = privatereceiver;
         if (hasNoletters(currentchat))
         {
             return;
@@ -423,6 +459,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         OnUserSubscribed("RegionChannel", username);
 
+        //ClearMessageBox
         //for (int i = 0; i < 100; i++)
         //{
         //    chatClient.PublishMessage("RegionChannel", "HELLO");
@@ -476,10 +513,18 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
     public void ClearMessageBox()
     {
-        foreach(TextMeshProUGUI t in chatdisplay.GetComponentsInChildren<TextMeshProUGUI>())
+        foreach (TextMeshProUGUI t in chatdisplay.GetComponentsInChildren<TextMeshProUGUI>())
         {
-            Destroy(t);
+            Destroy(t.gameObject);
         }
+
+        //foreach (Transform child in chatdisplay.transform)
+        //{
+        //    Destroy(child.gameObject);
+        //}
+        //chatdisplay.GetComponent<RectTransform>().sizeDelta = new Vector2(1, 0);
+
+        //chatdisplay.GetComponent<RectTransform>().sizeDelta = new Vector3(1, 0, 1);
     }
 
 
@@ -492,7 +537,8 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
         // Set the text
         textComponent.text = msg;
         
-        textComponent.fontSize = Screen.height * .05f;
+        textComponent.fontSizeMin = Screen.height * .01f;
+        textComponent.fontSizeMax = Screen.height * .05f;
         // Set the parent to your chatdisplay or another desired parent
         textObject.transform.SetParent(chatdisplay.transform, false);
     }
@@ -516,7 +562,7 @@ public class PhotonChatController : MonoBehaviour, IChatClientListener
 
         //string senderUsername = GetUsernameFromPhotonId(sender);
 
-        string msg = $"{sender}: {message}\n\n";
+        string msg = $"\n{sender}: {message}\n\n";
         //chatdisplay.text += msg;
 
         CreateMessage(msg);

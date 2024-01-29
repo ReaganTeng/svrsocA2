@@ -14,12 +14,18 @@ public class FriendsController : MonoBehaviour
     {
         pf.GetAvialablePlayers();
         //pf.GetFriends();
-        pf.OnGetFriendLB();
+        pf.GetFriendLB();
 
         //panel.SetActive(false);
         setPanelToFalse(panel);
     }
 
+    public void Refresh()
+    {
+        pf.GetAvialablePlayers();
+        //pf.GetFriends();
+        pf.GetFriendLB();
+    }
 
   
 

@@ -1,0 +1,2973 @@
+fileFormatVersion: 2
+guid: 6e02db8f8470fee4aaea49d115d64912
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: charger_velocity_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad6a998413d4cd4dad8d08e9ac8a3bd
+      internalID: 609231105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3600
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c989b1ed7550e54ba978b517930b2fd
+      internalID: 1568108588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3600
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd66e6af07e8524b9f312d248a7001f
+      internalID: 177848648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6132a607b87784faa1f4e3c0cf2111
+      internalID: -1121786441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3600
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7e677a17ca3434c9faa7eb21c7f714
+      internalID: -1872410809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3456
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7340c1c09b53b53469b9b60d88c7ae1f
+      internalID: -387944028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3456
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a7ad2b055f96b4fbb9a39ff2151700
+      internalID: 287481662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3456
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c105b5c53d42b84ab9ae7409e3de35f
+      internalID: 1661050850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3456
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f6cb7c4b054754e8e603e4a112f18e
+      internalID: 51512703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_9
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3456
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebf2b46e4c9bf24685c01f3e3a8299a
+      internalID: 588768900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3312
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8440c24fa23e47843aa86618a6f74672
+      internalID: -1134886897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3312
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a59e0478033244f92a5b696314b142
+      internalID: 1256427179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3312
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdf0ac7e0b50914d90e27bd0c2e40fc
+      internalID: 1996937879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_13
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3312
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46593c926879a834b95516e1c5f25db9
+      internalID: -962971935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3312
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860643f5923a5e84b99889b7c2d4bf42
+      internalID: -2121511086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3168
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116c2d3bb82a6b74fb5f2b8745b647b1
+      internalID: -1368029895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3168
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e133d97fe0b8674f9b0326841900703
+      internalID: -433030784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3168
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1e10ef423fe5144b732fef5c790862
+      internalID: -1199457958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_18
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3168
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb1609e34023754aa80c25e61cea58d
+      internalID: 1104503868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_19
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3168
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770e11e7c86a73040afcd9cbdfbb8d9a
+      internalID: 1674185282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3024
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0932b9b6f1ebaba45bc9b9066dc8c7a7
+      internalID: -1361468056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3024
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b15fd1caca8554ea33155ea5976fe8
+      internalID: -1719196596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3024
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747529840a6fa4f4599e0769b672e9af
+      internalID: -1258124791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_23
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3024
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f9298d0f9284543b5eefd2d3b40e2b
+      internalID: -990365406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_24
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3024
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820533ae1a67dff42b197d96b1eba6a2
+      internalID: -720946208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5d223b55682e747802c90c667c579c
+      internalID: -1082813443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2880
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ccdfb6a81d67646803fcf2d9046144
+      internalID: 83342459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2880
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a676c912c92568046a58d0d037288dec
+      internalID: -587256781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_28
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2880
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e593211cdb94cd04db62d5c7ea93ab59
+      internalID: 723408820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_29
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2880
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8312ae5d1de3e23438639895b2d64ef4
+      internalID: -1408832555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2736
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d844ba7676aaf479bd69333eb47e39
+      internalID: 982177843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2736
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01ba90f2508b6442980d055fcfc0c60
+      internalID: 1519678214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_32
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2736
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71886c2c1ecf88e42b0cd64a2b37b3e5
+      internalID: 1655813378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2736
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b575877507137e54d86f3811f08f3e73
+      internalID: 692404441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_34
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2736
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596dd01b68c3dd244aa8d47e04932386
+      internalID: -1032902781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7e79e4daadc8b4bb337199db15c641
+      internalID: 202444204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2592
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f70678dc8af3c74c81714441bf722ac
+      internalID: 929686668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2592
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe3a64ef7db93d4693c4a48fa45ea66
+      internalID: 951710065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2592
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b9e3c062741aa42978e33393fb577a
+      internalID: 721781575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2592
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44d4d12ec8ba594da34f1245440f303
+      internalID: -1855882831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2448
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915b23c31aaa87d4ebbcd5a2e3cf45d2
+      internalID: 1842005660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_41
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2448
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f882396e5f758f445bd01f1675cc9d20
+      internalID: -289280680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_42
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2448
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4af20f650a82f4790402e7d6270dfc
+      internalID: 1955230148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_43
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2448
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bddb194773996c4bae2616bb8d7354f
+      internalID: 1782904205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_44
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2448
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78278d9b549ff7a478e30f0d8abd5adc
+      internalID: 72729637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d44521db794f6145b62e7da3eba1719
+      internalID: 2000161447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2304
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76750447a6db3040976d9daad7ff3a8
+      internalID: -58539490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_47
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2304
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab2a9eb392f3a745816baea91266319
+      internalID: 438871020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_48
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2304
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba17170f14ea4749a1730c2e0d357bf
+      internalID: 642089424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_49
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2304
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c2a5cd3e047d140becd939e8708a1c
+      internalID: -759759482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d006ba523fa234f8ec47c6c381459a
+      internalID: -369921560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2160
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039b96091076638448f6afdb11e4fa08
+      internalID: 1860745460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_52
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2160
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d72cf9a9af22f346a3abc81493d61e1
+      internalID: 1742770411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_53
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2160
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1456709690bec64459ab7aadbd35de28
+      internalID: -1723573578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_54
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2160
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8d2fcde9c329e46bbca23dc0390f9c
+      internalID: -1189229421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573a74dcc0514d646acc37b16331277d
+      internalID: -1982183995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2016
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ec8f2ca6dcc3244b57177f638e8bce
+      internalID: -141926002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_57
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2016
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0722db99d125e304f84d35ee9c6d9def
+      internalID: 1570987719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_58
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2016
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860eac3dca9e3e949a5d076bcc0cdd7a
+      internalID: -1077089707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_59
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2016
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5659fe771c7e285439ac150f28cfefb7
+      internalID: 1846174421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1872
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e83d3e09b537834a91450691e7265b3
+      internalID: -43895571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_61
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1872
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a995a47755c194d9c841d817ee63cc
+      internalID: -1256193572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_62
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1872
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6c66f7cc5a2b04abdfb4babc978435
+      internalID: 2035876290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_63
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1872
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbd1cb28baaea64f81b131cde954fc7
+      internalID: 2082971704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_64
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1872
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc7430beda23ca49b5b3c291fd46396
+      internalID: 299780545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f3e0342be93b04ab54cb2df5c17974
+      internalID: -97563481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1728
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cd6e6dfb2eb38478fc1449049d5700
+      internalID: -1544194427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_67
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1728
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96325f9f0df05c94fb007ea31095e7aa
+      internalID: -134206105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_68
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1728
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35064303d87b3ba41b80166d288a5f34
+      internalID: 2070375269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_69
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1728
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41424d5e8febd84393017165657f31e
+      internalID: 916611050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247c34a4ab035af4397cf4aee608acc9
+      internalID: -618951751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1584
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eedbf9587df5ff4bb0a3098507fd700
+      internalID: -364249310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_72
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1584
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f39391cc6a3c4f479a29abb55afe99b
+      internalID: 280388381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_73
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1584
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60b73c68e1078d49a87f69eafdc97b5
+      internalID: 2067091925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_74
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1584
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c9f355c08673949b1d8ede47c15bb5
+      internalID: -1919673203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b3df82e349b6846a12cf9c172a54d0
+      internalID: 1746718306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1440
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefb82586acc26d46a500473db77e08c
+      internalID: -1470379549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_77
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1440
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28264526613391409d42d31a734fa08
+      internalID: 2071321440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_78
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1440
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283f51b130e0c494d894242ffc861e33
+      internalID: -1476636441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_79
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1440
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b300447072e13374da1785733b20d204
+      internalID: 1407901922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0711dd922006a9043ab2eab6d07de671
+      internalID: -1364400104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_81
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1296
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7543e60981223444b5318fbbacce524
+      internalID: 2123712297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_82
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1296
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c9db197b20e014583fc78a6ca17faf
+      internalID: 502312213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_83
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1296
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ffe94f0c49cd147b4822f37f7e2779
+      internalID: 981510169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_84
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1296
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f4269dfee19a543bc73b1c0a07c5b0
+      internalID: 2066676734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c897779fff83df8408c32c7101e09122
+      internalID: 1629910347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1152
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9654cc5d108edaf4496f3775dcf2eb6d
+      internalID: 1163183837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_87
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1152
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b75e69d2ba3ce49b2aecbded55c75d
+      internalID: -7520668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_88
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1152
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f21a3006ca98f4f963441a90a977b4
+      internalID: 525977660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_89
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1152
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0deab6926d124b44bbc1a6c2b83d8b18
+      internalID: -245962566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae1ec6d490e65049b6cc3ebe0c076f9
+      internalID: 706089737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_91
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1008
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dafd31310ce8ec4fbcb8dced557d9f6
+      internalID: -238830193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_92
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1008
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d2dc781d14d034e95ce68fa3cb36a5
+      internalID: -2034608286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_93
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1008
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a6e5e248ae2544b90b1d29f665c688
+      internalID: -59924244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_94
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1008
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0636f7ffa365cdb4a93719255c92426f
+      internalID: -556870867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d482db3bd9b7449aa29752869a1057
+      internalID: -1311739934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_96
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 864
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33298dde087929442ba2e98a7962b160
+      internalID: -2078250542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_97
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 864
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788dd0821aead0d419d9a4f4ba3e56f2
+      internalID: -787407124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_98
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 864
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb51f37fb09cc98488bd6442631ebd7b
+      internalID: -1779261061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_99
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 864
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c745874c6bf964b40b41fdf986597f6d
+      internalID: 655955058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7eeb83db4cc7f54a9824c8da376fb92
+      internalID: 1972502925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_101
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 720
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25d3efde7b3f1a4385ce6cbc4b6453d
+      internalID: -1459543810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_102
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 720
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c319daea351de44c8faf290bc7fcb7e
+      internalID: 1799500956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_103
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 720
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864d0f48b790cd24b806f029276786b3
+      internalID: -1878174050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_104
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 720
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1c435aeb0cd7148b6996a8ad8893db
+      internalID: -116509944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47375dc488bb438469bc4da1cefb6c3d
+      internalID: -1080446450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_106
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 576
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6708bea0b31284db239e82467ba585
+      internalID: -1586847049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_107
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 576
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd4e8918003c5f48ba9ae118c19934a
+      internalID: -1437156332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_108
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 576
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68f8db0eaf9acf49a1c6e9e7a39287a
+      internalID: -148195686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_109
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 576
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382272c944c18484082b3629decc5f2c
+      internalID: -23049674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803c6e161cb032d48b56adfee72677e3
+      internalID: -1789613769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_111
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 432
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e635dc99a907e438c0287478dde0b3
+      internalID: -1239963255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_112
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 432
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b5c4ccb1869664087bd3d14430fc7f
+      internalID: -1870843628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_113
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 432
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684fa3aff6ced15449a664bdd500a2f1
+      internalID: -1913141704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_114
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 432
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1d386fad360bf42afa8990c4625181
+      internalID: 646173181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_115
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaf0bbc70734044db284e415c83c07c
+      internalID: -1027450780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_116
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 288
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18cefc52937aa34f919825621b66550
+      internalID: 1663892344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_117
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 288
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96e11a5b59583b4eaf394ef7855e905
+      internalID: 991686438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_118
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 288
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27163aaadf9764943828c0d40053ad1e
+      internalID: -1332047832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_119
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 288
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942c7bf483c008741808f13f0cc5dd7e
+      internalID: 1552431944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c29ad2f89beb5d48a36e6a02b4adbc6
+      internalID: 111873759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_121
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 144
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d87fab7673fa4349b128747478fb019
+      internalID: 1644151223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_122
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 144
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b313b4d2e1fa7964bbe53d7b2907a198
+      internalID: -1028731316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_123
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 144
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9392d63933c3d6342baf6c6ba5962550
+      internalID: -1606251354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_124
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 144
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a1b4da23d65d748a03448842ca8380
+      internalID: -1841618820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9fee766d539ba479165887ddb2b10f
+      internalID: -632250532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_126
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0655ca85c6b28df4792b4c30e59b62ba
+      internalID: 1620380113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_127
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6b836bd30f15945a4a0cae421d19cd
+      internalID: -1750807052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charger_velocity_128
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cc2c2672ab43f49a60f60847126b65
+      internalID: -1429981640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d8059a969a43bca42b14a089c15da403
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      charger_velocity_33: 692404441
+      charger_velocity_12: 1996937879
+      charger_velocity_4: -1872410809
+      charger_velocity_59: 1846174421
+      charger_velocity_117: 991686438
+      charger_velocity_36: 929686668
+      charger_velocity_66: -1544194427
+      charger_velocity_47: 438871020
+      charger_velocity_75: 1746718306
+      charger_velocity_45: 2000161447
+      charger_velocity_53: -1723573578
+      charger_velocity_122: -1028731316
+      charger_velocity_56: -141926002
+      charger_velocity_98: -1779261061
+      charger_velocity_62: 2035876290
+      charger_velocity_0: 609231105
+      charger_velocity_120: 111873759
+      charger_velocity_57: 1570987719
+      charger_velocity_128: -1429981640
+      charger_velocity_72: 280388381
+      charger_velocity_39: -1855882831
+      charger_velocity_92: -2034608286
+      charger_velocity_115: -1027450780
+      charger_velocity_84: 2066676734
+      charger_velocity_119: 1552431944
+      charger_velocity_78: -1476636441
+      charger_velocity_8: 51512703
+      charger_velocity_24: -720946208
+      charger_velocity_6: 287481662
+      charger_velocity_81: 2123712297
+      charger_velocity_71: -364249310
+      charger_velocity_82: 502312213
+      charger_velocity_5: -387944028
+      charger_velocity_38: 721781575
+      charger_velocity_1: 1568108588
+      charger_velocity_87: -7520668
+      charger_velocity_100: 1972502925
+      charger_velocity_55: -1982183995
+      charger_velocity_102: 1799500956
+      charger_velocity_68: 2070375269
+      charger_velocity_91: -238830193
+      charger_velocity_26: 83342459
+      charger_velocity_114: 646173181
+      charger_velocity_25: -1082813443
+      charger_velocity_90: 706089737
+      charger_velocity_34: -1032902781
+      charger_velocity_97: -787407124
+      charger_velocity_111: -1239963255
+      charger_velocity_41: -289280680
+      charger_velocity_99: 655955058
+      charger_velocity_103: -1878174050
+      charger_velocity_112: -1870843628
+      charger_velocity_118: -1332047832
+      charger_velocity_21: -1719196596
+      charger_velocity_43: 1782904205
+      charger_velocity_74: -1919673203
+      charger_velocity_29: -1408832555
+      charger_velocity_27: -587256781
+      charger_velocity_31: 1519678214
+      charger_velocity_22: -1258124791
+      charger_velocity_106: -1586847049
+      charger_velocity_89: -245962566
+      charger_velocity_60: -43895571
+      charger_velocity_96: -2078250542
+      charger_velocity_40: 1842005660
+      charger_velocity_9: 588768900
+      charger_velocity_94: -556870867
+      charger_velocity_63: 2082971704
+      charger_velocity_14: -2121511086
+      charger_velocity_105: -1080446450
+      charger_velocity_107: -1437156332
+      charger_velocity_109: -23049674
+      charger_velocity_11: 1256427179
+      charger_velocity_126: 1620380113
+      charger_velocity_67: -134206105
+      charger_velocity_104: -116509944
+      charger_velocity_18: 1104503868
+      charger_velocity_37: 951710065
+      charger_velocity_20: -1361468056
+      charger_velocity_61: -1256193572
+      charger_velocity_123: -1606251354
+      charger_velocity_35: 202444204
+      charger_velocity_30: 982177843
+      charger_velocity_28: 723408820
+      charger_velocity_124: -1841618820
+      charger_velocity_70: -618951751
+      charger_velocity_95: -1311739934
+      charger_velocity_23: -990365406
+      charger_velocity_19: 1674185282
+      charger_velocity_58: -1077089707
+      charger_velocity_93: -59924244
+      charger_velocity_83: 981510169
+      charger_velocity_3: -1121786441
+      charger_velocity_110: -1789613769
+      charger_velocity_64: 299780545
+      charger_velocity_15: -1368029895
+      charger_velocity_46: -58539490
+      charger_velocity_52: 1742770411
+      charger_velocity_73: 2067091925
+      charger_velocity_88: 525977660
+      charger_velocity_48: 642089424
+      charger_velocity_113: -1913141704
+      charger_velocity_32: 1655813378
+      charger_velocity_50: -369921560
+      charger_velocity_127: -1750807052
+      charger_velocity_77: 2071321440
+      charger_velocity_51: 1860745460
+      charger_velocity_85: 1629910347
+      charger_velocity_2: 177848648
+      charger_velocity_79: 1407901922
+      charger_velocity_125: -632250532
+      charger_velocity_76: -1470379549
+      charger_velocity_86: 1163183837
+      charger_velocity_121: 1644151223
+      charger_velocity_44: 72729637
+      charger_velocity_101: -1459543810
+      charger_velocity_42: 1955230148
+      charger_velocity_54: -1189229421
+      charger_velocity_65: -97563481
+      charger_velocity_108: -148195686
+      charger_velocity_49: -759759482
+      charger_velocity_16: -433030784
+      charger_velocity_10: -1134886897
+      charger_velocity_17: -1199457958
+      charger_velocity_7: 1661050850
+      charger_velocity_116: 1663892344
+      charger_velocity_80: -1364400104
+      charger_velocity_69: 916611050
+      charger_velocity_13: -962971935
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

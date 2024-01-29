@@ -1,0 +1,2366 @@
+fileFormatVersion: 2
+guid: cb4afbedd12215e4b8b72c0507425cfa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MooMoo_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3724
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1fb9305b05811408c933e04a18966d
+      internalID: 1238964336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3724
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4871af283130104d967bd3ad7a6071b
+      internalID: 580634270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 3724
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59647f55a9fc9e04786d8bd704e69bc4
+      internalID: -2059538136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3724
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d051742ffc6c2aa4eafd105e2f440fad
+      internalID: -664346382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 3724
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a640026a8e1e94087d05231b4756ff
+      internalID: -939298989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3528
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a189da01bdf0e04dbbf2b143a0f6bae
+      internalID: 1870778814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3528
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8b9ca060f7df94a8add200aed186aa
+      internalID: 50332015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 3528
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233f56ce332d9504490d5e00828a483d
+      internalID: 1450320661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3528
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1929082777a1ac84cbd9f7662bcdca7f
+      internalID: 250866740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 3528
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf6c1967aadc03449a1b67a61be26d6
+      internalID: 2099717387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3332
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4deab8c235aa5345a92907aa9779aa1
+      internalID: 1134906600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3332
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9852dddae34a97449ac652eecaba19c3
+      internalID: -1359194622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 3332
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b89077bcfa49041a48d9be82f64664
+      internalID: 1295277692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3332
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8396c7f7c58c84842a4ca05a63c0f39b
+      internalID: -1828732632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 3332
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba2528234c977b40bbd02c0b87d2ce4
+      internalID: 1138997359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3136
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c32b2858fff19741bbb7f824845ec4c
+      internalID: 330159243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3136
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66de9c155445224bbe316c9fb98bcf3
+      internalID: -458283889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 3136
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfb81aeee6105d42a1fcc02a81d61c5
+      internalID: 459293667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3136
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367e08b56caf0e041a7374405c151f68
+      internalID: 460587449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 3136
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec82ed5092aa1a4aa2d8c78cc4337f0
+      internalID: -1422627996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2940
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5754dc37450424bb81142eb5f9a663
+      internalID: -2074607356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2940
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6263b60148f594f9c61c795d42a377
+      internalID: 1196972462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2940
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45b20e66762c9848b888da0f077f45a
+      internalID: 140211939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2940
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef74233e0e4d054ca48ee493a7743cf
+      internalID: 2011164173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2940
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb0c55fa87942f448fddd4b76d09549
+      internalID: 266088771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2744
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688e4de81795d10478f1c2c0787d90d8
+      internalID: 623899555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2744
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61b82f78f926974a8c58c4151754935
+      internalID: 1474338360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2744
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e939727eeab13dc4792f3c37847d00e3
+      internalID: -2082775461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2744
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7948301874e5c9f40af398b1109d6f89
+      internalID: -1447160787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2744
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3066b2799bfb44a4ca1daf6f8e40ca06
+      internalID: 915835850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2548
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6643948e2a0795b449f4bb474eac4276
+      internalID: -1741437940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2548
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc5f80caf143ef41b185031ba29ba4b
+      internalID: -1915005779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_32
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2548
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f6c0be3443c0a448035bdba3732001
+      internalID: -1368064262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_33
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2548
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9af3d20dcb0c6f40bb98cc68e1d29a9
+      internalID: 2033066287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_34
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2548
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc61871ae1ebd84469ecec999573eb64
+      internalID: -95365371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2352
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45314e9484783a34889f86f041e63d9e
+      internalID: -979746288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_36
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2352
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b8ccc229741b9468ff71b38de12e7e
+      internalID: 1987004645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_37
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2352
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d7fc09082386e4b9e30451e85173ec
+      internalID: 1401074673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_38
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2352
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c79daffdfe27f42a09219cc4c940b8
+      internalID: -300501606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_39
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2352
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bce5a86c013c494f93588505b96f396
+      internalID: -449531606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2156
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22e49daebf6edc42864e1a76a2f9e3e
+      internalID: 2020197220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_41
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2156
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a899c37a2719b4dbc986e8b51d0347
+      internalID: 527340971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_42
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 2156
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd4f404bc54b46499f9ed67d5a44d78
+      internalID: -1622835559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_43
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2156
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6e85cc10c81ec43b2ff07ff701d1ad
+      internalID: -1426925984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_44
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2156
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a550e6fadfc6f4c93ae674a8008c5b
+      internalID: -1767574159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1960
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d211486f193123458e17dc448e44ffb
+      internalID: -1467570153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_46
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1960
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379efe064637aa941a2a6c0804d41543
+      internalID: -605570434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_47
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1960
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2b8719ff5ec5940828fb12bdd7f41a
+      internalID: -275995695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_48
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1960
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d99eb6a6bf057b4490cc05e83f0b5b9
+      internalID: 1006289863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_49
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1960
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8815ee730bfea2e4ba881202b952e642
+      internalID: 936239788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1764
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044f6f1658e02a241ad6437006a0056b
+      internalID: 1324206784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_51
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1764
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29264a0fd146e4498ae78235657c6c6
+      internalID: -810224471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_52
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1764
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d05be987fe90f47a46cfe63260bb91
+      internalID: -479671157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_53
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1764
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebc0eaadd660c44eaf86c631413c0f1
+      internalID: -762537288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_54
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1764
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a441b69a53e97a948bc24e1bdb0de71a
+      internalID: -301476822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1568
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8309731238a424ba407cf13e94e420
+      internalID: 1654485938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_56
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1568
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd0e1cb85c9e8e45b60f10d069a7910
+      internalID: 111315832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_57
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1568
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afbda476e49ad24e9d07602ddad59f2
+      internalID: 800171865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_58
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1568
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191c8e157ecab714baac32533bce2d05
+      internalID: -1874744650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_59
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1568
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de91f4ea37327c4428827d23a7780ffc
+      internalID: 871833354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1372
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877ae55b1b4dd6048a1a333fffd290eb
+      internalID: 272098022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_61
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1372
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cdb339fd740874eb9217e25e48bbda
+      internalID: -678831287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_62
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1372
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7be912deeb9c09b4f975ec387e0d356f
+      internalID: 23872497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_63
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1372
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d6f988aceb210479625673c5e6a63e
+      internalID: -350845469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_64
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1372
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10782042eff7a046a2651bbc3c0a321
+      internalID: 1702341017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1176
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891407d05081cad49be5e79144feca7b
+      internalID: 2011576420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_66
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1176
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb86c7426b253894ba71f68265f26a34
+      internalID: 53662388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_67
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1176
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf3f3ebad8ae614e9c1cee661c71e09
+      internalID: 1488788185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_68
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1176
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529f53484a92c4243bce5f9ad1b330f6
+      internalID: 1241671319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_69
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1176
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b270bf1154f6b0a43b41a905629b231f
+      internalID: -1922980677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6f46a4583f7154cafc25429239d0a9
+      internalID: 1498687892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_71
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 980
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abfcc23c765812f4f8e9e772bbbb290e
+      internalID: 766002493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_72
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 980
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbc3162bacde394d8fe0be44c1aa473
+      internalID: -1072536843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_73
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 980
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d757690b6823145b46a417ed9f0a85
+      internalID: -1272417923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_74
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 980
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061583418f2cc0944a2ce15680a3302f
+      internalID: -77189660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ef77b044806554a872702d0777e254
+      internalID: -1577809488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_76
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 784
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975b15b3c45fd2e4b849eec8c0c9838a
+      internalID: -1726294454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_77
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 784
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f10751c8939134ca97445889992085
+      internalID: 504815197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_78
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 784
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b663922bd40d623449f2b952f0cd1327
+      internalID: -973997351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_79
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 784
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b164e0b28def04a8c274f63beacf25
+      internalID: -124191434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e709bc20d82b204b84158d8301eb61e
+      internalID: 1202343869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_81
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 588
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0123d27ca716440b5e3db2ea41f52b
+      internalID: 1635558557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_82
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 588
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108b87562c1609e48ad84f7a7ce30c66
+      internalID: -1065997464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_83
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 588
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45a284eb302f8a479de7f9e8dde9d6a
+      internalID: -632034370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_84
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 588
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61d313045d81aa41b82059ebb67da8c
+      internalID: -860837037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440ba2acf01b0cb42bc0baf66122dcfd
+      internalID: 261567551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_86
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 392
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c33c4edb7c0d76488ebb687c14a9188
+      internalID: -840760440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_87
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 392
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7702a5d1a7f85064a9139ecb248fa9a5
+      internalID: 2123669817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_88
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 392
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd3c9f564b254846b0331f61e15b9d5
+      internalID: -1579185979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_89
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 392
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368cc44101465c545922de030c3bb811
+      internalID: 1421068390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819e0849ec232f04bb086a1d4432bcb6
+      internalID: 766783941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_91
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 196
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518306c7221035546964df66e7336887
+      internalID: -1379696909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_92
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 196
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3498209ac3075cb4a873faa3a4336cea
+      internalID: 1906101211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_93
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 196
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3849b509c1c6899408671d09a7120adc
+      internalID: 923823625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_94
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 196
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c811d40df5e0d8e4dae98c82bad4977b
+      internalID: 198660713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a002bacbc14f88438a19d4cc0d4ed46
+      internalID: 1683616810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_96
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a933b16e1ffe9a74098684c328a7bd27
+      internalID: 1429243881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_97
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7c698dbdcf8d640bb7579d6f1d25b4
+      internalID: -1393002565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_98
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 0
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e69a3f326430d54fad6ec4271b77e53
+      internalID: 176461187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MooMoo_Idle_99
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 0
+        width: 206
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ded61b829faee34f9299b5024a3ccdb
+      internalID: 917681712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5bb0b3965ebbf354e9a2265115920402
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MooMoo_Idle_0: 1238964336
+      MooMoo_Idle_1: 580634270
+      MooMoo_Idle_10: 1134906600
+      MooMoo_Idle_11: -1359194622
+      MooMoo_Idle_12: 1295277692
+      MooMoo_Idle_13: -1828732632
+      MooMoo_Idle_14: 1138997359
+      MooMoo_Idle_15: 330159243
+      MooMoo_Idle_16: -458283889
+      MooMoo_Idle_17: 459293667
+      MooMoo_Idle_18: 460587449
+      MooMoo_Idle_19: -1422627996
+      MooMoo_Idle_2: -2059538136
+      MooMoo_Idle_20: -2074607356
+      MooMoo_Idle_21: 1196972462
+      MooMoo_Idle_22: 140211939
+      MooMoo_Idle_23: 2011164173
+      MooMoo_Idle_24: 266088771
+      MooMoo_Idle_25: 623899555
+      MooMoo_Idle_26: 1474338360
+      MooMoo_Idle_27: -2082775461
+      MooMoo_Idle_28: -1447160787
+      MooMoo_Idle_29: 915835850
+      MooMoo_Idle_3: -664346382
+      MooMoo_Idle_30: -1741437940
+      MooMoo_Idle_31: -1915005779
+      MooMoo_Idle_32: -1368064262
+      MooMoo_Idle_33: 2033066287
+      MooMoo_Idle_34: -95365371
+      MooMoo_Idle_35: -979746288
+      MooMoo_Idle_36: 1987004645
+      MooMoo_Idle_37: 1401074673
+      MooMoo_Idle_38: -300501606
+      MooMoo_Idle_39: -449531606
+      MooMoo_Idle_4: -939298989
+      MooMoo_Idle_40: 2020197220
+      MooMoo_Idle_41: 527340971
+      MooMoo_Idle_42: -1622835559
+      MooMoo_Idle_43: -1426925984
+      MooMoo_Idle_44: -1767574159
+      MooMoo_Idle_45: -1467570153
+      MooMoo_Idle_46: -605570434
+      MooMoo_Idle_47: -275995695
+      MooMoo_Idle_48: 1006289863
+      MooMoo_Idle_49: 936239788
+      MooMoo_Idle_5: 1870778814
+      MooMoo_Idle_50: 1324206784
+      MooMoo_Idle_51: -810224471
+      MooMoo_Idle_52: -479671157
+      MooMoo_Idle_53: -762537288
+      MooMoo_Idle_54: -301476822
+      MooMoo_Idle_55: 1654485938
+      MooMoo_Idle_56: 111315832
+      MooMoo_Idle_57: 800171865
+      MooMoo_Idle_58: -1874744650
+      MooMoo_Idle_59: 871833354
+      MooMoo_Idle_6: 50332015
+      MooMoo_Idle_60: 272098022
+      MooMoo_Idle_61: -678831287
+      MooMoo_Idle_62: 23872497
+      MooMoo_Idle_63: -350845469
+      MooMoo_Idle_64: 1702341017
+      MooMoo_Idle_65: 2011576420
+      MooMoo_Idle_66: 53662388
+      MooMoo_Idle_67: 1488788185
+      MooMoo_Idle_68: 1241671319
+      MooMoo_Idle_69: -1922980677
+      MooMoo_Idle_7: 1450320661
+      MooMoo_Idle_70: 1498687892
+      MooMoo_Idle_71: 766002493
+      MooMoo_Idle_72: -1072536843
+      MooMoo_Idle_73: -1272417923
+      MooMoo_Idle_74: -77189660
+      MooMoo_Idle_75: -1577809488
+      MooMoo_Idle_76: -1726294454
+      MooMoo_Idle_77: 504815197
+      MooMoo_Idle_78: -973997351
+      MooMoo_Idle_79: -124191434
+      MooMoo_Idle_8: 250866740
+      MooMoo_Idle_80: 1202343869
+      MooMoo_Idle_81: 1635558557
+      MooMoo_Idle_82: -1065997464
+      MooMoo_Idle_83: -632034370
+      MooMoo_Idle_84: -860837037
+      MooMoo_Idle_85: 261567551
+      MooMoo_Idle_86: -840760440
+      MooMoo_Idle_87: 2123669817
+      MooMoo_Idle_88: -1579185979
+      MooMoo_Idle_89: 1421068390
+      MooMoo_Idle_9: 2099717387
+      MooMoo_Idle_90: 766783941
+      MooMoo_Idle_91: -1379696909
+      MooMoo_Idle_92: 1906101211
+      MooMoo_Idle_93: 923823625
+      MooMoo_Idle_94: 198660713
+      MooMoo_Idle_95: 1683616810
+      MooMoo_Idle_96: 1429243881
+      MooMoo_Idle_97: -1393002565
+      MooMoo_Idle_98: 176461187
+      MooMoo_Idle_99: 917681712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

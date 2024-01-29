@@ -84,7 +84,7 @@ public class PlayFabUserMgt : MonoBehaviour
     void InstantLogin()
     {
         //userEmail.text = "yuzhe100903@gmail.com";
-        userName.text = "reagan";
+        userName.text = "john";
 
         userPassword.text = "1234567890";
 

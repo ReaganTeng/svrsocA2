@@ -1,0 +1,2586 @@
+fileFormatVersion: 2
+guid: 83b014cec8bc3354792ed67a062c8353
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pinachoo_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3990
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ed957b7db8e2346b95767c78d4a872
+      internalID: 774822624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3990
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec4b60baace2aa4db8cef10eca64338
+      internalID: -759043789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 3990
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a038713cbb2844ba0246836b6c3edd
+      internalID: -1587598231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3990
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d716c36d9774e44ba8c6f89c1c71bf
+      internalID: -479924839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3990
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9e09e3aa89fec46bfd02eea4b520cd
+      internalID: 1068405009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3800
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bc48bd2d2673f4b8bd57a6239b0ba4
+      internalID: -766172077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3800
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371d47bbedc616c48b87982885508ad9
+      internalID: -1765260879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 3800
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f05521cce3ee64cbeef1e8a0850a30
+      internalID: -653524840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3800
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf7de5b42deea843ab0d3c080c7c747
+      internalID: 954532957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3800
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de7fed0d33499748bf524c4587929ad
+      internalID: -1786339076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3610
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99916743265f4314aa40dbee3aec56be
+      internalID: -1172687426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3610
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ba7ec0b6fbe0e45ab3cb29b57e6b06
+      internalID: -670361496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 3610
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d6acdb67c277d44bbad4fdd2a8ed35
+      internalID: 1770499327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3610
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1208bd46a8adc1d438f83d117ad89642
+      internalID: -1467891777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3610
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8279ca3e0ed109e46828330e4aaf5060
+      internalID: -1031940270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3420
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f27f1ad225ee034382fe976db1a63a3
+      internalID: -1010111640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3420
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c22603c4ae03245ab01dee51d50020
+      internalID: -1132196473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 3420
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26747eec67835ed4586a52485aaf4f38
+      internalID: -702989088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3420
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e842fe64e542b04ab0058eb8d240c7a
+      internalID: -1312098368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3420
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dcf6ae029c23441ace8c29033c6b48
+      internalID: 1514427418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3230
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3cbdbd9ef226344aa5ea709e204bbf
+      internalID: -464808405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3230
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4375229e0c2c234bbcc3d19da09ff4c
+      internalID: 1943084615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 3230
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5811968dfbee29f4a88df2b4b12e5657
+      internalID: -1006259353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3230
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0034c76681ece4584b3047e5b17d70
+      internalID: 1444014860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3230
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9051fb9b648051b47b678076833a426b
+      internalID: 67113368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3040
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423c1cc770a77eb47b56ee627a75878d
+      internalID: -314623193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3040
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7140a4b1347694ab0421dfdfac3f2d
+      internalID: -1046574189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 3040
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a722e82082ad2bc4a8e5ff903fd07e38
+      internalID: 1862745099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3040
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4ecc1c940778b46995fdbf5741a03e
+      internalID: 841252596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 3040
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5fb3b5cebb9494b90639351417b706
+      internalID: 2110973452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2850
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc619897c7a6a0408b43f384c131882
+      internalID: -937804817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_31
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2850
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c011deed315da8642bb3cdb788218fbf
+      internalID: -621903435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_32
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2850
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d8faa5f0ab0cb4bb5e90c2c206c770
+      internalID: 1592516569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_33
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 2850
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed17d28307f13a448bafa83376865e2d
+      internalID: -689175511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_34
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2850
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76036e33330a6e4a8e99416f295c9bf
+      internalID: -1952887926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2660
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4156eb364bc69d4585ce40bf726863b
+      internalID: 373087695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_36
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2660
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0f25fa21fc8df429c148573f3faa86
+      internalID: -1241962122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_37
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2660
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c01838603370f34794aa0c7217404d2
+      internalID: 1748794261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_38
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 2660
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81651ea2703e6f40975be0e8063ba4a
+      internalID: -1051754307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_39
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2660
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9490fc80b7095a9489baea47966a5e85
+      internalID: -348764673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2470
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6550e5f33eedcc4fb54ea271f5ee72e
+      internalID: 751988230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_41
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2470
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0036264e768842e4c8959a64f1bc9651
+      internalID: 957914964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_42
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2470
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb88ee776985d14eb2bd2af718a4875
+      internalID: 776174614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_43
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 2470
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee012405cba75214fbc0879e9876f93b
+      internalID: 1182550384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_44
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2470
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e888fffe59f70c849a316b563375e0a0
+      internalID: -1980226139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2280
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41eceafe607d9546a485f2a3335064d
+      internalID: -941322006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_46
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2280
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb11e745882d04743828339a584603fa
+      internalID: -910671538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_47
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2280
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6ebb5ecb3a1e74b81b3ed384f28ef9
+      internalID: -1673790983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_48
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 2280
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e83e064474a644d8dcd30e27849f55
+      internalID: 2085650097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_49
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2280
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfeca8dbeff954c41bcea6babbcc5ebf
+      internalID: -1046187657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2090
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977eb8054eacbad46904160f90838d7d
+      internalID: 1518126358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_51
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2090
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8e00aa9d539fd47ba690befefdc5b9
+      internalID: 1092464377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_52
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 2090
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9aa40741e24004cb4bf8f453aaa8e1
+      internalID: 50947175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_53
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 2090
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00ae807da64b27408fbaa618a920f8f
+      internalID: 68644859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_54
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 2090
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe3e114b9ec33748afbc77638a8b075
+      internalID: 973935834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1900
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c063090cd8932840bfdfdc7c0242fae
+      internalID: -229182998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_56
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1900
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360b50c7b4e5a814dac2a23edebfe7fe
+      internalID: 2091646800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_57
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1900
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b825c9411688e9e4780fcc6cc9157060
+      internalID: 1667149633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_58
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1900
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddb47291cd383646991fb9d17c45077
+      internalID: 1873464843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_59
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1900
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464969e91a9ad024eb9d196a3ff81892
+      internalID: 1944802736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1710
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841feb3b988d20a4db9be55c17e14bb6
+      internalID: 1304046369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_61
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1710
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e775b299dd3584e84639c0644f6352
+      internalID: -1463670340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_62
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1710
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9111368e368c17145a8dd7b0475d71b7
+      internalID: -100927557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_63
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1710
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449d15de2b007eb4f8351138a5904d89
+      internalID: 513676119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_64
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1710
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3442b413c5a5c47829c4aeb5543f4b
+      internalID: 1992201729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1520
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5ee81f978fe614e916f105d85ca483
+      internalID: -152118080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_66
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1520
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44389cfe862c64242901ed0aec615763
+      internalID: 1331076136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_67
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1520
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c0af98e5eb1c443a06c2d4ff699059
+      internalID: 996168149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_68
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1520
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c451b9f93d43594681f846bd60840e1
+      internalID: 272761751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_69
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1520
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e5147213333564ea1be523728a1314
+      internalID: -1468085215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1330
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5d22a27fe102142a354da5d5606961
+      internalID: 1976319513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_71
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1330
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564decf6bff70ae409f51b8544852bf6
+      internalID: 1254557790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_72
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1330
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cff66da995abf4498074cae6b19abde
+      internalID: -1734692345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_73
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1330
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a73fc1a352949d43b39052c2c06fa25
+      internalID: -456757930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_74
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1330
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa8c07d766e22c49ab8e56c24a300db
+      internalID: -512341742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1140
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e57888874dff74087f6dfa040a376a
+      internalID: 1405215674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_76
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1140
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4922882e0bdfd44a30764f95294868
+      internalID: -373790981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_77
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1140
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d25f4b3edbbd6a499b776906d06b12c
+      internalID: -172292875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_78
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1140
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e0b59bceec5b147a9e2685cf6b687d
+      internalID: -69606913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_79
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1140
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c5ce3015159454eb37acff2a03b04a
+      internalID: 2005699281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 950
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd266502198ae82409cd1586ea75ce04
+      internalID: 565262299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_81
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 950
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfddb8a2cafc2404289b006dd4913063
+      internalID: 1578197820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_82
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 950
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1553be827217514cbe974bd3b756751
+      internalID: 29099743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_83
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 950
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6481193408c41614cb7d7f2a36e7183d
+      internalID: -1135218719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_84
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 950
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f374c6434d7a9a140bcef6175f1281c6
+      internalID: 965843706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 760
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da55661b167c3154f8245be1df575c18
+      internalID: -1025306970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_86
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 760
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3010e0c85bb1c9b49909a1c3edd25ab3
+      internalID: 399210121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_87
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 760
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622a288b95f7e6546845cd350b4a0fc9
+      internalID: -828605991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_88
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 760
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecca6d22b3a20544aa2ae227e3650c7d
+      internalID: -1527793063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_89
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 760
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95595fac6c756dc4090632361c010ce1
+      internalID: -197365302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28adf97d4bb848b41a6e745d89dd6da2
+      internalID: -566287981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_91
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 570
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ca2c6ff3067074fb90da9893bb1539
+      internalID: 850099530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_92
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 570
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c50af7994f9ea843a494acd11d5f25b
+      internalID: -821181894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_93
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 570
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd02d37765ada8e42bf703d1fb3944f0
+      internalID: 938095204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_94
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 570
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a762b78197ee0a8489348dab4af75126
+      internalID: -1432128305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69ee178c785ad449881a4b16e52c168
+      internalID: -1486227468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_96
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 380
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a8154a0df005749abc1184eeec27c1
+      internalID: -800961845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_97
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 380
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dd62b12153772489c2f617aff138de
+      internalID: -542393474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_98
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 380
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429eba37e751d664bb3cdefe64b009ea
+      internalID: 687334019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_99
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 380
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c2d9ade8cd32b47a26a26d8d16a819
+      internalID: -1353936521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ffcb54543cc9641940fa246e197edf
+      internalID: 668252217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_101
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 190
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00d7c02b90ff0048a53036cd16ddc2c
+      internalID: -1046882015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_102
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 190
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a046d56aeb12f654f864408c8fb972e0
+      internalID: 1354585055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_103
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 190
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fdd108983a4d1408d9db87eb7b8af2
+      internalID: 1835835267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_104
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 190
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a6d74142ee77e46997db15b1fb0c48
+      internalID: 29153663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213b3d43d59b9bc4aa821956adf737cd
+      internalID: -618737737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_106
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07432db035bb3804fa4073603badb5f0
+      internalID: -195082181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_107
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625e8a145c5a1994bae79a3ba8ce3ed7
+      internalID: -1963620162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_108
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034d5bda68bc41643b22c983a1f38293
+      internalID: -1993189645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pinachoo_Idle_109
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56938db45dec38145acb304eae03ee1c
+      internalID: 20567591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2afb887b398d5514bb2e806ea8dbabda
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Pinachoo_Idle_0: 774822624
+      Pinachoo_Idle_1: -759043789
+      Pinachoo_Idle_10: -1172687426
+      Pinachoo_Idle_100: 668252217
+      Pinachoo_Idle_101: -1046882015
+      Pinachoo_Idle_102: 1354585055
+      Pinachoo_Idle_103: 1835835267
+      Pinachoo_Idle_104: 29153663
+      Pinachoo_Idle_105: -618737737
+      Pinachoo_Idle_106: -195082181
+      Pinachoo_Idle_107: -1963620162
+      Pinachoo_Idle_108: -1993189645
+      Pinachoo_Idle_109: 20567591
+      Pinachoo_Idle_11: -670361496
+      Pinachoo_Idle_12: 1770499327
+      Pinachoo_Idle_13: -1467891777
+      Pinachoo_Idle_14: -1031940270
+      Pinachoo_Idle_15: -1010111640
+      Pinachoo_Idle_16: -1132196473
+      Pinachoo_Idle_17: -702989088
+      Pinachoo_Idle_18: -1312098368
+      Pinachoo_Idle_19: 1514427418
+      Pinachoo_Idle_2: -1587598231
+      Pinachoo_Idle_20: -464808405
+      Pinachoo_Idle_21: 1943084615
+      Pinachoo_Idle_22: -1006259353
+      Pinachoo_Idle_23: 1444014860
+      Pinachoo_Idle_24: 67113368
+      Pinachoo_Idle_25: -314623193
+      Pinachoo_Idle_26: -1046574189
+      Pinachoo_Idle_27: 1862745099
+      Pinachoo_Idle_28: 841252596
+      Pinachoo_Idle_29: 2110973452
+      Pinachoo_Idle_3: -479924839
+      Pinachoo_Idle_30: -937804817
+      Pinachoo_Idle_31: -621903435
+      Pinachoo_Idle_32: 1592516569
+      Pinachoo_Idle_33: -689175511
+      Pinachoo_Idle_34: -1952887926
+      Pinachoo_Idle_35: 373087695
+      Pinachoo_Idle_36: -1241962122
+      Pinachoo_Idle_37: 1748794261
+      Pinachoo_Idle_38: -1051754307
+      Pinachoo_Idle_39: -348764673
+      Pinachoo_Idle_4: 1068405009
+      Pinachoo_Idle_40: 751988230
+      Pinachoo_Idle_41: 957914964
+      Pinachoo_Idle_42: 776174614
+      Pinachoo_Idle_43: 1182550384
+      Pinachoo_Idle_44: -1980226139
+      Pinachoo_Idle_45: -941322006
+      Pinachoo_Idle_46: -910671538
+      Pinachoo_Idle_47: -1673790983
+      Pinachoo_Idle_48: 2085650097
+      Pinachoo_Idle_49: -1046187657
+      Pinachoo_Idle_5: -766172077
+      Pinachoo_Idle_50: 1518126358
+      Pinachoo_Idle_51: 1092464377
+      Pinachoo_Idle_52: 50947175
+      Pinachoo_Idle_53: 68644859
+      Pinachoo_Idle_54: 973935834
+      Pinachoo_Idle_55: -229182998
+      Pinachoo_Idle_56: 2091646800
+      Pinachoo_Idle_57: 1667149633
+      Pinachoo_Idle_58: 1873464843
+      Pinachoo_Idle_59: 1944802736
+      Pinachoo_Idle_6: -1765260879
+      Pinachoo_Idle_60: 1304046369
+      Pinachoo_Idle_61: -1463670340
+      Pinachoo_Idle_62: -100927557
+      Pinachoo_Idle_63: 513676119
+      Pinachoo_Idle_64: 1992201729
+      Pinachoo_Idle_65: -152118080
+      Pinachoo_Idle_66: 1331076136
+      Pinachoo_Idle_67: 996168149
+      Pinachoo_Idle_68: 272761751
+      Pinachoo_Idle_69: -1468085215
+      Pinachoo_Idle_7: -653524840
+      Pinachoo_Idle_70: 1976319513
+      Pinachoo_Idle_71: 1254557790
+      Pinachoo_Idle_72: -1734692345
+      Pinachoo_Idle_73: -456757930
+      Pinachoo_Idle_74: -512341742
+      Pinachoo_Idle_75: 1405215674
+      Pinachoo_Idle_76: -373790981
+      Pinachoo_Idle_77: -172292875
+      Pinachoo_Idle_78: -69606913
+      Pinachoo_Idle_79: 2005699281
+      Pinachoo_Idle_8: 954532957
+      Pinachoo_Idle_80: 565262299
+      Pinachoo_Idle_81: 1578197820
+      Pinachoo_Idle_82: 29099743
+      Pinachoo_Idle_83: -1135218719
+      Pinachoo_Idle_84: 965843706
+      Pinachoo_Idle_85: -1025306970
+      Pinachoo_Idle_86: 399210121
+      Pinachoo_Idle_87: -828605991
+      Pinachoo_Idle_88: -1527793063
+      Pinachoo_Idle_89: -197365302
+      Pinachoo_Idle_9: -1786339076
+      Pinachoo_Idle_90: -566287981
+      Pinachoo_Idle_91: 850099530
+      Pinachoo_Idle_92: -821181894
+      Pinachoo_Idle_93: 938095204
+      Pinachoo_Idle_94: -1432128305
+      Pinachoo_Idle_95: -1486227468
+      Pinachoo_Idle_96: -800961845
+      Pinachoo_Idle_97: -542393474
+      Pinachoo_Idle_98: 687334019
+      Pinachoo_Idle_99: -1353936521
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
